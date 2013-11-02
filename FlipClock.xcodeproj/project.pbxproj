@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12023A9917717ADA00494081 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12023A9717717ADA00494081 /* thumbnail@2x.png */; };
+		12023A9A17717ADA00494081 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 12023A9817717ADA00494081 /* thumbnail.png */; };
+		120DE6ED1662E88500C3C998 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE6EC1662E88500C3C998 /* Cocoa.framework */; };
+		120DE6EF1662E88500C3C998 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE6EE1662E88500C3C998 /* ScreenSaver.framework */; };
+		120DE6F91662E88500C3C998 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 120DE6F71662E88500C3C998 /* InfoPlist.strings */; };
+		120DE6FD1662E88500C3C998 /* FlipClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 120DE6FC1662E88500C3C998 /* FlipClockView.m */; };
+		120DE7291662E8C200C3C998 /* am_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7111662E8C200C3C998 /* am_top.png */; };
+		120DE72A1662E8C300C3C998 /* pm_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7121662E8C200C3C998 /* pm_top.png */; };
+		120DE72B1662E8C300C3C998 /* am_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7131662E8C200C3C998 /* am_bot.png */; };
+		120DE72C1662E8C300C3C998 /* pm_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7141662E8C200C3C998 /* pm_bot.png */; };
+		120DE72D1662E8C300C3C998 /* eight_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7151662E8C200C3C998 /* eight_bot.png */; };
+		120DE72E1662E8C300C3C998 /* eight_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7161662E8C200C3C998 /* eight_top.png */; };
+		120DE72F1662E8C300C3C998 /* five_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7171662E8C200C3C998 /* five_bot.png */; };
+		120DE7301662E8C300C3C998 /* five_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7181662E8C200C3C998 /* five_top.png */; };
+		120DE7311662E8C300C3C998 /* four_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7191662E8C200C3C998 /* four_bot.png */; };
+		120DE7321662E8C300C3C998 /* four_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71A1662E8C200C3C998 /* four_top.png */; };
+		120DE7331662E8C300C3C998 /* nine_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71B1662E8C200C3C998 /* nine_bot.png */; };
+		120DE7341662E8C300C3C998 /* nine_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71C1662E8C200C3C998 /* nine_top.png */; };
+		120DE7351662E8C300C3C998 /* one_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71D1662E8C200C3C998 /* one_bot.png */; };
+		120DE7361662E8C300C3C998 /* one_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71E1662E8C200C3C998 /* one_top.png */; };
+		120DE7371662E8C300C3C998 /* seven_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71F1662E8C200C3C998 /* seven_bot.png */; };
+		120DE7381662E8C300C3C998 /* seven_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7201662E8C200C3C998 /* seven_top.png */; };
+		120DE7391662E8C300C3C998 /* six_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7211662E8C200C3C998 /* six_bot.png */; };
+		120DE73A1662E8C300C3C998 /* six_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7221662E8C200C3C998 /* six_top.png */; };
+		120DE73B1662E8C300C3C998 /* three_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7231662E8C200C3C998 /* three_bot.png */; };
+		120DE73C1662E8C300C3C998 /* three_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7241662E8C200C3C998 /* three_top.png */; };
+		120DE73D1662E8C300C3C998 /* two_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7251662E8C200C3C998 /* two_bot.png */; };
+		120DE73E1662E8C300C3C998 /* two_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7261662E8C200C3C998 /* two_top.png */; };
+		120DE73F1662E8C300C3C998 /* zero_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7271662E8C200C3C998 /* zero_bot.png */; };
+		120DE7401662E8C300C3C998 /* zero_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7281662E8C200C3C998 /* zero_top.png */; };
+		120DE7461662E95600C3C998 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE7441662E95600C3C998 /* QuartzCore.framework */; };
+		120DE7471662E95600C3C998 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE7451662E95600C3C998 /* SceneKit.framework */; };
+		121C2B341824B6B500A2580D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 121C2B321824B6B500A2580D /* MainMenu.xib */; };
+		121C2B361824B71600A2580D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 120DE6F71662E88500C3C998 /* InfoPlist.strings */; };
+		121C2B391824B75100A2580D /* am_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7111662E8C200C3C998 /* am_top.png */; };
+		121C2B3A1824B75100A2580D /* pm_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7121662E8C200C3C998 /* pm_top.png */; };
+		121C2B3B1824B75100A2580D /* am_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7131662E8C200C3C998 /* am_bot.png */; };
+		121C2B3C1824B75100A2580D /* pm_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7141662E8C200C3C998 /* pm_bot.png */; };
+		121C2B3D1824B75100A2580D /* eight_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7151662E8C200C3C998 /* eight_bot.png */; };
+		121C2B3E1824B75100A2580D /* eight_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7161662E8C200C3C998 /* eight_top.png */; };
+		121C2B3F1824B75100A2580D /* five_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7171662E8C200C3C998 /* five_bot.png */; };
+		121C2B401824B75100A2580D /* five_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7181662E8C200C3C998 /* five_top.png */; };
+		121C2B411824B75100A2580D /* four_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7191662E8C200C3C998 /* four_bot.png */; };
+		121C2B421824B75100A2580D /* four_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71A1662E8C200C3C998 /* four_top.png */; };
+		121C2B431824B75100A2580D /* nine_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71B1662E8C200C3C998 /* nine_bot.png */; };
+		121C2B441824B75100A2580D /* nine_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71C1662E8C200C3C998 /* nine_top.png */; };
+		121C2B451824B75100A2580D /* one_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71D1662E8C200C3C998 /* one_bot.png */; };
+		121C2B461824B75100A2580D /* one_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71E1662E8C200C3C998 /* one_top.png */; };
+		121C2B471824B75100A2580D /* seven_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71F1662E8C200C3C998 /* seven_bot.png */; };
+		121C2B481824B75100A2580D /* seven_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7201662E8C200C3C998 /* seven_top.png */; };
+		121C2B491824B75100A2580D /* six_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7211662E8C200C3C998 /* six_bot.png */; };
+		121C2B4A1824B75100A2580D /* six_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7221662E8C200C3C998 /* six_top.png */; };
+		121C2B4B1824B75100A2580D /* three_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7231662E8C200C3C998 /* three_bot.png */; };
+		121C2B4C1824B75100A2580D /* three_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7241662E8C200C3C998 /* three_top.png */; };
+		121C2B4D1824B75100A2580D /* two_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7251662E8C200C3C998 /* two_bot.png */; };
+		121C2B4E1824B75100A2580D /* two_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7261662E8C200C3C998 /* two_top.png */; };
+		121C2B4F1824B75100A2580D /* zero_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7271662E8C200C3C998 /* zero_bot.png */; };
+		121C2B501824B75100A2580D /* zero_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7281662E8C200C3C998 /* zero_top.png */; };
+		121C2B531824B7D600A2580D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 121C2B511824B7CC00A2580D /* Credits.rtf */; };
+		121C2B561824B8C100A2580D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 121C2B551824B88500A2580D /* main.m */; };
+		121C2B571824B8C800A2580D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C8F1824AFED009DD26A /* AppDelegate.m */; };
+		121C2B581824B8CD00A2580D /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7F1824AE1E009DD26A /* ClockView.m */; };
+		121C2B591824B8D200A2580D /* DigitNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C831824AE1E009DD26A /* DigitNode.m */; };
+		121C2B5A1824B8D400A2580D /* DigitAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */; };
+		12203C841824AE1E009DD26A /* ClockNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 12203C7C1824AE1E009DD26A /* ClockNode.h */; };
+		12203C851824AE1E009DD26A /* ClockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7D1824AE1E009DD26A /* ClockNode.m */; };
+		12203C861824AE1E009DD26A /* ClockView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12203C7E1824AE1E009DD26A /* ClockView.h */; };
+		12203C871824AE1E009DD26A /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7F1824AE1E009DD26A /* ClockView.m */; };
+		12203C881824AE1E009DD26A /* DigitAnimationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 12203C801824AE1E009DD26A /* DigitAnimationDelegate.h */; };
+		12203C891824AE1E009DD26A /* DigitAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */; };
+		12203C8A1824AE1E009DD26A /* DigitNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 12203C821824AE1E009DD26A /* DigitNode.h */; };
+		12203C8B1824AE1E009DD26A /* DigitNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C831824AE1E009DD26A /* DigitNode.m */; };
+		12203C901824AFED009DD26A /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 12203C8E1824AFED009DD26A /* AppDelegate.h */; };
+		12203C911824AFED009DD26A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C8F1824AFED009DD26A /* AppDelegate.m */; };
+		12203C9A1824B193009DD26A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE6EC1662E88500C3C998 /* Cocoa.framework */; };
+		12203CC81824B1F3009DD26A /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12203CC71824B1F3009DD26A /* SceneKit.framework */; };
+		12203CCA1824B201009DD26A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12203CC91824B201009DD26A /* QuartzCore.framework */; };
+		125D6FDD1824B98E00164C8C /* ClockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7D1824AE1E009DD26A /* ClockNode.m */; };
+		12902409166BDF3100F4FE57 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12902408166BDF3100F4FE57 /* ConfigureSheet.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12023A9717717ADA00494081 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		12023A9817717ADA00494081 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		120DE6E91662E88500C3C998 /* FlipClock.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipClock.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		120DE6EC1662E88500C3C998 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		120DE6EE1662E88500C3C998 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		120DE6F11662E88500C3C998 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		120DE6F21662E88500C3C998 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		120DE6F31662E88500C3C998 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		120DE6F61662E88500C3C998 /* FlipClock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlipClock-Info.plist"; sourceTree = "<group>"; };
+		120DE6F81662E88500C3C998 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		120DE6FA1662E88500C3C998 /* FlipClock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlipClock-Prefix.pch"; sourceTree = "<group>"; };
+		120DE6FB1662E88500C3C998 /* FlipClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockView.h; sourceTree = "<group>"; };
+		120DE6FC1662E88500C3C998 /* FlipClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipClockView.m; sourceTree = "<group>"; };
+		120DE7111662E8C200C3C998 /* am_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = am_top.png; sourceTree = "<group>"; };
+		120DE7121662E8C200C3C998 /* pm_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pm_top.png; sourceTree = "<group>"; };
+		120DE7131662E8C200C3C998 /* am_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = am_bot.png; sourceTree = "<group>"; };
+		120DE7141662E8C200C3C998 /* pm_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pm_bot.png; sourceTree = "<group>"; };
+		120DE7151662E8C200C3C998 /* eight_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eight_bot.png; sourceTree = "<group>"; };
+		120DE7161662E8C200C3C998 /* eight_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eight_top.png; sourceTree = "<group>"; };
+		120DE7171662E8C200C3C998 /* five_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = five_bot.png; sourceTree = "<group>"; };
+		120DE7181662E8C200C3C998 /* five_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = five_top.png; sourceTree = "<group>"; };
+		120DE7191662E8C200C3C998 /* four_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = four_bot.png; sourceTree = "<group>"; };
+		120DE71A1662E8C200C3C998 /* four_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = four_top.png; sourceTree = "<group>"; };
+		120DE71B1662E8C200C3C998 /* nine_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nine_bot.png; sourceTree = "<group>"; };
+		120DE71C1662E8C200C3C998 /* nine_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nine_top.png; sourceTree = "<group>"; };
+		120DE71D1662E8C200C3C998 /* one_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one_bot.png; sourceTree = "<group>"; };
+		120DE71E1662E8C200C3C998 /* one_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one_top.png; sourceTree = "<group>"; };
+		120DE71F1662E8C200C3C998 /* seven_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven_bot.png; sourceTree = "<group>"; };
+		120DE7201662E8C200C3C998 /* seven_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven_top.png; sourceTree = "<group>"; };
+		120DE7211662E8C200C3C998 /* six_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = six_bot.png; sourceTree = "<group>"; };
+		120DE7221662E8C200C3C998 /* six_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = six_top.png; sourceTree = "<group>"; };
+		120DE7231662E8C200C3C998 /* three_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = three_bot.png; sourceTree = "<group>"; };
+		120DE7241662E8C200C3C998 /* three_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = three_top.png; sourceTree = "<group>"; };
+		120DE7251662E8C200C3C998 /* two_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two_bot.png; sourceTree = "<group>"; };
+		120DE7261662E8C200C3C998 /* two_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two_top.png; sourceTree = "<group>"; };
+		120DE7271662E8C200C3C998 /* zero_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zero_bot.png; sourceTree = "<group>"; };
+		120DE7281662E8C200C3C998 /* zero_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zero_top.png; sourceTree = "<group>"; };
+		120DE7441662E95600C3C998 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuartzCore.framework; sourceTree = "<group>"; };
+		120DE7451662E95600C3C998 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SceneKit.framework; sourceTree = "<group>"; };
+		121C2B331824B6B500A2580D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		121C2B521824B7CC00A2580D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		121C2B541824B82500A2580D /* ClockDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockDemo-Prefix.pch"; sourceTree = "<group>"; };
+		121C2B551824B88500A2580D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12203C7C1824AE1E009DD26A /* ClockNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockNode.h; sourceTree = "<group>"; };
+		12203C7D1824AE1E009DD26A /* ClockNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockNode.m; sourceTree = "<group>"; };
+		12203C7E1824AE1E009DD26A /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		12203C7F1824AE1E009DD26A /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
+		12203C801824AE1E009DD26A /* DigitAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitAnimationDelegate.h; sourceTree = "<group>"; };
+		12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitAnimationDelegate.m; sourceTree = "<group>"; };
+		12203C821824AE1E009DD26A /* DigitNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitNode.h; sourceTree = "<group>"; };
+		12203C831824AE1E009DD26A /* DigitNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitNode.m; sourceTree = "<group>"; };
+		12203C8E1824AFED009DD26A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12203C8F1824AFED009DD26A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12203C991824B193009DD26A /* ClockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12203CC71824B1F3009DD26A /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		12203CC91824B201009DD26A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		12203CCB1824B35A009DD26A /* ClockDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockDemo-Info.plist"; sourceTree = "<group>"; };
+		12902408166BDF3100F4FE57 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		120DE6E41662E88500C3C998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120DE6ED1662E88500C3C998 /* Cocoa.framework in Frameworks */,
+				120DE6EF1662E88500C3C998 /* ScreenSaver.framework in Frameworks */,
+				120DE7461662E95600C3C998 /* QuartzCore.framework in Frameworks */,
+				120DE7471662E95600C3C998 /* SceneKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12203C961824B193009DD26A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12203CCA1824B201009DD26A /* QuartzCore.framework in Frameworks */,
+				12203CC81824B1F3009DD26A /* SceneKit.framework in Frameworks */,
+				12203C9A1824B193009DD26A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		120DE6DC1662E88500C3C998 = {
+			isa = PBXGroup;
+			children = (
+				120DE6F41662E88500C3C998 /* FlipClock */,
+				120DE6EB1662E88500C3C998 /* Frameworks */,
+				120DE6EA1662E88500C3C998 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		120DE6EA1662E88500C3C998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				120DE6E91662E88500C3C998 /* FlipClock.saver */,
+				12203C991824B193009DD26A /* ClockDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		120DE6EB1662E88500C3C998 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12203CC91824B201009DD26A /* QuartzCore.framework */,
+				12203CC71824B1F3009DD26A /* SceneKit.framework */,
+				120DE7441662E95600C3C998 /* QuartzCore.framework */,
+				120DE7451662E95600C3C998 /* SceneKit.framework */,
+				120DE6EC1662E88500C3C998 /* Cocoa.framework */,
+				120DE6EE1662E88500C3C998 /* ScreenSaver.framework */,
+				120DE6F01662E88500C3C998 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		120DE6F01662E88500C3C998 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				120DE6F11662E88500C3C998 /* AppKit.framework */,
+				120DE6F21662E88500C3C998 /* CoreData.framework */,
+				120DE6F31662E88500C3C998 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		120DE6F41662E88500C3C998 /* FlipClock */ = {
+			isa = PBXGroup;
+			children = (
+				12203C8D1824AF6E009DD26A /* ScreenSaver */,
+				12203C8C1824AF05009DD26A /* ClockDemo */,
+				12203C7B1824ADC3009DD26A /* Shared */,
+				120DE6F51662E88500C3C998 /* Supporting Files */,
+			);
+			path = FlipClock;
+			sourceTree = "<group>";
+		};
+		120DE6F51662E88500C3C998 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				121C2B511824B7CC00A2580D /* Credits.rtf */,
+				12023A9717717ADA00494081 /* thumbnail@2x.png */,
+				12023A9817717ADA00494081 /* thumbnail.png */,
+				120DE7111662E8C200C3C998 /* am_top.png */,
+				120DE7121662E8C200C3C998 /* pm_top.png */,
+				120DE7131662E8C200C3C998 /* am_bot.png */,
+				120DE7141662E8C200C3C998 /* pm_bot.png */,
+				120DE7151662E8C200C3C998 /* eight_bot.png */,
+				120DE7161662E8C200C3C998 /* eight_top.png */,
+				120DE7171662E8C200C3C998 /* five_bot.png */,
+				120DE7181662E8C200C3C998 /* five_top.png */,
+				120DE7191662E8C200C3C998 /* four_bot.png */,
+				120DE71A1662E8C200C3C998 /* four_top.png */,
+				120DE71B1662E8C200C3C998 /* nine_bot.png */,
+				120DE71C1662E8C200C3C998 /* nine_top.png */,
+				120DE71D1662E8C200C3C998 /* one_bot.png */,
+				120DE71E1662E8C200C3C998 /* one_top.png */,
+				120DE71F1662E8C200C3C998 /* seven_bot.png */,
+				120DE7201662E8C200C3C998 /* seven_top.png */,
+				120DE7211662E8C200C3C998 /* six_bot.png */,
+				120DE7221662E8C200C3C998 /* six_top.png */,
+				120DE7231662E8C200C3C998 /* three_bot.png */,
+				120DE7241662E8C200C3C998 /* three_top.png */,
+				120DE7251662E8C200C3C998 /* two_bot.png */,
+				120DE7261662E8C200C3C998 /* two_top.png */,
+				120DE7271662E8C200C3C998 /* zero_bot.png */,
+				120DE7281662E8C200C3C998 /* zero_top.png */,
+				120DE6F61662E88500C3C998 /* FlipClock-Info.plist */,
+				12203CCB1824B35A009DD26A /* ClockDemo-Info.plist */,
+				120DE6F71662E88500C3C998 /* InfoPlist.strings */,
+				121C2B551824B88500A2580D /* main.m */,
+				120DE6FA1662E88500C3C998 /* FlipClock-Prefix.pch */,
+				121C2B541824B82500A2580D /* ClockDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12203C7B1824ADC3009DD26A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				12203C7C1824AE1E009DD26A /* ClockNode.h */,
+				12203C7D1824AE1E009DD26A /* ClockNode.m */,
+				12203C7E1824AE1E009DD26A /* ClockView.h */,
+				12203C7F1824AE1E009DD26A /* ClockView.m */,
+				12203C801824AE1E009DD26A /* DigitAnimationDelegate.h */,
+				12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */,
+				12203C821824AE1E009DD26A /* DigitNode.h */,
+				12203C831824AE1E009DD26A /* DigitNode.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		12203C8C1824AF05009DD26A /* ClockDemo */ = {
+			isa = PBXGroup;
+			children = (
+				12203C8E1824AFED009DD26A /* AppDelegate.h */,
+				12203C8F1824AFED009DD26A /* AppDelegate.m */,
+				12203C921824B035009DD26A /* XIBs */,
+			);
+			name = ClockDemo;
+			sourceTree = "<group>";
+		};
+		12203C8D1824AF6E009DD26A /* ScreenSaver */ = {
+			isa = PBXGroup;
+			children = (
+				120DE6FB1662E88500C3C998 /* FlipClockView.h */,
+				120DE6FC1662E88500C3C998 /* FlipClockView.m */,
+				12902400166BDB7C00F4FE57 /* XIBs */,
+			);
+			name = ScreenSaver;
+			sourceTree = "<group>";
+		};
+		12203C921824B035009DD26A /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				121C2B321824B6B500A2580D /* MainMenu.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		12902400166BDB7C00F4FE57 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				12902408166BDF3100F4FE57 /* ConfigureSheet.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		120DE6E51662E88500C3C998 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12203C8A1824AE1E009DD26A /* DigitNode.h in Headers */,
+				12203C861824AE1E009DD26A /* ClockView.h in Headers */,
+				12203C881824AE1E009DD26A /* DigitAnimationDelegate.h in Headers */,
+				12203C841824AE1E009DD26A /* ClockNode.h in Headers */,
+				12203C901824AFED009DD26A /* AppDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		120DE6E81662E88500C3C998 /* FlipClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 120DE7001662E88500C3C998 /* Build configuration list for PBXNativeTarget "FlipClock" */;
+			buildPhases = (
+				120DE6E31662E88500C3C998 /* Sources */,
+				120DE6E41662E88500C3C998 /* Frameworks */,
+				120DE6E51662E88500C3C998 /* Headers */,
+				120DE6E61662E88500C3C998 /* Resources */,
+				120DE6E71662E88500C3C998 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlipClock;
+			productName = FlipClock;
+			productReference = 120DE6E91662E88500C3C998 /* FlipClock.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+		12203C981824B193009DD26A /* ClockDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12203CC11824B194009DD26A /* Build configuration list for PBXNativeTarget "ClockDemo" */;
+			buildPhases = (
+				12203C951824B193009DD26A /* Sources */,
+				12203C961824B193009DD26A /* Frameworks */,
+				12203C971824B193009DD26A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockDemo;
+			productName = ClockDemo;
+			productReference = 12203C991824B193009DD26A /* ClockDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		120DE6DE1662E88500C3C998 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jonathan Salvador";
+			};
+			buildConfigurationList = 120DE6E11662E88500C3C998 /* Build configuration list for PBXProject "FlipClock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 120DE6DC1662E88500C3C998;
+			productRefGroup = 120DE6EA1662E88500C3C998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				120DE6E81662E88500C3C998 /* FlipClock */,
+				12203C981824B193009DD26A /* ClockDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		120DE6E61662E88500C3C998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120DE6F91662E88500C3C998 /* InfoPlist.strings in Resources */,
+				120DE7291662E8C200C3C998 /* am_top.png in Resources */,
+				120DE72A1662E8C300C3C998 /* pm_top.png in Resources */,
+				120DE72B1662E8C300C3C998 /* am_bot.png in Resources */,
+				120DE72C1662E8C300C3C998 /* pm_bot.png in Resources */,
+				120DE72D1662E8C300C3C998 /* eight_bot.png in Resources */,
+				120DE72E1662E8C300C3C998 /* eight_top.png in Resources */,
+				120DE72F1662E8C300C3C998 /* five_bot.png in Resources */,
+				120DE7301662E8C300C3C998 /* five_top.png in Resources */,
+				120DE7311662E8C300C3C998 /* four_bot.png in Resources */,
+				120DE7321662E8C300C3C998 /* four_top.png in Resources */,
+				120DE7331662E8C300C3C998 /* nine_bot.png in Resources */,
+				120DE7341662E8C300C3C998 /* nine_top.png in Resources */,
+				120DE7351662E8C300C3C998 /* one_bot.png in Resources */,
+				120DE7361662E8C300C3C998 /* one_top.png in Resources */,
+				120DE7371662E8C300C3C998 /* seven_bot.png in Resources */,
+				120DE7381662E8C300C3C998 /* seven_top.png in Resources */,
+				120DE7391662E8C300C3C998 /* six_bot.png in Resources */,
+				120DE73A1662E8C300C3C998 /* six_top.png in Resources */,
+				120DE73B1662E8C300C3C998 /* three_bot.png in Resources */,
+				120DE73C1662E8C300C3C998 /* three_top.png in Resources */,
+				120DE73D1662E8C300C3C998 /* two_bot.png in Resources */,
+				120DE73E1662E8C300C3C998 /* two_top.png in Resources */,
+				120DE73F1662E8C300C3C998 /* zero_bot.png in Resources */,
+				120DE7401662E8C300C3C998 /* zero_top.png in Resources */,
+				12902409166BDF3100F4FE57 /* ConfigureSheet.xib in Resources */,
+				12023A9917717ADA00494081 /* thumbnail@2x.png in Resources */,
+				12023A9A17717ADA00494081 /* thumbnail.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12203C971824B193009DD26A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121C2B361824B71600A2580D /* InfoPlist.strings in Resources */,
+				121C2B531824B7D600A2580D /* Credits.rtf in Resources */,
+				121C2B341824B6B500A2580D /* MainMenu.xib in Resources */,
+				121C2B391824B75100A2580D /* am_top.png in Resources */,
+				121C2B3A1824B75100A2580D /* pm_top.png in Resources */,
+				121C2B3B1824B75100A2580D /* am_bot.png in Resources */,
+				121C2B3C1824B75100A2580D /* pm_bot.png in Resources */,
+				121C2B3D1824B75100A2580D /* eight_bot.png in Resources */,
+				121C2B3E1824B75100A2580D /* eight_top.png in Resources */,
+				121C2B3F1824B75100A2580D /* five_bot.png in Resources */,
+				121C2B401824B75100A2580D /* five_top.png in Resources */,
+				121C2B411824B75100A2580D /* four_bot.png in Resources */,
+				121C2B421824B75100A2580D /* four_top.png in Resources */,
+				121C2B431824B75100A2580D /* nine_bot.png in Resources */,
+				121C2B441824B75100A2580D /* nine_top.png in Resources */,
+				121C2B451824B75100A2580D /* one_bot.png in Resources */,
+				121C2B461824B75100A2580D /* one_top.png in Resources */,
+				121C2B471824B75100A2580D /* seven_bot.png in Resources */,
+				121C2B481824B75100A2580D /* seven_top.png in Resources */,
+				121C2B491824B75100A2580D /* six_bot.png in Resources */,
+				121C2B4A1824B75100A2580D /* six_top.png in Resources */,
+				121C2B4B1824B75100A2580D /* three_bot.png in Resources */,
+				121C2B4C1824B75100A2580D /* three_top.png in Resources */,
+				121C2B4D1824B75100A2580D /* two_bot.png in Resources */,
+				121C2B4E1824B75100A2580D /* two_top.png in Resources */,
+				121C2B4F1824B75100A2580D /* zero_bot.png in Resources */,
+				121C2B501824B75100A2580D /* zero_top.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		120DE6E71662E88500C3C998 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		120DE6E31662E88500C3C998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12203C851824AE1E009DD26A /* ClockNode.m in Sources */,
+				120DE6FD1662E88500C3C998 /* FlipClockView.m in Sources */,
+				12203C911824AFED009DD26A /* AppDelegate.m in Sources */,
+				12203C8B1824AE1E009DD26A /* DigitNode.m in Sources */,
+				12203C871824AE1E009DD26A /* ClockView.m in Sources */,
+				12203C891824AE1E009DD26A /* DigitAnimationDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12203C951824B193009DD26A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121C2B561824B8C100A2580D /* main.m in Sources */,
+				121C2B571824B8C800A2580D /* AppDelegate.m in Sources */,
+				121C2B581824B8CD00A2580D /* ClockView.m in Sources */,
+				125D6FDD1824B98E00164C8C /* ClockNode.m in Sources */,
+				121C2B591824B8D200A2580D /* DigitNode.m in Sources */,
+				121C2B5A1824B8D400A2580D /* DigitAnimationDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		120DE6F71662E88500C3C998 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				120DE6F81662E88500C3C998 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		121C2B321824B6B500A2580D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				121C2B331824B6B500A2580D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		121C2B511824B7CC00A2580D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				121C2B521824B7CC00A2580D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		120DE6FE1662E88500C3C998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		120DE6FF1662E88500C3C998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		120DE7011662E88500C3C998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipClock/FlipClock-Prefix.pch";
+				INFOPLIST_FILE = "FlipClock/FlipClock-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		120DE7021662E88500C3C998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipClock/FlipClock-Prefix.pch";
+				INFOPLIST_FILE = "FlipClock/FlipClock-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		12203CC21824B194009DD26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipClock/ClockDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "${SRCROOT}/FlipClock/ClockDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		12203CC31824B194009DD26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipClock/ClockDemo-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "${SRCROOT}/FlipClock/ClockDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		120DE6E11662E88500C3C998 /* Build configuration list for PBXProject "FlipClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120DE6FE1662E88500C3C998 /* Debug */,
+				120DE6FF1662E88500C3C998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		120DE7001662E88500C3C998 /* Build configuration list for PBXNativeTarget "FlipClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120DE7011662E88500C3C998 /* Debug */,
+				120DE7021662E88500C3C998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12203CC11824B194009DD26A /* Build configuration list for PBXNativeTarget "ClockDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12203CC21824B194009DD26A /* Debug */,
+				12203CC31824B194009DD26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 120DE6DE1662E88500C3C998 /* Project object */;
+}
