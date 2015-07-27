@@ -86,6 +86,9 @@
 		12203CCA1824B201009DD26A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12203CC91824B201009DD26A /* QuartzCore.framework */; };
 		125D6FDD1824B98E00164C8C /* ClockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7D1824AE1E009DD26A /* ClockNode.m */; };
 		12902409166BDF3100F4FE57 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12902408166BDF3100F4FE57 /* ConfigureSheet.xib */; };
+		12B8E46E1B65C170002EADC6 /* SCNNode+FlipClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */; };
+		12B8E46F1B65C170002EADC6 /* SCNNode+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */; };
+		12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +150,8 @@
 		12203CC91824B201009DD26A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		12203CCB1824B35A009DD26A /* ClockDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockDemo-Info.plist"; sourceTree = "<group>"; };
 		12902408166BDF3100F4FE57 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SCNNode+FlipClock.h"; path = "Categories/SCNNode+FlipClock.h"; sourceTree = "<group>"; };
+		12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SCNNode+FlipClock.m"; path = "Categories/SCNNode+FlipClock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +275,7 @@
 		12203C7B1824ADC3009DD26A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				12B8E46B1B65C132002EADC6 /* Categories */,
 				12203C7C1824AE1E009DD26A /* ClockNode.h */,
 				12203C7D1824AE1E009DD26A /* ClockNode.m */,
 				12203C7E1824AE1E009DD26A /* ClockView.h */,
@@ -318,6 +324,15 @@
 			name = XIBs;
 			sourceTree = "<group>";
 		};
+		12B8E46B1B65C132002EADC6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */,
+				12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -326,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12203C8A1824AE1E009DD26A /* DigitNode.h in Headers */,
+				12B8E46E1B65C170002EADC6 /* SCNNode+FlipClock.h in Headers */,
 				12203C861824AE1E009DD26A /* ClockView.h in Headers */,
 				12203C881824AE1E009DD26A /* DigitAnimationDelegate.h in Headers */,
 				12203C841824AE1E009DD26A /* ClockNode.h in Headers */,
@@ -491,6 +507,7 @@
 				120DE6FD1662E88500C3C998 /* FlipClockView.m in Sources */,
 				12203C911824AFED009DD26A /* AppDelegate.m in Sources */,
 				12203C8B1824AE1E009DD26A /* DigitNode.m in Sources */,
+				12B8E46F1B65C170002EADC6 /* SCNNode+FlipClock.m in Sources */,
 				12203C871824AE1E009DD26A /* ClockView.m in Sources */,
 				12203C891824AE1E009DD26A /* DigitAnimationDelegate.m in Sources */,
 			);
@@ -500,6 +517,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */,
 				121C2B561824B8C100A2580D /* main.m in Sources */,
 				121C2B571824B8C800A2580D /* AppDelegate.m in Sources */,
 				121C2B581824B8CD00A2580D /* ClockView.m in Sources */,
