@@ -30,22 +30,13 @@
 
 @implementation DigitAnimationDelegate
 
--(id)initWithNode:(SCNNode*)givenNode andTop:(SCNPlane*)givenTopHalf andBottom:(SCNPlane*)givenBottomHalf andPlanes:(NSArray*)givenPlanes  andNodes:(NSArray*)givenNodes{
-    if (self = [super init]){
-        // Initialization code here
-        self->flipNode      = givenNode;
-        self->topHalf       = givenTopHalf;
-        self->bottomHalf    = givenBottomHalf;
-        self->planes        = givenPlanes;
-        self->nodes         = givenNodes;
-    }
-    return self;
-}
 
 - (void)animationDidStart:(CAAnimation *)theAnimation{
     
+    DigitAnimationContainer *container = theAnimation.animationContainer;
+    
     //update topHalf
-    [DigitNode giveSegment:topHalf MaterialWithName:[NSString stringWithFormat:@"%@_top", theAnimation.animationContainer.texturePrefix]];
+    [DigitNode giveSegment:container.topHalf MaterialWithName:[NSString stringWithFormat:@"%@_top", container.texturePrefix]];
 }
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag{
@@ -53,26 +44,28 @@
     
     if(flag){
         
+        DigitAnimationContainer *container = theAnimation.animationContainer;
+        
         //update bottomHalf
-        [DigitNode giveSegment:bottomHalf MaterialWithName:[NSString stringWithFormat:@"%@_bot", theAnimation.animationContainer.texturePrefix]];
+        [DigitNode giveSegment:container.bottomHalf MaterialWithName:[NSString stringWithFormat:@"%@_bot", container.texturePrefix]];
         
         //Nil the NSImages in the given material array
-        for (SCNPlane* __strong currentPlane in planes) {
+        for (SCNPlane* __strong currentPlane in container.planes) {
             SCNMaterial *currentMaterial = [[currentPlane materials] objectAtIndex:0];
             currentMaterial.diffuse.contents = nil;
             currentMaterial = nil;
             currentPlane = nil;
         }
         
-        for(SCNNode* __strong currentNode in nodes){
+        for(SCNNode* __strong currentNode in container.nodes){
             
             [currentNode cleanupAndRemoveFromParentNode];
             currentNode = nil;
         }
         
         //remove flipper
-        [flipNode cleanupAndRemoveFromParentNode];
-        flipNode = nil;
+        [container.flipNode cleanupAndRemoveFromParentNode];
+        container.flipNode = nil;
         
         theAnimation.delegate = nil;
     }
