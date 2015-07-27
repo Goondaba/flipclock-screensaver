@@ -51,6 +51,7 @@ typedef enum {
 }
 
 @property (nonatomic, retain) NSString *currentTexturePrefix;
+@property (nonatomic)   id animationDelegate;
 
 -(void)flipToDigit:(DigitType)givenDigitType;
 -(void)startDigitAt:(DigitType)givenDigitType;
