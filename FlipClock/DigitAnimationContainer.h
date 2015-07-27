@@ -10,8 +10,8 @@
 
 @interface DigitAnimationContainer : NSObject
 
-@property (nonatomic) NSString  *texturePrefix;
-@property (nonatomic) SCNNode   *flipNode;
+@property (nonatomic, copy) NSString  *texturePrefix;
+@property (nonatomic, copy) SCNNode   *flipNode;
 @property (nonatomic) SCNPlane  *topHalf;
 @property (nonatomic) SCNPlane  *bottomHalf;
 @property (nonatomic) NSArray   *planes;
