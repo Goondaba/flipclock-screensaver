@@ -67,6 +67,7 @@
         [container.flipNode cleanupAndRemoveFromParentNode];
         container.flipNode = nil;
         
+        theAnimation.animationContainer = nil;
         theAnimation.delegate = nil;
     }
 }
