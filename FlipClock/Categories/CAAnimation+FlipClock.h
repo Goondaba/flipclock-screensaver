@@ -1,5 +1,5 @@
 //
-//  CAKeyframeAnimation+FlipClock.h
+//  CAAnimation+FlipClock.h
 //  FlipClock
 //
 //  Created by Jonathan Salvador on 7/26/15.
@@ -8,7 +8,8 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import <objc/runtime.h>
+#import "DigitAnimationContainer.h"
 
-@interface CAKeyframeAnimation (FlipClock)
-@property (nonatomic, strong) id texturePrefix;
+@interface CAAnimation (FlipClock)
+@property (nonatomic, strong) DigitAnimationContainer *animationContainer;
 @end

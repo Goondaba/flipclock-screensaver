@@ -89,9 +89,12 @@
 		12B8E46E1B65C170002EADC6 /* SCNNode+FlipClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */; };
 		12B8E46F1B65C170002EADC6 /* SCNNode+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */; };
 		12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */; };
-		12B8E4731B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E4711B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.h */; };
-		12B8E4741B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4721B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.m */; };
-		12B8E4751B65CD25002EADC6 /* CAKeyframeAnimation+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4721B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.m */; };
+		12B8E4731B65CAD6002EADC6 /* CAAnimation+FlipClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E4711B65CAD6002EADC6 /* CAAnimation+FlipClock.h */; };
+		12B8E4741B65CAD6002EADC6 /* CAAnimation+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4721B65CAD6002EADC6 /* CAAnimation+FlipClock.m */; };
+		12B8E4751B65CD25002EADC6 /* CAAnimation+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4721B65CAD6002EADC6 /* CAAnimation+FlipClock.m */; };
+		12B8E4781B65EB6B002EADC6 /* DigitAnimationContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E4761B65EB6B002EADC6 /* DigitAnimationContainer.h */; };
+		12B8E4791B65EB6B002EADC6 /* DigitAnimationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4771B65EB6B002EADC6 /* DigitAnimationContainer.m */; };
+		12D79AD21B65EC9C00C0A422 /* DigitAnimationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4771B65EB6B002EADC6 /* DigitAnimationContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -155,8 +158,10 @@
 		12902408166BDF3100F4FE57 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SCNNode+FlipClock.h"; path = "Categories/SCNNode+FlipClock.h"; sourceTree = "<group>"; };
 		12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SCNNode+FlipClock.m"; path = "Categories/SCNNode+FlipClock.m"; sourceTree = "<group>"; };
-		12B8E4711B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CAKeyframeAnimation+FlipClock.h"; path = "Categories/CAKeyframeAnimation+FlipClock.h"; sourceTree = "<group>"; };
-		12B8E4721B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CAKeyframeAnimation+FlipClock.m"; path = "Categories/CAKeyframeAnimation+FlipClock.m"; sourceTree = "<group>"; };
+		12B8E4711B65CAD6002EADC6 /* CAAnimation+FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CAAnimation+FlipClock.h"; path = "Categories/CAAnimation+FlipClock.h"; sourceTree = "<group>"; };
+		12B8E4721B65CAD6002EADC6 /* CAAnimation+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CAAnimation+FlipClock.m"; path = "Categories/CAAnimation+FlipClock.m"; sourceTree = "<group>"; };
+		12B8E4761B65EB6B002EADC6 /* DigitAnimationContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitAnimationContainer.h; sourceTree = "<group>"; };
+		12B8E4771B65EB6B002EADC6 /* DigitAnimationContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitAnimationContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +294,8 @@
 				12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */,
 				12203C821824AE1E009DD26A /* DigitNode.h */,
 				12203C831824AE1E009DD26A /* DigitNode.m */,
+				12B8E4761B65EB6B002EADC6 /* DigitAnimationContainer.h */,
+				12B8E4771B65EB6B002EADC6 /* DigitAnimationContainer.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -334,8 +341,8 @@
 			children = (
 				12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */,
 				12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */,
-				12B8E4711B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.h */,
-				12B8E4721B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.m */,
+				12B8E4711B65CAD6002EADC6 /* CAAnimation+FlipClock.h */,
+				12B8E4721B65CAD6002EADC6 /* CAAnimation+FlipClock.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -350,10 +357,11 @@
 				12203C8A1824AE1E009DD26A /* DigitNode.h in Headers */,
 				12B8E46E1B65C170002EADC6 /* SCNNode+FlipClock.h in Headers */,
 				12203C861824AE1E009DD26A /* ClockView.h in Headers */,
+				12B8E4781B65EB6B002EADC6 /* DigitAnimationContainer.h in Headers */,
 				12203C881824AE1E009DD26A /* DigitAnimationDelegate.h in Headers */,
 				12203C841824AE1E009DD26A /* ClockNode.h in Headers */,
 				12203C901824AFED009DD26A /* AppDelegate.h in Headers */,
-				12B8E4731B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.h in Headers */,
+				12B8E4731B65CAD6002EADC6 /* CAAnimation+FlipClock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +523,8 @@
 				120DE6FD1662E88500C3C998 /* FlipClockView.m in Sources */,
 				12203C911824AFED009DD26A /* AppDelegate.m in Sources */,
 				12203C8B1824AE1E009DD26A /* DigitNode.m in Sources */,
-				12B8E4741B65CAD6002EADC6 /* CAKeyframeAnimation+FlipClock.m in Sources */,
+				12B8E4741B65CAD6002EADC6 /* CAAnimation+FlipClock.m in Sources */,
+				12B8E4791B65EB6B002EADC6 /* DigitAnimationContainer.m in Sources */,
 				12B8E46F1B65C170002EADC6 /* SCNNode+FlipClock.m in Sources */,
 				12203C871824AE1E009DD26A /* ClockView.m in Sources */,
 				12203C891824AE1E009DD26A /* DigitAnimationDelegate.m in Sources */,
@@ -526,11 +535,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12B8E4751B65CD25002EADC6 /* CAKeyframeAnimation+FlipClock.m in Sources */,
+				12B8E4751B65CD25002EADC6 /* CAAnimation+FlipClock.m in Sources */,
 				12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */,
 				121C2B561824B8C100A2580D /* main.m in Sources */,
 				121C2B571824B8C800A2580D /* AppDelegate.m in Sources */,
 				121C2B581824B8CD00A2580D /* ClockView.m in Sources */,
+				12D79AD21B65EC9C00C0A422 /* DigitAnimationContainer.m in Sources */,
 				125D6FDD1824B98E00164C8C /* ClockNode.m in Sources */,
 				121C2B591824B8D200A2580D /* DigitNode.m in Sources */,
 				121C2B5A1824B8D400A2580D /* DigitAnimationDelegate.m in Sources */,
