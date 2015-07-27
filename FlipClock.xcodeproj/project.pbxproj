@@ -290,12 +290,12 @@
 				12203C7D1824AE1E009DD26A /* ClockNode.m */,
 				12203C7E1824AE1E009DD26A /* ClockView.h */,
 				12203C7F1824AE1E009DD26A /* ClockView.m */,
-				12203C801824AE1E009DD26A /* DigitAnimationDelegate.h */,
-				12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */,
 				12203C821824AE1E009DD26A /* DigitNode.h */,
 				12203C831824AE1E009DD26A /* DigitNode.m */,
 				12B8E4761B65EB6B002EADC6 /* DigitAnimationContainer.h */,
 				12B8E4771B65EB6B002EADC6 /* DigitAnimationContainer.m */,
+				12203C801824AE1E009DD26A /* DigitAnimationDelegate.h */,
+				12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
