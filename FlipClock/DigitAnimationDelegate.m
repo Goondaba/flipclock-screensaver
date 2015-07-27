@@ -66,12 +66,13 @@
         }
         
         for(SCNNode* __strong currentNode in nodes){
-            [currentNode removeFromParentNode];
+            
+            [currentNode cleanupAndRemoveFromParentNode];
             currentNode = nil;
         }
         
         //remove flipper
-        [flipNode removeFromParentNode];
+        [flipNode cleanupAndRemoveFromParentNode];
         flipNode = nil;
     }
 }
