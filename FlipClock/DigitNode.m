@@ -102,6 +102,8 @@ NSMutableDictionary *textures = nil;
     animation.duration = 0.8f;
     animation.repeatCount = 0;
     
+    //set values to animation for the delegate to use
+    animation.texturePrefix = self.currentTexturePrefix;
     animation.delegate = [[DigitAnimationDelegate alloc] initWithNode:flipNode andTop:topHalf andBottom:bottomHalf andPrefix:self->currentTexturePrefix andPlanes:@[newTopHalf, newBottomHalf] andNodes:@[newTopHalfNode, newBottomHalfNode]];
   
     animation.removedOnCompletion = YES;

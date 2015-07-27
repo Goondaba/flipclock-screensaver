@@ -74,6 +74,8 @@
         //remove flipper
         [flipNode cleanupAndRemoveFromParentNode];
         flipNode = nil;
+        
+        theAnimation.delegate = nil;
     }
 }
 
