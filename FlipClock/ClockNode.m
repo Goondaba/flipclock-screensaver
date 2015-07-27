@@ -126,13 +126,16 @@ CGFloat currentLateral;
         [secondOne_Node flipToDigit:([self getSecond] % 10)];
     }
     
-    //    NSLog(@"Digit: %@", [minuteOne_Node currentTexturePrefix]);
-    
-//    double delayInSeconds = 0.01;
+
     double delayInSeconds = 1.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    
+    __weak typeof(self) weakSelf = self;
+    
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [self flipToCurrentTime];
+        
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        [strongSelf flipToCurrentTime];
 
     });
 }
