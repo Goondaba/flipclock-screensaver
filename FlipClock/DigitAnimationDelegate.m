@@ -30,13 +30,12 @@
 
 @implementation DigitAnimationDelegate
 
--(id)initWithNode:(SCNNode*)givenNode andTop:(SCNPlane*)givenTopHalf andBottom:(SCNPlane*)givenBottomHalf andPrefix:(NSString*)givenPrefix andPlanes:(NSArray*)givenPlanes  andNodes:(NSArray*)givenNodes{
+-(id)initWithNode:(SCNNode*)givenNode andTop:(SCNPlane*)givenTopHalf andBottom:(SCNPlane*)givenBottomHalf andPlanes:(NSArray*)givenPlanes  andNodes:(NSArray*)givenNodes{
     if (self = [super init]){
         // Initialization code here
         self->flipNode      = givenNode;
         self->topHalf       = givenTopHalf;
         self->bottomHalf    = givenBottomHalf;
-        self->texturePrefix = givenPrefix;
         self->planes        = givenPlanes;
         self->nodes         = givenNodes;
     }
@@ -46,7 +45,7 @@
 - (void)animationDidStart:(CAAnimation *)theAnimation{
     
     //update topHalf
-    [DigitNode giveSegment:topHalf MaterialWithName:[NSString stringWithFormat:@"%@_top", texturePrefix]];
+    [DigitNode giveSegment:topHalf MaterialWithName:[NSString stringWithFormat:@"%@_top", theAnimation.animationContainer.texturePrefix]];
 }
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag{
@@ -55,7 +54,7 @@
     if(flag){
         
         //update bottomHalf
-        [DigitNode giveSegment:bottomHalf MaterialWithName:[NSString stringWithFormat:@"%@_bot", texturePrefix]];
+        [DigitNode giveSegment:bottomHalf MaterialWithName:[NSString stringWithFormat:@"%@_bot", theAnimation.animationContainer.texturePrefix]];
         
         //Nil the NSImages in the given material array
         for (SCNPlane* __strong currentPlane in planes) {
