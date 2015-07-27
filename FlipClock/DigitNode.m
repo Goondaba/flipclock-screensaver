@@ -28,6 +28,7 @@
 
 #import "DigitNode.h"
 #import "DigitAnimationDelegate.h"
+#import "DigitAnimationContainer.h"	
 
 @implementation DigitNode
 @synthesize currentTexturePrefix;
@@ -38,6 +39,14 @@ CGFloat flipSegementGap   = 0.005;
 CGFloat flipSegmentZGap   = 0.01;
 
 NSMutableDictionary *textures = nil;
+
+- (id)init {
+    if (self == [super init]) {
+        self.animationDelegate = [[DigitAnimationDelegate alloc] init];
+     }
+    
+    return self;
+}
 
 +(CGFloat)getDigitWidth{
     return flipSegementWidth;
@@ -102,9 +111,19 @@ NSMutableDictionary *textures = nil;
     animation.duration = 0.8f;
     animation.repeatCount = 0;
     
-    animation.delegate = [[DigitAnimationDelegate alloc] initWithNode:flipNode andTop:topHalf andBottom:bottomHalf andPrefix:self->currentTexturePrefix andPlanes:@[newTopHalf, newBottomHalf] andNodes:@[newTopHalfNode, newBottomHalfNode]];
-  
+    //set values to animation for the delegate to use
+    DigitAnimationContainer *container = [[DigitAnimationContainer alloc] init];
+    container.texturePrefix = self.currentTexturePrefix;
+    container.flipNode      = flipNode;
+    container.topHalf       = topHalf;
+    container.bottomHalf    = bottomHalf;
+    container.planes        = @[newTopHalf, newBottomHalf];
+    container.nodes         = @[newTopHalfNode, newBottomHalfNode];
+    
+    animation.animationContainer = container;
+    animation.delegate = self.animationDelegate;
     animation.removedOnCompletion = YES;
+    
     [flipNode addAnimation:animation forKey:nil];
 }
 
