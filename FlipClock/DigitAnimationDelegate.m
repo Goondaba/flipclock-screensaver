@@ -27,6 +27,7 @@
 //
 
 #import "DigitAnimationDelegate.h"
+#import "DigitAnimationContainer.h"
 
 @implementation DigitAnimationDelegate
 
