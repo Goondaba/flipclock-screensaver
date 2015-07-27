@@ -31,14 +31,8 @@
 #import "DigitNode.h"
 
 @interface DigitAnimationDelegate : NSObject{
-    NSString *texturePrefix;
-    SCNNode  *flipNode;
-    SCNPlane *topHalf;
-    SCNPlane *bottomHalf;
-    NSArray  *planes;
-    NSArray  *nodes;
+
 }
 
--(id)initWithNode:(SCNNode*)givenNode andTop:(SCNPlane*)givenTopHalf andBottom:(SCNPlane*)givenBottomHalf andPrefix:(NSString*)givenPrefix andPlanes:(NSArray*)givenPlanes andNodes:(NSArray*)givenNodes;
 
 @end
