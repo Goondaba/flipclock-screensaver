@@ -28,7 +28,7 @@
 
 #import "DigitNode.h"
 #import "DigitAnimationDelegate.h"
-#import "DigitAnimationContainer.h"	
+#import "DigitAnimationModel.h"
 
 @implementation DigitNode
 @synthesize currentTexturePrefix;
@@ -112,7 +112,7 @@ NSMutableDictionary *textures = nil;
     animation.repeatCount = 0;
     
     //set values to animation for the delegate to use
-    DigitAnimationContainer *container = [[DigitAnimationContainer alloc] init];
+    DigitAnimationModel *container = [[DigitAnimationModel alloc] init];
     container.texturePrefix = self.currentTexturePrefix;
     container.flipNode      = flipNode;
     container.topHalf       = topHalf;
@@ -120,7 +120,7 @@ NSMutableDictionary *textures = nil;
     container.planes        = @[newTopHalf, newBottomHalf];
     container.nodes         = @[newTopHalfNode, newBottomHalfNode];
     
-    animation.animationContainer = container;
+    animation.animationModel = container;
     animation.delegate = self.animationDelegate;
     animation.removedOnCompletion = YES;
     

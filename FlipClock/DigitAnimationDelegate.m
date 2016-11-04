@@ -27,14 +27,14 @@
 //
 
 #import "DigitAnimationDelegate.h"
-#import "DigitAnimationContainer.h"
+#import "DigitAnimationModel.h"
 
 @implementation DigitAnimationDelegate
 
 
 - (void)animationDidStart:(CAAnimation *)theAnimation{
     
-    DigitAnimationContainer *container = theAnimation.animationContainer;
+    DigitAnimationModel *container = theAnimation.animationModel;
     
     //update topHalf
     [DigitNode giveSegment:container.topHalf MaterialWithName:[NSString stringWithFormat:@"%@_top", container.texturePrefix]];
@@ -45,7 +45,7 @@
     
     if(flag){
         
-        DigitAnimationContainer *container = theAnimation.animationContainer;
+        DigitAnimationModel *container = theAnimation.animationModel;
         
         //update bottomHalf
         [DigitNode giveSegment:container.bottomHalf MaterialWithName:[NSString stringWithFormat:@"%@_bot", container.texturePrefix]];
@@ -68,7 +68,7 @@
         [container.flipNode cleanupAndRemoveFromParentNode];
         container.flipNode = nil;
         
-        theAnimation.animationContainer = nil;
+        theAnimation.animationModel = nil;
         theAnimation.delegate = nil;
     }
 }

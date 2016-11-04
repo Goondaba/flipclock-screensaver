@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DigitAnimationContainer : NSObject
+@interface DigitAnimationModel : NSObject
 
 @property (nonatomic, copy) NSString  *texturePrefix;
 @property (nonatomic, copy) SCNNode   *flipNode;
