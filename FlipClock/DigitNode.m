@@ -229,7 +229,7 @@ NSMutableDictionary *textures = nil;
         
         //nil the existing material
         currentMaterial.diffuse.contents = nil;
-        givenSegment.materials = nil;
+        givenSegment.materials = @[];
         
         //set new material
         [DigitNode giveSegment:givenSegment MaterialWithName:givenImageName];

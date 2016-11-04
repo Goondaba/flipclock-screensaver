@@ -28,7 +28,7 @@
 
 #import <SceneKit/SceneKit.h>
 
-typedef enum {
+typedef NS_ENUM(NSInteger, DigitType) {
     kZero,
     kOne,
     kTwo,
@@ -42,8 +42,7 @@ typedef enum {
     kAM,
     kPM,
     numDigitType
-} DigitType;
-
+};
 @interface DigitNode : SCNNode{
     NSString *currentTexturePrefix;
     SCNPlane *topHalf;
