@@ -8,8 +8,8 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import <objc/runtime.h>
-#import "DigitAnimationContainer.h"
+#import "DigitAnimationModel.h"
 
 @interface CAAnimation (FlipClock)
-@property (nonatomic, strong) DigitAnimationContainer *animationContainer;
+@property (nonatomic, strong) DigitAnimationModel *animationModel;
 @end

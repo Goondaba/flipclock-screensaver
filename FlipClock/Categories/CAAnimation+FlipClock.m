@@ -11,14 +11,14 @@
 
 @implementation CAAnimation (FlipClock)
 
-@dynamic animationContainer;
+@dynamic animationModel;
 
-- (void)setAnimationContainer:(DigitAnimationContainer *)object {
-    objc_setAssociatedObject(self, @selector(animationContainer), object, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setAnimationModel:(DigitAnimationModel *)object {
+    objc_setAssociatedObject(self, @selector(animationModel), object, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (DigitAnimationContainer *)animationContainer {
-    return objc_getAssociatedObject(self, @selector(animationContainer));
+- (DigitAnimationModel *)animationModel {
+    return objc_getAssociatedObject(self, @selector(animationModel));
 }
 
 @end
