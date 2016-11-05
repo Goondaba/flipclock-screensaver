@@ -1,7 +1,11 @@
 # FlipClock
 
 A simple flip clock screen saver written with SceneKit.
-Requires 10.8 Mountain Lion.
+Requires at least 10.8 Mountain Lion.
+
+## How To Install FlipClock
+
+Double-click the FlipClock.saver file and allow Gatekeeper access to install.
 
 ## How To Build FlipClock
 
