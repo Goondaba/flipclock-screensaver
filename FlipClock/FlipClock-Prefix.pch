@@ -5,5 +5,4 @@
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
     #import "SCNNode+FlipClock.h"
-    #import "CAAnimation+FlipClock.h"
 #endif
