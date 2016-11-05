@@ -28,7 +28,7 @@
 
 #import <SceneKit/SceneKit.h>
 
-typedef enum {
+typedef NS_ENUM(NSInteger, DigitType) {
     kZero,
     kOne,
     kTwo,
@@ -42,7 +42,7 @@ typedef enum {
     kAM,
     kPM,
     numDigitType
-} DigitType;
+};
 
 @interface DigitNode : SCNNode{
     NSString *currentTexturePrefix;
@@ -51,11 +51,12 @@ typedef enum {
 }
 
 @property (nonatomic, retain) NSString *currentTexturePrefix;
-@property (nonatomic)   id animationDelegate;
 
--(void)flipToDigit:(DigitType)givenDigitType;
--(void)startDigitAt:(DigitType)givenDigitType;
-+(CGFloat)getDigitWidth;
-+(void)giveSegment:(SCNPlane*)givenSegment MaterialWithName:(NSString*)givenImageName;
+
+- (void)flipToDigit:(DigitType)givenDigitType;
+- (void)startDigitAt:(DigitType)givenDigitType;
+
++ (NSDictionary<NSString *, NSImage*> *)textures;
++ (CGFloat)getDigitWidth;
 
 @end

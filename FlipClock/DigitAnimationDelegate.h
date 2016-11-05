@@ -28,11 +28,8 @@
 
 #import <Foundation/Foundation.h>
 #import <SceneKit/SceneKit.h>
-#import "DigitNode.h"
+#import "DigitAnimationModel.h"
 
-@interface DigitAnimationDelegate : NSObject{
-
-}
-
-
+@interface DigitAnimationDelegate : NSObject <CAAnimationDelegate>
+@property (nonatomic, strong) DigitAnimationModel *animationModel;
 @end
