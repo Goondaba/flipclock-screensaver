@@ -10,4 +10,6 @@
 
 @interface SCNPlane (FlipClock)
 
+- (void)applyMaterialWithName:(NSString*)givenImageName;
+
 @end

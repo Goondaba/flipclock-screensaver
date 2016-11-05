@@ -28,6 +28,7 @@
 
 #import "DigitAnimationDelegate.h"
 #import "DigitAnimationModel.h"
+#import "SCNPlane+FlipClock.h"
 
 @implementation DigitAnimationDelegate
 
@@ -37,7 +38,7 @@
     DigitAnimationModel *container = theAnimation.animationModel;
     
     //update topHalf
-    [DigitNode giveSegment:container.topHalf MaterialWithName:[NSString stringWithFormat:@"%@_top", container.texturePrefix]];
+    [container.topHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_top", container.texturePrefix]];
 }
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag{
@@ -48,7 +49,7 @@
         DigitAnimationModel *container = theAnimation.animationModel;
         
         //update bottomHalf
-        [DigitNode giveSegment:container.bottomHalf MaterialWithName:[NSString stringWithFormat:@"%@_bot", container.texturePrefix]];
+        [container.bottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", container.texturePrefix]];
         
         //Nil the NSImages in the given material array
         for (SCNPlane* __strong currentPlane in container.planes) {

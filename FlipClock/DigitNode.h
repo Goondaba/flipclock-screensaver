@@ -57,6 +57,6 @@ typedef NS_ENUM(NSInteger, DigitType) {
 
 + (NSDictionary<NSString *, NSImage*> *)textures;
 +(CGFloat)getDigitWidth;
-+(void)giveSegment:(SCNPlane*)givenSegment MaterialWithName:(NSString*)givenImageName;
+//+(void)giveSegment:(SCNPlane*)givenSegment MaterialWithName:(NSString*)givenImageName;
 
 @end

@@ -29,6 +29,7 @@
 #import "DigitNode.h"
 #import "DigitAnimationDelegate.h"
 #import "DigitAnimationModel.h"
+#import "SCNPlane+FlipClock.h"
 
 @implementation DigitNode
 @synthesize currentTexturePrefix;
@@ -91,14 +92,14 @@ CGFloat flipSegmentZGap   = 0.01;
     [flipNode addChildNode:newBottomHalfNode];
     
     // set the newTopHalf texture
-    [DigitNode giveSegment:newTopHalf    MaterialWithName:[NSString stringWithFormat:@"%@_top", givenOldPrefix]];
-    [DigitNode giveSegment:newBottomHalf MaterialWithName:[NSString stringWithFormat:@"%@_bot", givenPrefix]];
+    [newTopHalf    applyMaterialWithName:[NSString stringWithFormat:@"%@_top", givenOldPrefix]];
+    [newBottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", givenPrefix]];
     
     
     //update prefixString
     self->currentTexturePrefix = givenPrefix;
     
-    [DigitNode giveSegment:bottomHalf MaterialWithName:[NSString stringWithFormat:@"%@_bot", self->currentTexturePrefix]];
+    [bottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", self->currentTexturePrefix]];
     
     //make it flip!
     CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
@@ -147,8 +148,8 @@ CGFloat flipSegmentZGap   = 0.01;
     [self addChildNode:bottomHalfNode];
     
     // Give the top an image
-    [DigitNode giveSegment:topHalf    MaterialWithName:[NSString stringWithFormat:@"%@_top", self->currentTexturePrefix]];
-    [DigitNode giveSegment:bottomHalf MaterialWithName:[NSString stringWithFormat:@"%@_bot", self->currentTexturePrefix]];
+    [topHalf    applyMaterialWithName:[NSString stringWithFormat:@"%@_top", self->currentTexturePrefix]];
+    [bottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", self->currentTexturePrefix]];
 }
 
 //Do a one-time load of textures into the textures array
@@ -172,23 +173,6 @@ CGFloat flipSegmentZGap   = 0.01;
     });
     
     return shared;
-    
-//    @synchronized(textures){
-//        if(nil == textures){
-//            textures = [NSMutableDictionary dictionary];
-//            
-//            for(int i=0; i < numDigitType; i++){
-//                
-//                NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
-//                NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
-//                NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
-//
-//                [textures setObject:[DigitNode getImageForFileName:top_str]     forKey:top_str];
-//                [textures setObject:[DigitNode getImageForFileName:bottom_str]  forKey:bottom_str];
-//
-//            }
-//        }
-//    }
 }
 
 +(NSImage*)getImageForFileName:(NSString*)givenImageName{
@@ -237,26 +221,6 @@ CGFloat flipSegmentZGap   = 0.01;
     default:
         return @"zero";
         break;
-    }
-}
-
-+(void)giveSegment:(SCNPlane*)givenSegment MaterialWithName:(NSString*)givenImageName{
-
-    if((nil != givenSegment.materials) && ([givenSegment.materials count] != 0)){
-        SCNMaterial *currentMaterial = [givenSegment.materials objectAtIndex:0];
-        
-        //nil the existing material
-        currentMaterial.diffuse.contents = nil;
-        givenSegment.materials = @[];
-        
-        //set new material
-        [DigitNode giveSegment:givenSegment MaterialWithName:givenImageName];
-    }
-    else{
-        SCNMaterial *material = [SCNMaterial material];
-        material.diffuse.contents  = [[DigitNode textures] objectForKey:givenImageName];
-        material.shininess = 1.0;
-        givenSegment.materials = @[material];
     }
 }
 
