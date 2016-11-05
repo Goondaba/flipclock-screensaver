@@ -29,48 +29,44 @@
 #import "DigitAnimationDelegate.h"
 #import "DigitAnimationModel.h"
 #import "SCNPlane+FlipClock.h"
+#import "DigitNode.h"
 
 @implementation DigitAnimationDelegate
 
 
 - (void)animationDidStart:(CAAnimation *)theAnimation{
     
-    DigitAnimationModel *container = theAnimation.animationModel;
-    
     //update topHalf
-    [container.topHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_top", container.texturePrefix]];
+    [self.animationModel.topHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_top", self.animationModel.texturePrefix]];
 }
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag{
     
     
     if(flag){
-        
-        DigitAnimationModel *container = theAnimation.animationModel;
-        
+
         //update bottomHalf
-        [container.bottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", container.texturePrefix]];
+        [self.animationModel.bottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", self.animationModel.texturePrefix]];
         
         //Nil the NSImages in the given material array
-        for (SCNPlane* __strong currentPlane in container.planes) {
+        for (SCNPlane* __strong currentPlane in self.animationModel.planes) {
             SCNMaterial *currentMaterial = [[currentPlane materials] objectAtIndex:0];
             currentMaterial.diffuse.contents = nil;
             currentMaterial = nil;
             currentPlane = nil;
         }
         
-        for(SCNNode* __strong currentNode in container.nodes){
+        for(SCNNode* __strong currentNode in self.animationModel.nodes){
             
             [currentNode cleanupAndRemoveFromParentNode];
             currentNode = nil;
         }
         
         //remove flipper
-        [container.flipNode cleanupAndRemoveFromParentNode];
-        container.flipNode = nil;
+        [self.animationModel.flipNode cleanupAndRemoveFromParentNode];
+        self.animationModel.flipNode = nil;
         
-        theAnimation.animationModel = nil;
-        theAnimation.delegate = nil;
+        self.animationModel = nil;
     }
 }
 

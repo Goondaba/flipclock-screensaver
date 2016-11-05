@@ -37,17 +37,18 @@
 CGFloat flipSegementWidth = 6.0;
 CGFloat flipSegmentHeight = 4.5;
 CGFloat flipSegementGap   = 0.005;
-CGFloat flipSegmentZGap   = 0.01;
+//CGFloat flipSegmentZGap   = 0.01;
+CGFloat flipSegmentZGap   = 0.41;
 
 //NSMutableDictionary *textures = nil;
 
-- (id)init {
-    if (self == [super init]) {
-        self.animationDelegate = [[DigitAnimationDelegate alloc] init];
-     }
-    
-    return self;
-}
+//- (id)init {
+//    if (self == [super init]) {
+////        self.animationDelegate = [[DigitAnimationDelegate alloc] init];
+//     }
+//    
+//    return self;
+//}
 
 +(CGFloat)getDigitWidth{
     return flipSegementWidth;
@@ -113,16 +114,17 @@ CGFloat flipSegmentZGap   = 0.01;
     animation.repeatCount = 0;
     
     //set values to animation for the delegate to use
-    DigitAnimationModel *container = [[DigitAnimationModel alloc] init];
-    container.texturePrefix = self.currentTexturePrefix;
-    container.flipNode      = flipNode;
-    container.topHalf       = topHalf;
-    container.bottomHalf    = bottomHalf;
-    container.planes        = @[newTopHalf, newBottomHalf];
-    container.nodes         = @[newTopHalfNode, newBottomHalfNode];
+    DigitAnimationModel *model = [[DigitAnimationModel alloc] init];
+    model.texturePrefix = self.currentTexturePrefix;
+    model.flipNode      = flipNode;
+    model.topHalf       = topHalf;
+    model.bottomHalf    = bottomHalf;
+    model.planes        = @[newTopHalf, newBottomHalf];
+    model.nodes         = @[newTopHalfNode, newBottomHalfNode];
     
-    animation.animationModel = container;
-    animation.delegate = self.animationDelegate;
+    DigitAnimationDelegate *delegate = [[DigitAnimationDelegate alloc] init];
+    delegate.animationModel = model;
+    animation.delegate = delegate;
     animation.removedOnCompletion = YES;
     
     [flipNode addAnimation:animation forKey:nil];
