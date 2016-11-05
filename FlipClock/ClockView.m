@@ -64,10 +64,7 @@
     
     //move clock a little to the left
     CATransform3D transLeft = [ClockView getClockTransformFor:showMilitary andSeconds:showSeconds]; //move to the right
-//    clock.transform = transLeft;
-    CATransform3D rotate = CATransform3DMakeRotation(-(M_PI/2.3), 0, 1, 0);
-    CATransform3D transform = CATransform3DConcat(transLeft, rotate);
-    clock.transform = transform;
+    clock.transform = transLeft;
     
     [clock startClockWithMilitary:showMilitary andWithSeconds:showSeconds];
 }
@@ -85,8 +82,7 @@
 
 +(CATransform3D)getClockTransformFor:(Boolean)givenMilitary andSeconds:(Boolean)givenSeconds{
     if(givenMilitary && givenSeconds)
-//        return CATransform3DMakeTranslation(-23.5, 0, 0);
-        return CATransform3DMakeTranslation(-26.5, 0, 0);
+        return CATransform3DMakeTranslation(-23.5, 0, 0);
     else if(givenMilitary && (!givenSeconds))
         return CATransform3DMakeTranslation(-16.3, 0, 0);
     else if((!givenMilitary) && givenSeconds)
