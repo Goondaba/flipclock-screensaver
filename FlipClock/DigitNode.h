@@ -43,6 +43,7 @@ typedef NS_ENUM(NSInteger, DigitType) {
     kPM,
     numDigitType
 };
+
 @interface DigitNode : SCNNode{
     NSString *currentTexturePrefix;
     SCNPlane *topHalf;
@@ -50,13 +51,12 @@ typedef NS_ENUM(NSInteger, DigitType) {
 }
 
 @property (nonatomic, retain) NSString *currentTexturePrefix;
-//@property (nonatomic)   id animationDelegate;
 
--(void)flipToDigit:(DigitType)givenDigitType;
--(void)startDigitAt:(DigitType)givenDigitType;
+
+- (void)flipToDigit:(DigitType)givenDigitType;
+- (void)startDigitAt:(DigitType)givenDigitType;
 
 + (NSDictionary<NSString *, NSImage*> *)textures;
-+(CGFloat)getDigitWidth;
-//+(void)giveSegment:(SCNPlane*)givenSegment MaterialWithName:(NSString*)givenImageName;
++ (CGFloat)getDigitWidth;
 
 @end
