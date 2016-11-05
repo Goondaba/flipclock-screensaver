@@ -38,7 +38,7 @@ CGFloat flipSegmentHeight = 4.5;
 CGFloat flipSegementGap   = 0.005;
 CGFloat flipSegmentZGap   = 0.01;
 
-NSMutableDictionary *textures = nil;
+//NSMutableDictionary *textures = nil;
 
 - (id)init {
     if (self == [super init]) {
@@ -129,8 +129,6 @@ NSMutableDictionary *textures = nil;
 
 -(void)startDigitAt:(DigitType)givenDigitType{
     
-    [DigitNode loadTextures];
-    
     //get texture prefix
     self->currentTexturePrefix = [DigitNode getTexturePrefixFor:givenDigitType];
     
@@ -154,23 +152,43 @@ NSMutableDictionary *textures = nil;
 }
 
 //Do a one-time load of textures into the textures array
-+(void)loadTextures{
-    @synchronized(textures){
-        if(nil == textures){
-            textures = [NSMutableDictionary dictionary];
++ (NSDictionary<NSString *, NSImage*> *)textures {
+    
+    static dispatch_once_t token;
+    static NSDictionary<NSString *, NSImage*> *shared = nil;
+    
+    dispatch_once(&token, ^{
+        shared = [NSMutableDictionary dictionary];
+        
+        for(int i=0; i < numDigitType; i++){
             
-            for(int i=0; i < numDigitType; i++){
-                
-                NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
-                NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
-                NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
-
-                [textures setObject:[DigitNode getImageForFileName:top_str]     forKey:top_str];
-                [textures setObject:[DigitNode getImageForFileName:bottom_str]  forKey:bottom_str];
-
-            }
+            NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
+            NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
+            NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
+            
+            [shared setValue:[DigitNode getImageForFileName:top_str]    forKey:top_str];
+            [shared setValue:[DigitNode getImageForFileName:bottom_str] forKey:bottom_str];
         }
-    }
+    });
+    
+    return shared;
+    
+//    @synchronized(textures){
+//        if(nil == textures){
+//            textures = [NSMutableDictionary dictionary];
+//            
+//            for(int i=0; i < numDigitType; i++){
+//                
+//                NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
+//                NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
+//                NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
+//
+//                [textures setObject:[DigitNode getImageForFileName:top_str]     forKey:top_str];
+//                [textures setObject:[DigitNode getImageForFileName:bottom_str]  forKey:bottom_str];
+//
+//            }
+//        }
+//    }
 }
 
 +(NSImage*)getImageForFileName:(NSString*)givenImageName{
@@ -236,7 +254,7 @@ NSMutableDictionary *textures = nil;
     }
     else{
         SCNMaterial *material = [SCNMaterial material];
-        material.diffuse.contents  = [textures objectForKey:givenImageName];
+        material.diffuse.contents  = [[DigitNode textures] objectForKey:givenImageName];
         material.shininess = 1.0;
         givenSegment.materials = @[material];
     }
