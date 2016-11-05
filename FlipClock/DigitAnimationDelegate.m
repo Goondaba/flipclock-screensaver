@@ -49,12 +49,12 @@
         [self.animationModel.bottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", self.animationModel.texturePrefix]];
         
         //Nil the NSImages in the given material array
-//        for (SCNPlane* __strong currentPlane in self.animationModel.planes) {
-//            SCNMaterial *currentMaterial = [[currentPlane materials] objectAtIndex:0];
-//            currentMaterial.diffuse.contents = nil;
-//            currentMaterial = nil;
-//            currentPlane = nil;
-//        }
+        for (SCNNode* __strong currentNode in self.animationModel.flipNode.childNodes) {
+            
+            SCNPlane *currentPlane =  (SCNPlane *) currentNode.geometry;
+            [currentPlane clearMaterials];
+            currentPlane = nil;
+        }
         
         for(SCNNode* __strong currentNode in self.animationModel.flipNode.childNodes){
             [currentNode cleanupAndRemoveFromParentNode];

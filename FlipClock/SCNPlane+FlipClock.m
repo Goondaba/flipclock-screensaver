@@ -14,11 +14,8 @@
 - (void)applyMaterialWithName:(NSString*)givenImageName {
     
     if((nil != self.materials) && ([self.materials count] != 0)){
-        SCNMaterial *currentMaterial = [self.materials objectAtIndex:0];
         
-        //nil the existing material
-        currentMaterial.diffuse.contents = nil;
-        self.materials = @[];
+        [self clearMaterials];
         
         //set new material
         [self applyMaterialWithName:givenImageName];
@@ -29,6 +26,14 @@
         material.shininess = 1.0;
         self.materials = @[material];
     }
+}
+
+- (void)clearMaterials {
+    
+    SCNMaterial *currentMaterial = [[self materials] objectAtIndex:0];
+    currentMaterial.diffuse.contents = nil;
+    currentMaterial = nil;
+    self.materials = @[];
 }
 
 @end
