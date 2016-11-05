@@ -106,7 +106,7 @@ CGFloat currentLateral;
     
     [self flipToCurrentTime];
     //Begin timer
-//    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(flipToCurrentTime) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(flipToCurrentTime) userInfo:nil repeats:NO];
 }
 
 -(void)flipToCurrentTime{
@@ -127,17 +127,17 @@ CGFloat currentLateral;
     }
     
 
-    double delayInSeconds = 1.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    
-    __weak typeof(self) weakSelf = self;
-    
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        
-        __strong typeof(weakSelf) strongSelf = weakSelf;
-        [strongSelf flipToCurrentTime];
-
-    });
+//    double delayInSeconds = 1.0;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+//    
+//    __weak typeof(self) weakSelf = self;
+//    
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//        
+//        __strong typeof(weakSelf) strongSelf = weakSelf;
+//        [strongSelf flipToCurrentTime];
+//
+//    });
 }
 
 -(DigitType)getCurrentMedian{

@@ -54,6 +54,8 @@ typedef NS_ENUM(NSInteger, DigitType) {
 
 -(void)flipToDigit:(DigitType)givenDigitType;
 -(void)startDigitAt:(DigitType)givenDigitType;
+
++ (NSDictionary<NSString *, NSImage*> *)textures;
 +(CGFloat)getDigitWidth;
 +(void)giveSegment:(SCNPlane*)givenSegment MaterialWithName:(NSString*)givenImageName;
 
