@@ -6,12 +6,12 @@
 //  Copyright (c) 2015 Jonathan Salvador. All rights reserved.
 //
 
-#import "DigitAnimationContainer.h"
+#import "DigitAnimationModel.h"
 
 /**
  *  Container for information needed by the flip animation delegate
  */
-@implementation DigitAnimationContainer
+@implementation DigitAnimationModel
 
 - (void)dealloc {
     
@@ -19,8 +19,6 @@
     self.flipNode      = nil;
     self.topHalf       = nil;
     self.bottomHalf    = nil;
-    self.planes        = nil;
-    self.nodes         = nil;
 }
 
 @end

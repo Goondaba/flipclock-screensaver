@@ -27,49 +27,45 @@
 //
 
 #import "DigitAnimationDelegate.h"
-#import "DigitAnimationContainer.h"
+#import "DigitAnimationModel.h"
+#import "SCNPlane+FlipClock.h"
+#import "DigitNode.h"
 
 @implementation DigitAnimationDelegate
 
 
 - (void)animationDidStart:(CAAnimation *)theAnimation{
     
-    DigitAnimationContainer *container = theAnimation.animationContainer;
-    
     //update topHalf
-    [DigitNode giveSegment:container.topHalf MaterialWithName:[NSString stringWithFormat:@"%@_top", container.texturePrefix]];
+    [self.animationModel.topHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_top", self.animationModel.texturePrefix]];
 }
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag{
     
     
     if(flag){
-        
-        DigitAnimationContainer *container = theAnimation.animationContainer;
-        
+
         //update bottomHalf
-        [DigitNode giveSegment:container.bottomHalf MaterialWithName:[NSString stringWithFormat:@"%@_bot", container.texturePrefix]];
+        [self.animationModel.bottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", self.animationModel.texturePrefix]];
         
         //Nil the NSImages in the given material array
-        for (SCNPlane* __strong currentPlane in container.planes) {
-            SCNMaterial *currentMaterial = [[currentPlane materials] objectAtIndex:0];
-            currentMaterial.diffuse.contents = nil;
-            currentMaterial = nil;
+        for (SCNNode* __strong currentNode in self.animationModel.flipNode.childNodes) {
+            
+            SCNPlane *currentPlane =  (SCNPlane *) currentNode.geometry;
+            [currentPlane clearMaterials];
             currentPlane = nil;
         }
         
-        for(SCNNode* __strong currentNode in container.nodes){
-            
+        for(SCNNode* __strong currentNode in self.animationModel.flipNode.childNodes){
             [currentNode cleanupAndRemoveFromParentNode];
             currentNode = nil;
         }
         
         //remove flipper
-        [container.flipNode cleanupAndRemoveFromParentNode];
-        container.flipNode = nil;
+        [self.animationModel.flipNode cleanupAndRemoveFromParentNode];
+        self.animationModel.flipNode = nil;
         
-        theAnimation.animationContainer = nil;
-        theAnimation.delegate = nil;
+        self.animationModel = nil;
     }
 }
 
