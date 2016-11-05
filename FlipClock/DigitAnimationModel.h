@@ -11,10 +11,8 @@
 @interface DigitAnimationModel : NSObject
 
 @property (nonatomic, copy) NSString  *texturePrefix;
-@property (nonatomic, copy) SCNNode   *flipNode;
-@property (nonatomic) SCNPlane  *topHalf;
-@property (nonatomic) SCNPlane  *bottomHalf;
-@property (nonatomic) NSArray   *planes;
-@property (nonatomic) NSArray   *nodes;
+@property (nonatomic, weak) SCNNode   *flipNode;
+@property (nonatomic, weak) SCNPlane  *topHalf;
+@property (nonatomic, weak) SCNPlane  *bottomHalf;
 
 @end

@@ -19,8 +19,6 @@
     self.flipNode      = nil;
     self.topHalf       = nil;
     self.bottomHalf    = nil;
-    self.planes        = nil;
-    self.nodes         = nil;
 }
 
 @end

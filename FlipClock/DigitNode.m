@@ -37,18 +37,8 @@
 CGFloat flipSegementWidth = 6.0;
 CGFloat flipSegmentHeight = 4.5;
 CGFloat flipSegementGap   = 0.005;
-//CGFloat flipSegmentZGap   = 0.01;
-CGFloat flipSegmentZGap   = 0.41;
+CGFloat flipSegmentZGap   = 0.01;
 
-//NSMutableDictionary *textures = nil;
-
-//- (id)init {
-//    if (self == [super init]) {
-////        self.animationDelegate = [[DigitAnimationDelegate alloc] init];
-//     }
-//    
-//    return self;
-//}
 
 +(CGFloat)getDigitWidth{
     return flipSegementWidth;
@@ -119,13 +109,12 @@ CGFloat flipSegmentZGap   = 0.41;
     model.flipNode      = flipNode;
     model.topHalf       = topHalf;
     model.bottomHalf    = bottomHalf;
-    model.planes        = @[newTopHalf, newBottomHalf];
-    model.nodes         = @[newTopHalfNode, newBottomHalfNode];
     
     DigitAnimationDelegate *delegate = [[DigitAnimationDelegate alloc] init];
     delegate.animationModel = model;
     animation.delegate = delegate;
-    animation.removedOnCompletion = YES;
+    animation.fillMode = kCAFillModeForwards;
+    animation.removedOnCompletion = NO;
     
     [flipNode addAnimation:animation forKey:nil];
 }
