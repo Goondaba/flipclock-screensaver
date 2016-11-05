@@ -12,4 +12,6 @@
 
 - (void)applyMaterialWithName:(NSString*)givenImageName;
 
+- (void)clearMaterials;
+
 @end
