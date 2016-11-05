@@ -11,7 +11,7 @@
 
 @implementation SCNPlane (FlipClock)
 
-- (void)applyMaterialWithName:(NSString*)givenImageName{
+- (void)applyMaterialWithName:(NSString*)givenImageName {
     
     if((nil != self.materials) && ([self.materials count] != 0)){
         SCNMaterial *currentMaterial = [self.materials objectAtIndex:0];
