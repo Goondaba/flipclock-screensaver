@@ -41,7 +41,7 @@
 
 -(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds{
     
-    self.backgroundColor = [NSColor colorWithCalibratedRed:0.06f green:0.06f blue:0.06f alpha:1.0f];
+    self.backgroundColor = [NSColor blackColor];
     
     // Create an empty scene
     SCNScene *scene = [SCNScene scene];
