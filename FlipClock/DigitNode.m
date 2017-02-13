@@ -30,6 +30,7 @@
 #import "DigitAnimationDelegate.h"
 #import "DigitAnimationModel.h"
 #import "SCNPlane+FlipClock.h"
+#import "DigitNodeImageGeneratorUtil.h"
 
 @implementation DigitNode
 @synthesize currentTexturePrefix;
@@ -167,8 +168,16 @@ CGFloat flipSegmentZGap   = 0.01;
 }
 
 +(NSImage*)getImageForFileName:(NSString*)givenImageName{
-     NSString *pathString = [[NSBundle bundleForClass:[self class]] pathForResource:givenImageName ofType:@"png"];
-    return [[NSImage alloc] initWithContentsOfFile:pathString];
+    
+    NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
+    
+    NSFont *font = [NSFont systemFontOfSize:999.f];
+    NSImage *testImage = [DigitNodeImageGeneratorUtil drawString:@"1" withFont:font andBackgroundColour:veryDarkGrey];
+     
+    return testImage;
+    
+//     NSString *pathString = [[NSBundle bundleForClass:[self class]] pathForResource:givenImageName ofType:@"png"];
+//    return [[NSImage alloc] initWithContentsOfFile:pathString];
 }
 
 +(NSString*)getTexturePrefixFor:(DigitType)givenDigitType{
