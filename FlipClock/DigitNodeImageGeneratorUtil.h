@@ -10,7 +10,6 @@
 
 @interface DigitNodeImageGeneratorUtil : NSObject
 
-+ (NSImage *)swatchWithColor:(NSColor *)color size:(NSSize)size;
 + (NSImage *)drawString:(NSString *)attributedString withFont:(NSFont *)font andBackgroundColour:(NSColor *)backgroundColour;
 
 @end

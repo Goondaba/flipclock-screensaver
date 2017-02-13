@@ -31,6 +31,7 @@
 #import "DigitAnimationModel.h"
 #import "SCNPlane+FlipClock.h"
 #import "DigitNodeImageGeneratorUtil.h"
+#import "NSImage+Flipclock.h"
 
 @implementation DigitNode
 @synthesize currentTexturePrefix;
@@ -159,8 +160,23 @@ CGFloat flipSegmentZGap   = 0.01;
             NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
             NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
             
-            [shared setValue:[DigitNode getImageForFileName:top_str]    forKey:top_str];
-            [shared setValue:[DigitNode getImageForFileName:bottom_str] forKey:bottom_str];
+            if (i <= kNine) {
+                NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
+                NSFont *font = [NSFont systemFontOfSize:999.f];
+                NSImage *fullImage = [DigitNodeImageGeneratorUtil drawString:@"1" withFont:font andBackgroundColour:veryDarkGrey];
+                
+                NSImage *firstImage = nil;
+                NSImage *secondImage = nil;
+                
+                [fullImage splitImageVertically:&firstImage secondImage:&secondImage];
+                
+                [shared setValue:firstImage    forKey:top_str];
+                [shared setValue:secondImage forKey:bottom_str];
+            }
+            else {
+                [shared setValue:[DigitNode getImageForFileName:top_str]    forKey:top_str];
+                [shared setValue:[DigitNode getImageForFileName:bottom_str] forKey:bottom_str];
+            }
         }
     });
     
@@ -169,15 +185,8 @@ CGFloat flipSegmentZGap   = 0.01;
 
 +(NSImage*)getImageForFileName:(NSString*)givenImageName{
     
-    NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
-    
-    NSFont *font = [NSFont systemFontOfSize:999.f];
-    NSImage *testImage = [DigitNodeImageGeneratorUtil drawString:@"1" withFont:font andBackgroundColour:veryDarkGrey];
-     
-    return testImage;
-    
-//     NSString *pathString = [[NSBundle bundleForClass:[self class]] pathForResource:givenImageName ofType:@"png"];
-//    return [[NSImage alloc] initWithContentsOfFile:pathString];
+     NSString *pathString = [[NSBundle bundleForClass:[self class]] pathForResource:givenImageName ofType:@"png"];
+    return [[NSImage alloc] initWithContentsOfFile:pathString];
 }
 
 +(NSString*)getTexturePrefixFor:(DigitType)givenDigitType{
