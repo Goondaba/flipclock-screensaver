@@ -35,6 +35,8 @@
     renderView.textField.stringValue = string;
     renderView.textField.cell.font = font;
     
+    [renderView updateConstraints];
+    
     ///Render
     NSBitmapImageRep* rep = [renderView bitmapImageRepForCachingDisplayInRect:renderView.bounds];
     [renderView cacheDisplayInRect:renderView.bounds toBitmapImageRep:rep];

@@ -17,9 +17,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
                     <subviews>
                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIy-69-xuz">
-                            <rect key="frame" x="75" y="-139" width="451" height="1178"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="1" id="uvr-r0-kVc">
-                                <font key="font" metaFont="system" size="999"/>
+                            <rect key="frame" x="18" y="-150" width="564" height="1200"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="9" id="uvr-r0-kVc">
+                                <font key="font" size="999" name="Helvetica"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
