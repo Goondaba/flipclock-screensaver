@@ -12,7 +12,7 @@
 @implementation DigitNodeImageGeneratorUtil
 
 
-+ (NSImage *)drawString:(NSString *)attributedString withFont:(NSFont *)font andBackgroundColour:(NSColor *)backgroundColour {
++ (NSImage *)drawString:(NSString *)string withFont:(NSFont *)font andBackgroundColour:(NSColor *)backgroundColour {
     
     /// Get view
     NSNib *nib = [[NSNib alloc] initWithNibNamed:NSStringFromClass([DigitRenderView class]) bundle:nil];
@@ -32,6 +32,8 @@
     }
     
     renderView.backgroundColour = backgroundColour;
+    renderView.textField.stringValue = string;
+    renderView.textField.cell.font = font;
     
     ///Render
     NSBitmapImageRep* rep = [renderView bitmapImageRepForCachingDisplayInRect:renderView.bounds];

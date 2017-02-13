@@ -11,7 +11,7 @@
 @interface DigitRenderView : NSView
 
 @property (nonatomic, weak) IBOutlet NSView *backingView;
-@property (nonatomic, weak) IBOutlet NSTextFieldCell *textCell;
+@property (nonatomic, weak) IBOutlet NSTextField *textField;
 
 @property (nonatomic, strong) NSColor *backgroundColour;
 
