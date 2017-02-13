@@ -154,6 +154,9 @@ CGFloat flipSegmentZGap   = 0.01;
     dispatch_once(&token, ^{
         shared = [NSMutableDictionary dictionary];
         
+        NSFont *font = [NSFont fontWithName:@"Helvetica" size:999.f];
+//        NSFont *font = [NSFont fontWithName:@"HelveticaNeue-UltraLight" size:999.f];
+        
         for(int i=0; i < numDigitType; i++){
             
             NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
@@ -162,7 +165,6 @@ CGFloat flipSegmentZGap   = 0.01;
             
             if (i <= kNine) {
                 NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
-                NSFont *font = [NSFont systemFontOfSize:999.f];
                 NSImage *fullImage = [DigitNodeImageGeneratorUtil drawString:[NSString stringWithFormat:@"%d", i] withFont:font andBackgroundColour:veryDarkGrey];
                 
                 NSImage *firstImage = nil;
