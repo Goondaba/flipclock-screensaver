@@ -95,14 +95,14 @@
 		12E3D3621E515447007F3134 /* DigitNodeImageGeneratorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E3D3601E515447007F3134 /* DigitNodeImageGeneratorUtil.h */; };
 		12E3D3631E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3611E515447007F3134 /* DigitNodeImageGeneratorUtil.m */; };
 		12E3D3641E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3611E515447007F3134 /* DigitNodeImageGeneratorUtil.m */; };
-		12E3D3681E515E22007F3134 /* NSImage+DrawAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E3D3661E515E22007F3134 /* NSImage+DrawAttributedString.h */; };
-		12E3D3691E515E22007F3134 /* NSImage+DrawAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3671E515E22007F3134 /* NSImage+DrawAttributedString.m */; };
-		12E3D36A1E515E22007F3134 /* NSImage+DrawAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3671E515E22007F3134 /* NSImage+DrawAttributedString.m */; };
 		12E3D36E1E516710007F3134 /* DigitRenderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E3D36C1E516710007F3134 /* DigitRenderView.h */; };
 		12E3D36F1E516710007F3134 /* DigitRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D36D1E516710007F3134 /* DigitRenderView.m */; };
 		12E3D3701E516710007F3134 /* DigitRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D36D1E516710007F3134 /* DigitRenderView.m */; };
 		12E3D3721E516734007F3134 /* DigitRenderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E3D3711E516734007F3134 /* DigitRenderView.xib */; };
 		12E3D3731E516734007F3134 /* DigitRenderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E3D3711E516734007F3134 /* DigitRenderView.xib */; };
+		12E3D3761E5173EC007F3134 /* NSImage+Flipclock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E3D3741E5173EC007F3134 /* NSImage+Flipclock.h */; };
+		12E3D3771E5173EC007F3134 /* NSImage+Flipclock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */; };
+		12E3D3781E5173EC007F3134 /* NSImage+Flipclock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */; };
 		12FA9DBF1DCD7FF700EA216A /* SCNPlane+FlipClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12FA9DBD1DCD7FF700EA216A /* SCNPlane+FlipClock.h */; };
 		12FA9DC01DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */; };
 		12FA9DC11DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */; };
@@ -173,11 +173,11 @@
 		12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitAnimationModel.m; sourceTree = "<group>"; };
 		12E3D3601E515447007F3134 /* DigitNodeImageGeneratorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitNodeImageGeneratorUtil.h; sourceTree = "<group>"; };
 		12E3D3611E515447007F3134 /* DigitNodeImageGeneratorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitNodeImageGeneratorUtil.m; sourceTree = "<group>"; };
-		12E3D3661E515E22007F3134 /* NSImage+DrawAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+DrawAttributedString.h"; sourceTree = "<group>"; };
-		12E3D3671E515E22007F3134 /* NSImage+DrawAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+DrawAttributedString.m"; sourceTree = "<group>"; };
 		12E3D36C1E516710007F3134 /* DigitRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitRenderView.h; sourceTree = "<group>"; };
 		12E3D36D1E516710007F3134 /* DigitRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitRenderView.m; sourceTree = "<group>"; };
 		12E3D3711E516734007F3134 /* DigitRenderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DigitRenderView.xib; sourceTree = "<group>"; };
+		12E3D3741E5173EC007F3134 /* NSImage+Flipclock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Flipclock.h"; sourceTree = "<group>"; };
+		12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Flipclock.m"; sourceTree = "<group>"; };
 		12FA9DBD1DCD7FF700EA216A /* SCNPlane+FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCNPlane+FlipClock.h"; sourceTree = "<group>"; };
 		12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCNPlane+FlipClock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -361,8 +361,8 @@
 				12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */,
 				12FA9DBD1DCD7FF700EA216A /* SCNPlane+FlipClock.h */,
 				12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */,
-				12E3D3661E515E22007F3134 /* NSImage+DrawAttributedString.h */,
-				12E3D3671E515E22007F3134 /* NSImage+DrawAttributedString.m */,
+				12E3D3741E5173EC007F3134 /* NSImage+Flipclock.h */,
+				12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -400,11 +400,11 @@
 				12203C861824AE1E009DD26A /* ClockView.h in Headers */,
 				12B8E4781B65EB6B002EADC6 /* DigitAnimationModel.h in Headers */,
 				12E3D36E1E516710007F3134 /* DigitRenderView.h in Headers */,
-				12E3D3681E515E22007F3134 /* NSImage+DrawAttributedString.h in Headers */,
 				12203C881824AE1E009DD26A /* DigitAnimationDelegate.h in Headers */,
 				12203C841824AE1E009DD26A /* ClockNode.h in Headers */,
 				12203C901824AFED009DD26A /* AppDelegate.h in Headers */,
 				12E3D3621E515447007F3134 /* DigitNodeImageGeneratorUtil.h in Headers */,
+				12E3D3761E5173EC007F3134 /* NSImage+Flipclock.h in Headers */,
 				12FA9DBF1DCD7FF700EA216A /* SCNPlane+FlipClock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,8 +572,8 @@
 				12203C8B1824AE1E009DD26A /* DigitNode.m in Sources */,
 				12FA9DC01DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */,
 				12B8E4791B65EB6B002EADC6 /* DigitAnimationModel.m in Sources */,
-				12E3D3691E515E22007F3134 /* NSImage+DrawAttributedString.m in Sources */,
 				12E3D36F1E516710007F3134 /* DigitRenderView.m in Sources */,
+				12E3D3771E5173EC007F3134 /* NSImage+Flipclock.m in Sources */,
 				12B8E46F1B65C170002EADC6 /* SCNNode+FlipClock.m in Sources */,
 				12203C871824AE1E009DD26A /* ClockView.m in Sources */,
 				12203C891824AE1E009DD26A /* DigitAnimationDelegate.m in Sources */,
@@ -591,8 +591,8 @@
 				121C2B581824B8CD00A2580D /* ClockView.m in Sources */,
 				12FA9DC11DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */,
 				12D79AD21B65EC9C00C0A422 /* DigitAnimationModel.m in Sources */,
-				12E3D36A1E515E22007F3134 /* NSImage+DrawAttributedString.m in Sources */,
 				12E3D3701E516710007F3134 /* DigitRenderView.m in Sources */,
+				12E3D3781E5173EC007F3134 /* NSImage+Flipclock.m in Sources */,
 				125D6FDD1824B98E00164C8C /* ClockNode.m in Sources */,
 				121C2B591824B8D200A2580D /* DigitNode.m in Sources */,
 				121C2B5A1824B8D400A2580D /* DigitAnimationDelegate.m in Sources */,
