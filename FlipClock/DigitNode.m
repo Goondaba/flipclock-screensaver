@@ -154,8 +154,8 @@ CGFloat flipSegmentZGap   = 0.01;
     dispatch_once(&token, ^{
         shared = [NSMutableDictionary dictionary];
         
-        NSFont *font = [NSFont fontWithName:@"Helvetica" size:999.f];
-//        NSFont *font = [NSFont fontWithName:@"HelveticaNeue-UltraLight" size:999.f];
+//        NSFont *font = [NSFont fontWithName:@"Helvetica" size:999.f];
+        NSFont *font = [NSFont fontWithName:@"HelveticaNeue-UltraLight" size:999.f];
         
         for(int i=0; i < numDigitType; i++){
             
