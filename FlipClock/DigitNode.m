@@ -163,7 +163,7 @@ CGFloat flipSegmentZGap   = 0.01;
             if (i <= kNine) {
                 NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
                 NSFont *font = [NSFont systemFontOfSize:999.f];
-                NSImage *fullImage = [DigitNodeImageGeneratorUtil drawString:@"1" withFont:font andBackgroundColour:veryDarkGrey];
+                NSImage *fullImage = [DigitNodeImageGeneratorUtil drawString:[NSString stringWithFormat:@"%d", i] withFont:font andBackgroundColour:veryDarkGrey];
                 
                 NSImage *firstImage = nil;
                 NSImage *secondImage = nil;

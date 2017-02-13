@@ -41,7 +41,7 @@
             </constraints>
             <connections>
                 <outlet property="backingView" destination="ZSg-VV-wuU" id="LnT-OY-P6u"/>
-                <outlet property="textCell" destination="uvr-r0-kVc" id="jXx-sx-rR7"/>
+                <outlet property="textField" destination="pIy-69-xuz" id="PME-1u-cqx"/>
             </connections>
             <point key="canvasLocation" x="162" y="283"/>
         </customView>
