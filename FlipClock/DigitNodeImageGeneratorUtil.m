@@ -8,6 +8,7 @@
 
 #import "DigitNodeImageGeneratorUtil.h"
 #import "DigitRenderView.h"
+#import "DigitMedianRenderView.h"
 
 @implementation DigitNodeImageGeneratorUtil
 
@@ -15,17 +16,7 @@
 + (NSImage *)drawString:(NSString *)string withFont:(NSFont *)font andBackgroundColour:(NSColor *)backgroundColour {
     
     /// Get view
-    NSNib *nib = [[NSNib alloc] initWithNibNamed:NSStringFromClass([DigitRenderView class]) bundle:nil];
-    NSArray *topLevelObjects;
-    [nib instantiateWithOwner:self topLevelObjects:&topLevelObjects];
-    
-    DigitRenderView *renderView = nil;
-    for (id topLevelObject in topLevelObjects) {
-        if ([topLevelObject isKindOfClass:[DigitRenderView class]]) {
-            renderView = topLevelObject;
-            break;
-        }
-    }
+    DigitRenderView *renderView = [self getTopViewFromNibWithClass:[DigitRenderView class]];
     
     if (renderView == nil) {
         return nil;
@@ -38,12 +29,64 @@
     [renderView updateConstraints];
     
     ///Render
+    NSImage *image = [self renderViewToImage:renderView];
+    
+    return image;
+}
+
++ (NSImage *)drawMedianWithType:(DigitMedianDrawType)type withFont:(NSFont *)font andBackgroundColour:(NSColor *)backgroundColour {
+    
+    /// Get view
+    DigitMedianRenderView *renderView = [self getTopViewFromNibWithClass:[DigitMedianRenderView class]];
+    
+    if (renderView == nil) {
+        return nil;
+    }
+    
+    renderView.backgroundColour = backgroundColour;
+    renderView.topTextField.cell.font = font;
+    renderView.bottomTextField.cell.font = font;
+    
+    if (type == kDigitMedianDrawTypeAM) {
+        renderView.bottomTextField.hidden = YES;
+    }
+    else {
+        renderView.bottomTextField.hidden = YES;
+    }
+    
+    [renderView updateConstraints];
+    
+    ///Render
+    NSImage *image = [self renderViewToImage:renderView];
+    
+    return image;
+}
+
+
+#pragma mark - Private
+
++ (NSView *)getTopViewFromNibWithClass:(Class)class {
+    
+    NSNib *nib = [[NSNib alloc] initWithNibNamed:NSStringFromClass(class) bundle:nil];
+    NSArray *topLevelObjects;
+    [nib instantiateWithOwner:self topLevelObjects:&topLevelObjects];
+    
+    for (id topLevelObject in topLevelObjects) {
+        if ([topLevelObject isKindOfClass:class]) {
+            return topLevelObject;
+        }
+    }
+    
+    return nil;
+}
+
++ (NSImage *)renderViewToImage:(NSView *)renderView {
+    
     NSBitmapImageRep* rep = [renderView bitmapImageRepForCachingDisplayInRect:renderView.bounds];
     [renderView cacheDisplayInRect:renderView.bounds toBitmapImageRep:rep];
     NSData* data = [rep representationUsingType:NSJPEGFileType properties:nil];
-    NSImage *image = [[NSImage alloc] initWithData:data];
     
-    return image;
+    return [[NSImage alloc] initWithData:data];
 }
 
 @end
