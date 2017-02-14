@@ -156,29 +156,34 @@ CGFloat flipSegmentZGap   = 0.01;
         
 //        NSFont *font = [NSFont fontWithName:@"Helvetica" size:999.f];
         NSFont *font = [NSFont fontWithName:@"HelveticaNeue-UltraLight" size:999.f];
+        NSFont *medianFont = [NSFont fontWithName:@"HelveticaNeue-UltraLight" size:300.f];
+        
+        NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
         
         for(int i=0; i < numDigitType; i++){
             
             NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
             NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
             NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
+            NSImage *fullImage = nil;
             
             if (i <= kNine) {
-                NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
-                NSImage *fullImage = [DigitNodeImageGeneratorUtil drawString:[NSString stringWithFormat:@"%d", i] withFont:font andBackgroundColour:veryDarkGrey];
                 
-                NSImage *firstImage = nil;
-                NSImage *secondImage = nil;
-                
-                [fullImage splitImageVertically:&firstImage secondImage:&secondImage];
-                
-                [shared setValue:firstImage    forKey:top_str];
-                [shared setValue:secondImage forKey:bottom_str];
+                fullImage = [DigitNodeImageGeneratorUtil drawString:[NSString stringWithFormat:@"%d", i] withFont:font andBackgroundColour:veryDarkGrey];
             }
             else {
-                [shared setValue:[DigitNode getImageForFileName:top_str]    forKey:top_str];
-                [shared setValue:[DigitNode getImageForFileName:bottom_str] forKey:bottom_str];
+                
+                DigitMedianDrawType medianType = (i == kAM) ? kDigitMedianDrawTypeAM : kDigitMedianDrawTypePM;
+                fullImage = [DigitNodeImageGeneratorUtil drawMedianWithType:medianType withFont:medianFont andBackgroundColour:veryDarkGrey];
             }
+            
+            NSImage *firstImage = nil;
+            NSImage *secondImage = nil;
+            
+            [fullImage splitImageVertically:&firstImage secondImage:&secondImage];
+            
+            [shared setValue:firstImage    forKey:top_str];
+            [shared setValue:secondImage forKey:bottom_str];
         }
     });
     
