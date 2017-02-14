@@ -32,6 +32,8 @@
 #import "SCNPlane+FlipClock.h"
 #import "DigitNodeImageGeneratorUtil.h"
 #import "NSImage+Flipclock.h"
+#import "DigitFontHelveticaRegular.h"
+#import "DigitFontHelveticaNeueUltraLight.h"
 
 @implementation DigitNode
 @synthesize currentTexturePrefix;
@@ -153,10 +155,9 @@ CGFloat flipSegmentZGap   = 0.01;
     
     dispatch_once(&token, ^{
         shared = [NSMutableDictionary dictionary];
-        
-//        NSFont *font = [NSFont fontWithName:@"Helvetica" size:999.f];
-        NSFont *font = [NSFont fontWithName:@"HelveticaNeue-UltraLight" size:999.f];
-        NSFont *medianFont = [NSFont fontWithName:@"HelveticaNeue-UltraLight" size:300.f];
+    
+        DigitFont *nodeFont = [DigitFontHelveticaRegular new];
+//        DigitFont *nodeFont = [DigitFontHelveticaNeueUltraLight new];
         
         NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
         
@@ -169,12 +170,12 @@ CGFloat flipSegmentZGap   = 0.01;
             
             if (i <= kNine) {
                 
-                fullImage = [DigitNodeImageGeneratorUtil drawString:[NSString stringWithFormat:@"%d", i] withFont:font andBackgroundColour:veryDarkGrey];
+                fullImage = [DigitNodeImageGeneratorUtil drawString:[NSString stringWithFormat:@"%d", i] withFont:nodeFont.largeFont andBackgroundColour:veryDarkGrey];
             }
             else {
                 
                 DigitMedianDrawType medianType = (i == kAM) ? kDigitMedianDrawTypeAM : kDigitMedianDrawTypePM;
-                fullImage = [DigitNodeImageGeneratorUtil drawMedianWithType:medianType withFont:medianFont andBackgroundColour:veryDarkGrey];
+                fullImage = [DigitNodeImageGeneratorUtil drawMedianWithType:medianType withFont:nodeFont.medianFont andBackgroundColour:veryDarkGrey];
             }
             
             NSImage *firstImage = nil;
