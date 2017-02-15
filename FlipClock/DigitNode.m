@@ -155,6 +155,8 @@ CGFloat flipSegmentZGap   = 0.01;
     dispatch_once(&token, ^{
         shared = [NSMutableDictionary dictionary];
     
+        //TODO: Read saved font pref
+        //If not present, default font
         DigitFont *nodeFont = [[DigitFont alloc] initWithFontType:kDigitFontTypeHelveticaNeueUltraLight];
         
         NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];

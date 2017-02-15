@@ -33,5 +33,23 @@
     return self;
 }
 
++ (NSString *)fontNameForType:(DigitFontType)fontType {
+    
+    NSString *result = nil;
+    
+    switch(fontType) {
+        case kDigitFontTypeHelveticaRegular:
+            result = @"Helvetica Regular";
+            break;
+        case kDigitFontTypeHelveticaNeueUltraLight:
+            result = @"Helvetica Neue UltraLight";
+            break;
+        default:
+            [NSException raise:NSGenericException format:@"Unexpected FormatType."];
+    }
+    
+    return result;
+}
+
 @end
 

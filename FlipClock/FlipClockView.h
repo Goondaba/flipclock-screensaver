@@ -38,6 +38,7 @@
     IBOutlet id configSheet;
     IBOutlet NSButton *militaryBox;
     IBOutlet NSButton *secondsBox;
+    IBOutlet NSPopUpButton *fontPopUp;
 }
 
 @end

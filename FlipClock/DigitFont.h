@@ -10,7 +10,8 @@
 
 typedef NS_ENUM(NSInteger, DigitFontType) {
     kDigitFontTypeHelveticaRegular,
-    kDigitFontTypeHelveticaNeueUltraLight
+    kDigitFontTypeHelveticaNeueUltraLight,
+    kDigitFontTypeCount
 };
 
 @interface DigitFont : NSObject
@@ -19,5 +20,6 @@ typedef NS_ENUM(NSInteger, DigitFontType) {
 @property (nonatomic, strong) NSFont *medianFont;
 
 - (id)initWithFontType:(DigitFontType)fontType;
++ (NSString *)fontNameForType:(DigitFontType)fontType;
 
 @end

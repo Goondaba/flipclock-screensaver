@@ -27,6 +27,7 @@
 //
 
 #import "FlipClockView.h"
+#import "DigitFont.h"
 
 @implementation FlipClockView
 
@@ -34,6 +35,7 @@
 static NSString * const moduleName = @"com.Goondaba.FlipClock";
 static NSString * const isMilitary_str  = @"isMilitary";
 static NSString * const hasSeconds_str  = @"hasSeconds";
+static NSString * const font_str        = @"selectedFont";
 CGFloat frameRate = 30.0f;
 
 - (id)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview{
@@ -46,6 +48,7 @@ CGFloat frameRate = 30.0f;
         [[self getDefaults] registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:
                                     @"NO", isMilitary_str,
                                     @"YES", hasSeconds_str,
+                                    @(kDigitFontTypeHelveticaRegular), font_str,
                                     nil]];
     }
     return self;
@@ -108,6 +111,14 @@ CGFloat frameRate = 30.0f;
     [militaryBox setState:[defaults integerForKey:isMilitary_str]];
     [secondsBox  setState:[defaults integerForKey:hasSeconds_str]];
     
+    NSMutableArray *listOfFonts = [NSMutableArray new];
+    for (NSInteger i=0; i < kDigitFontTypeCount; i++) {
+        [listOfFonts addObject:[DigitFont fontNameForType:i]];
+    }
+
+    [fontPopUp addItemsWithTitles:listOfProfiles];
+    [fontPopUp selectItemAtIndex:[defaults integerForKey:font_str]];
+    
     return configSheet;
 }
 
@@ -134,6 +145,7 @@ CGFloat frameRate = 30.0f;
     // Update our defaults
     [defaults setInteger:[militaryBox state]   forKey:isMilitary_str];
     [defaults setInteger:[secondsBox state]    forKey:hasSeconds_str];
+    [defaults setInteger:[fontPopUp indexOfSelectedItem]    forKey:hasSeconds_str];
     
     // Save the settings to disk
     [defaults synchronize];
