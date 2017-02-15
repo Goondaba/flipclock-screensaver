@@ -116,6 +116,7 @@ CGFloat frameRate = 30.0f;
         [listOfFonts addObject:[DigitFont fontNameForType:i]];
     }
 
+    [fontPopUp removeAllItems];
     [fontPopUp addItemsWithTitles:listOfFonts];
     [fontPopUp selectItemAtIndex:[defaults integerForKey:font_str]];
     
@@ -145,7 +146,7 @@ CGFloat frameRate = 30.0f;
     // Update our defaults
     [defaults setInteger:[militaryBox state]   forKey:isMilitary_str];
     [defaults setInteger:[secondsBox state]    forKey:hasSeconds_str];
-    [defaults setInteger:[fontPopUp indexOfSelectedItem]    forKey:hasSeconds_str];
+    [defaults setInteger:[fontPopUp indexOfSelectedItem]    forKey:font_str];
     
     // Save the settings to disk
     [defaults synchronize];
