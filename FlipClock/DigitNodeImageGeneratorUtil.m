@@ -9,9 +9,56 @@
 #import "DigitNodeImageGeneratorUtil.h"
 #import "DigitRenderView.h"
 #import "DigitMedianRenderView.h"
+#import "DigitNode.h"
+#import "NSImage+Flipclock.h"
+
+static NSDictionary<NSString *, NSImage*> *shared = nil;
 
 @implementation DigitNodeImageGeneratorUtil
 
++ (NSDictionary<NSString *, NSImage*> *)textures {
+    return shared;
+}
+
++ (void)generateTexturesWithFontType:(DigitFontType)fontType {
+    
+    if (fontType < 0) {
+        return;
+    }
+    
+    if (!shared) {
+        shared = [NSMutableDictionary dictionary];
+    }
+    DigitFont *nodeFont = [[DigitFont alloc] initWithFontType:fontType];
+    
+    NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
+    
+    for(int i=0; i < numDigitType; i++){
+        
+        NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
+        NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
+        NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
+        NSImage *fullImage = nil;
+        
+        if (i <= kNine) {
+            
+            fullImage = [DigitNodeImageGeneratorUtil drawString:[NSString stringWithFormat:@"%d", i] withFont:nodeFont.largeFont andBackgroundColour:veryDarkGrey];
+        }
+        else {
+            
+            DigitMedianDrawType medianType = (i == kAM) ? kDigitMedianDrawTypeAM : kDigitMedianDrawTypePM;
+            fullImage = [DigitNodeImageGeneratorUtil drawMedianWithType:medianType withFont:nodeFont.medianFont andBackgroundColour:veryDarkGrey];
+        }
+        
+        NSImage *firstImage = nil;
+        NSImage *secondImage = nil;
+        
+        [fullImage splitImageVertically:&firstImage secondImage:&secondImage];
+        
+        [shared setValue:firstImage    forKey:top_str];
+        [shared setValue:secondImage forKey:bottom_str];
+    }
+}
 
 + (NSImage *)drawString:(NSString *)string withFont:(NSFont *)font andBackgroundColour:(NSColor *)backgroundColour {
     

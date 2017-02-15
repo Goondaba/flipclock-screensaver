@@ -35,7 +35,7 @@ NSDate *displayedDate;
 CGFloat DigitGap = 0.5;
 CGFloat currentLateral;
 
--(void)startClockWithMilitary:(Boolean)givenMilitaryFlag andWithSeconds:(Boolean)givenSecondsFlag{
+- (void)startClockWithMilitary:(Boolean)givenMilitaryFlag andWithSeconds:(Boolean)givenSecondsFlag {
     
     currentLateral = 0.0;
     

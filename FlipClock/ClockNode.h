@@ -28,6 +28,7 @@
 
 #import <SceneKit/SceneKit.h>
 #import "DigitNode.h"
+#import "DigitFont.h"
 
 @interface ClockNode : SCNNode{
     Boolean isMilitary;
