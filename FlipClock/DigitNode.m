@@ -30,6 +30,9 @@
 #import "DigitAnimationDelegate.h"
 #import "DigitAnimationModel.h"
 #import "SCNPlane+FlipClock.h"
+#import "DigitNodeImageGeneratorUtil.h"
+#import "NSImage+Flipclock.h"
+#import "DigitFont.h"
 
 @implementation DigitNode
 @synthesize currentTexturePrefix;
@@ -143,30 +146,8 @@ CGFloat flipSegmentZGap   = 0.01;
     [bottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", self->currentTexturePrefix]];
 }
 
-//Do a one-time load of textures into the textures array
-+ (NSDictionary<NSString *, NSImage*> *)textures {
-    
-    static dispatch_once_t token;
-    static NSDictionary<NSString *, NSImage*> *shared = nil;
-    
-    dispatch_once(&token, ^{
-        shared = [NSMutableDictionary dictionary];
-        
-        for(int i=0; i < numDigitType; i++){
-            
-            NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
-            NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
-            NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
-            
-            [shared setValue:[DigitNode getImageForFileName:top_str]    forKey:top_str];
-            [shared setValue:[DigitNode getImageForFileName:bottom_str] forKey:bottom_str];
-        }
-    });
-    
-    return shared;
-}
-
 +(NSImage*)getImageForFileName:(NSString*)givenImageName{
+    
      NSString *pathString = [[NSBundle bundleForClass:[self class]] pathForResource:givenImageName ofType:@"png"];
     return [[NSImage alloc] initWithContentsOfFile:pathString];
 }
