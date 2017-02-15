@@ -51,7 +51,7 @@
         renderView.bottomTextField.hidden = YES;
     }
     else {
-        renderView.bottomTextField.hidden = YES;
+        renderView.topTextField.hidden = YES;
     }
     
     [renderView updateConstraints];
