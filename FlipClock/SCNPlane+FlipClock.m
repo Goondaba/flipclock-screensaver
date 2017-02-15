@@ -7,7 +7,7 @@
 //
 
 #import "SCNPlane+FlipClock.h"
-#import "DigitNode.h"
+#import "DigitNodeImageGeneratorUtil.h"
 
 @implementation SCNPlane (FlipClock)
 
@@ -22,7 +22,7 @@
     }
     else{
         SCNMaterial *material = [SCNMaterial material];
-        material.diffuse.contents  = [[DigitNode textures] objectForKey:givenImageName];
+        material.diffuse.contents  = [[DigitNodeImageGeneratorUtil textures] objectForKey:givenImageName];
         material.shininess = 1.0;
         self.materials = @[material];
     }

@@ -28,6 +28,7 @@
 
 #import "ClockView.h"
 #import "ClockNode.h"
+#import "DigitNodeImageGeneratorUtil.h"
 
 @implementation ClockView
 
@@ -35,13 +36,17 @@
     //set military and seconds flags
     Boolean showMilitary = true;
     Boolean showSeconds  = true;
+    DigitFontType fontType = kDigitFontTypeHelveticaRegular;
     
-    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds];
+    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds andFontType:fontType];
 }
 
--(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds{
+-(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andFontType:(DigitFontType)fontType {
     
     self.backgroundColor = [NSColor blackColor];
+    
+    //Load textures
+    [DigitNodeImageGeneratorUtil generateTexturesWithFontType:fontType];
     
     // Create an empty scene
     SCNScene *scene = [SCNScene scene];

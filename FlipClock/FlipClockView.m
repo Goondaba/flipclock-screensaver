@@ -67,7 +67,9 @@ CGFloat frameRate = 30.0f;
     
     [self addSubview:myClockView];
     
-    [myClockView drawClockWithMilitary:[defaults integerForKey:isMilitary_str] andSeconds:[defaults integerForKey:hasSeconds_str]];
+    [myClockView drawClockWithMilitary:[defaults integerForKey:isMilitary_str]
+                            andSeconds:[defaults integerForKey:hasSeconds_str]
+                           andFontType:[defaults integerForKey:font_str]];
 }
 
 - (void)stopAnimation{

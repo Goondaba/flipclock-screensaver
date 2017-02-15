@@ -146,51 +146,6 @@ CGFloat flipSegmentZGap   = 0.01;
     [bottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", self->currentTexturePrefix]];
 }
 
-//Do a one-time load of textures into the textures array
-+ (NSDictionary<NSString *, NSImage*> *)textures {
-    
-    static dispatch_once_t token;
-    static NSDictionary<NSString *, NSImage*> *shared = nil;
-    
-    dispatch_once(&token, ^{
-        shared = [NSMutableDictionary dictionary];
-    
-        //TODO: Read saved font pref
-        //If not present, default font
-        DigitFont *nodeFont = [[DigitFont alloc] initWithFontType:kDigitFontTypeHelveticaNeueUltraLight];
-        
-        NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
-        
-        for(int i=0; i < numDigitType; i++){
-            
-            NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
-            NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
-            NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
-            NSImage *fullImage = nil;
-            
-            if (i <= kNine) {
-                
-                fullImage = [DigitNodeImageGeneratorUtil drawString:[NSString stringWithFormat:@"%d", i] withFont:nodeFont.largeFont andBackgroundColour:veryDarkGrey];
-            }
-            else {
-                
-                DigitMedianDrawType medianType = (i == kAM) ? kDigitMedianDrawTypeAM : kDigitMedianDrawTypePM;
-                fullImage = [DigitNodeImageGeneratorUtil drawMedianWithType:medianType withFont:nodeFont.medianFont andBackgroundColour:veryDarkGrey];
-            }
-            
-            NSImage *firstImage = nil;
-            NSImage *secondImage = nil;
-            
-            [fullImage splitImageVertically:&firstImage secondImage:&secondImage];
-            
-            [shared setValue:firstImage    forKey:top_str];
-            [shared setValue:secondImage forKey:bottom_str];
-        }
-    });
-    
-    return shared;
-}
-
 +(NSImage*)getImageForFileName:(NSString*)givenImageName{
     
      NSString *pathString = [[NSBundle bundleForClass:[self class]] pathForResource:givenImageName ofType:@"png"];
