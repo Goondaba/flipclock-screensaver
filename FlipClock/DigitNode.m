@@ -32,8 +32,7 @@
 #import "SCNPlane+FlipClock.h"
 #import "DigitNodeImageGeneratorUtil.h"
 #import "NSImage+Flipclock.h"
-#import "DigitFontHelveticaRegular.h"
-#import "DigitFontHelveticaNeueUltraLight.h"
+#import "DigitFont.h"
 
 @implementation DigitNode
 @synthesize currentTexturePrefix;
@@ -156,8 +155,7 @@ CGFloat flipSegmentZGap   = 0.01;
     dispatch_once(&token, ^{
         shared = [NSMutableDictionary dictionary];
     
-        DigitFont *nodeFont = [DigitFontHelveticaRegular new];
-//        DigitFont *nodeFont = [DigitFontHelveticaNeueUltraLight new];
+        DigitFont *nodeFont = [[DigitFont alloc] initWithFontType:kDigitFontTypeHelveticaNeueUltraLight];
         
         NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
         

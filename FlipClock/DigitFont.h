@@ -8,9 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, DigitFontType) {
+    kDigitFontTypeHelveticaRegular,
+    kDigitFontTypeHelveticaNeueUltraLight
+};
+
 @interface DigitFont : NSObject
 
 @property (nonatomic, strong) NSFont *largeFont;
 @property (nonatomic, strong) NSFont *medianFont;
+
+- (id)initWithFontType:(DigitFontType)fontType;
 
 @end
