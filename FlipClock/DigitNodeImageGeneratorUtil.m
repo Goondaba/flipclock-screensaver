@@ -67,7 +67,7 @@
 
 + (NSView *)getTopViewFromNibWithClass:(Class)class {
     
-    NSNib *nib = [[NSNib alloc] initWithNibNamed:NSStringFromClass(class) bundle:nil];
+    NSNib *nib = [[NSNib alloc] initWithNibNamed:NSStringFromClass(class) bundle:[NSBundle bundleForClass:[self class]]];
     NSArray *topLevelObjects;
     [nib instantiateWithOwner:self topLevelObjects:&topLevelObjects];
     
