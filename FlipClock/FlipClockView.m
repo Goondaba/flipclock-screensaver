@@ -116,7 +116,7 @@ CGFloat frameRate = 30.0f;
         [listOfFonts addObject:[DigitFont fontNameForType:i]];
     }
 
-    [fontPopUp addItemsWithTitles:listOfProfiles];
+    [fontPopUp addItemsWithTitles:listOfFonts];
     [fontPopUp selectItemAtIndex:[defaults integerForKey:font_str]];
     
     return configSheet;
