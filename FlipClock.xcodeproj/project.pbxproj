@@ -44,12 +44,6 @@
 		12285B581E52D39E00DB212A /* DigitFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 12285B561E52D39E00DB212A /* DigitFont.h */; };
 		12285B591E52D39E00DB212A /* DigitFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B571E52D39E00DB212A /* DigitFont.m */; };
 		12285B5A1E52D39E00DB212A /* DigitFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B571E52D39E00DB212A /* DigitFont.m */; };
-		12285B5E1E52D3FC00DB212A /* DigitFontHelveticaRegular.h in Headers */ = {isa = PBXBuildFile; fileRef = 12285B5C1E52D3FC00DB212A /* DigitFontHelveticaRegular.h */; };
-		12285B5F1E52D3FC00DB212A /* DigitFontHelveticaRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B5D1E52D3FC00DB212A /* DigitFontHelveticaRegular.m */; };
-		12285B601E52D3FC00DB212A /* DigitFontHelveticaRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B5D1E52D3FC00DB212A /* DigitFontHelveticaRegular.m */; };
-		12285B631E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.h in Headers */ = {isa = PBXBuildFile; fileRef = 12285B611E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.h */; };
-		12285B641E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B621E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.m */; };
-		12285B651E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B621E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.m */; };
 		125D6FDD1824B98E00164C8C /* ClockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7D1824AE1E009DD26A /* ClockNode.m */; };
 		12902409166BDF3100F4FE57 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12902408166BDF3100F4FE57 /* ConfigureSheet.xib */; };
 		12B8E46E1B65C170002EADC6 /* SCNNode+FlipClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */; };
@@ -113,10 +107,6 @@
 		12285B531E52CC5F00DB212A /* DigitMedianRenderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DigitMedianRenderView.xib; sourceTree = "<group>"; };
 		12285B561E52D39E00DB212A /* DigitFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitFont.h; sourceTree = "<group>"; };
 		12285B571E52D39E00DB212A /* DigitFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitFont.m; sourceTree = "<group>"; };
-		12285B5C1E52D3FC00DB212A /* DigitFontHelveticaRegular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitFontHelveticaRegular.h; sourceTree = "<group>"; };
-		12285B5D1E52D3FC00DB212A /* DigitFontHelveticaRegular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitFontHelveticaRegular.m; sourceTree = "<group>"; };
-		12285B611E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitFontHelveticaNeueUltraLight.h; sourceTree = "<group>"; };
-		12285B621E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitFontHelveticaNeueUltraLight.m; sourceTree = "<group>"; };
 		12902408166BDF3100F4FE57 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SCNNode+FlipClock.h"; path = "Categories/SCNNode+FlipClock.h"; sourceTree = "<group>"; };
 		12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SCNNode+FlipClock.m"; path = "Categories/SCNNode+FlipClock.m"; sourceTree = "<group>"; };
@@ -279,10 +269,6 @@
 			children = (
 				12285B561E52D39E00DB212A /* DigitFont.h */,
 				12285B571E52D39E00DB212A /* DigitFont.m */,
-				12285B5C1E52D3FC00DB212A /* DigitFontHelveticaRegular.h */,
-				12285B5D1E52D3FC00DB212A /* DigitFontHelveticaRegular.m */,
-				12285B611E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.h */,
-				12285B621E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -345,12 +331,10 @@
 				12B8E4781B65EB6B002EADC6 /* DigitAnimationModel.h in Headers */,
 				12E3D36E1E516710007F3134 /* DigitRenderView.h in Headers */,
 				12203C881824AE1E009DD26A /* DigitAnimationDelegate.h in Headers */,
-				12285B631E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.h in Headers */,
 				12203C841824AE1E009DD26A /* ClockNode.h in Headers */,
 				12203C901824AFED009DD26A /* AppDelegate.h in Headers */,
 				12285B581E52D39E00DB212A /* DigitFont.h in Headers */,
 				12E3D3621E515447007F3134 /* DigitNodeImageGeneratorUtil.h in Headers */,
-				12285B5E1E52D3FC00DB212A /* DigitFontHelveticaRegular.h in Headers */,
 				12E3D3761E5173EC007F3134 /* NSImage+Flipclock.h in Headers */,
 				12FA9DBF1DCD7FF700EA216A /* SCNPlane+FlipClock.h in Headers */,
 				12285B501E52CC5500DB212A /* DigitMedianRenderView.h in Headers */,
@@ -470,13 +454,11 @@
 				12203C851824AE1E009DD26A /* ClockNode.m in Sources */,
 				12E3D3631E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */,
 				12285B591E52D39E00DB212A /* DigitFont.m in Sources */,
-				12285B641E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.m in Sources */,
 				120DE6FD1662E88500C3C998 /* FlipClockView.m in Sources */,
 				12203C911824AFED009DD26A /* AppDelegate.m in Sources */,
 				12203C8B1824AE1E009DD26A /* DigitNode.m in Sources */,
 				12FA9DC01DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */,
 				12B8E4791B65EB6B002EADC6 /* DigitAnimationModel.m in Sources */,
-				12285B5F1E52D3FC00DB212A /* DigitFontHelveticaRegular.m in Sources */,
 				12E3D36F1E516710007F3134 /* DigitRenderView.m in Sources */,
 				12285B511E52CC5500DB212A /* DigitMedianRenderView.m in Sources */,
 				12E3D3771E5173EC007F3134 /* NSImage+Flipclock.m in Sources */,
@@ -493,13 +475,11 @@
 				12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */,
 				12E3D3641E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */,
 				12285B5A1E52D39E00DB212A /* DigitFont.m in Sources */,
-				12285B651E52D4F400DB212A /* DigitFontHelveticaNeueUltraLight.m in Sources */,
 				121C2B561824B8C100A2580D /* main.m in Sources */,
 				121C2B571824B8C800A2580D /* AppDelegate.m in Sources */,
 				121C2B581824B8CD00A2580D /* ClockView.m in Sources */,
 				12FA9DC11DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */,
 				12D79AD21B65EC9C00C0A422 /* DigitAnimationModel.m in Sources */,
-				12285B601E52D3FC00DB212A /* DigitFontHelveticaRegular.m in Sources */,
 				12E3D3701E516710007F3134 /* DigitRenderView.m in Sources */,
 				12285B521E52CC5500DB212A /* DigitMedianRenderView.m in Sources */,
 				12E3D3781E5173EC007F3134 /* NSImage+Flipclock.m in Sources */,
