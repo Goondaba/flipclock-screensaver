@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FeedServiceProtocol.h"
+#import "RepoFeedServiceProtocol.h"
 
-@interface RepoFeedService : NSObject <FeedServiceProtocol>
+@interface RepoFeedService : NSObject <RepoFeedServiceProtocol>
 
 @end

@@ -58,7 +58,7 @@
 		12D6B2C01E556FDA00AE9805 /* RepoFeedService.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D6B2BE1E556FDA00AE9805 /* RepoFeedService.h */; };
 		12D6B2C11E556FDA00AE9805 /* RepoFeedService.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D6B2BF1E556FDA00AE9805 /* RepoFeedService.m */; };
 		12D6B2C21E556FDA00AE9805 /* RepoFeedService.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D6B2BF1E556FDA00AE9805 /* RepoFeedService.m */; };
-		12D6B2C51E556FF900AE9805 /* FeedServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D6B2C41E556FF900AE9805 /* FeedServiceProtocol.h */; };
+		12D6B2C51E556FF900AE9805 /* RepoFeedServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D6B2C41E556FF900AE9805 /* RepoFeedServiceProtocol.h */; };
 		12D79AD21B65EC9C00C0A422 /* DigitAnimationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */; };
 		12E3D3621E515447007F3134 /* DigitNodeImageGeneratorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E3D3601E515447007F3134 /* DigitNodeImageGeneratorUtil.h */; };
 		12E3D3631E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3611E515447007F3134 /* DigitNodeImageGeneratorUtil.m */; };
@@ -125,7 +125,7 @@
 		12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitAnimationModel.m; sourceTree = "<group>"; };
 		12D6B2BE1E556FDA00AE9805 /* RepoFeedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepoFeedService.h; sourceTree = "<group>"; };
 		12D6B2BF1E556FDA00AE9805 /* RepoFeedService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepoFeedService.m; sourceTree = "<group>"; };
-		12D6B2C41E556FF900AE9805 /* FeedServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedServiceProtocol.h; sourceTree = "<group>"; };
+		12D6B2C41E556FF900AE9805 /* RepoFeedServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepoFeedServiceProtocol.h; sourceTree = "<group>"; };
 		12E3D3601E515447007F3134 /* DigitNodeImageGeneratorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitNodeImageGeneratorUtil.h; sourceTree = "<group>"; };
 		12E3D3611E515447007F3134 /* DigitNodeImageGeneratorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitNodeImageGeneratorUtil.m; sourceTree = "<group>"; };
 		12E3D36C1E516710007F3134 /* DigitRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitRenderView.h; sourceTree = "<group>"; };
@@ -346,7 +346,7 @@
 		12D6B2C31E556FDF00AE9805 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				12D6B2C41E556FF900AE9805 /* FeedServiceProtocol.h */,
+				12D6B2C41E556FF900AE9805 /* RepoFeedServiceProtocol.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -384,7 +384,7 @@
 			files = (
 				12203C8A1824AE1E009DD26A /* DigitNode.h in Headers */,
 				12B8E46E1B65C170002EADC6 /* SCNNode+FlipClock.h in Headers */,
-				12D6B2C51E556FF900AE9805 /* FeedServiceProtocol.h in Headers */,
+				12D6B2C51E556FF900AE9805 /* RepoFeedServiceProtocol.h in Headers */,
 				12203C861824AE1E009DD26A /* ClockView.h in Headers */,
 				12B8E4781B65EB6B002EADC6 /* DigitAnimationModel.h in Headers */,
 				12E3D36E1E516710007F3134 /* DigitRenderView.h in Headers */,

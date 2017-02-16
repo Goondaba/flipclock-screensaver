@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FeedServiceProtocol.h"
+#import "RepoFeedServiceProtocol.h"
 
 @interface ServicesProvider : NSObject
 
 + (instancetype)instance;
 
-@property (nonatomic, strong) id<FeedServiceProtocol> feedService;
+@property (nonatomic, strong) id<RepoFeedServiceProtocol> feedService;
 
 @end
