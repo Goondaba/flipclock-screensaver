@@ -19,6 +19,8 @@
     
     dispatch_once(&token, ^{
 
+        shared = [ServicesProvider new];
+        
         shared.feedService = [RepoFeedService new];
         //TODO: Add texture generator/fetcher to services
     });

@@ -29,6 +29,7 @@
 #import "ClockView.h"
 #import "ClockNode.h"
 #import "DigitNodeImageGeneratorUtil.h"
+#import "ServicesProvider.h"
 
 @implementation ClockView
 
@@ -72,6 +73,15 @@
     clock.transform = transLeft;
     
     [clock startClockWithMilitary:showMilitary andWithSeconds:showSeconds];
+    
+    //Check if update available
+    static dispatch_once_t token;
+    dispatch_once(&token, ^{
+        [[ServicesProvider instance].feedService newReleaseIsAvailable:^(BOOL newReleaseAvailable) {
+            
+            //
+        }];
+    });
 }
 
 +(SCNVector3)getCamPositionFor:(Boolean)givenMilitary andSeconds:(Boolean)givenSeconds{
