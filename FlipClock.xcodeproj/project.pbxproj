@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D8687C3FA324EF0B173C4F3 /* libPods-ClockDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1317A58C512F251D58A98283 /* libPods-ClockDemo.a */; };
 		12023A9917717ADA00494081 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12023A9717717ADA00494081 /* thumbnail@2x.png */; };
 		12023A9A17717ADA00494081 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 12023A9817717ADA00494081 /* thumbnail.png */; };
 		120DE6ED1662E88500C3C998 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE6EC1662E88500C3C998 /* Cocoa.framework */; };
@@ -66,6 +67,7 @@
 		12FA9DBF1DCD7FF700EA216A /* SCNPlane+FlipClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12FA9DBD1DCD7FF700EA216A /* SCNPlane+FlipClock.h */; };
 		12FA9DC01DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */; };
 		12FA9DC11DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */; };
+		EA0030E321FA83527B8A54E1 /* libPods-FlipClock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39626A867257171D9584E9FC /* libPods-FlipClock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +123,12 @@
 		12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Flipclock.m"; sourceTree = "<group>"; };
 		12FA9DBD1DCD7FF700EA216A /* SCNPlane+FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCNPlane+FlipClock.h"; sourceTree = "<group>"; };
 		12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCNPlane+FlipClock.m"; sourceTree = "<group>"; };
+		1317A58C512F251D58A98283 /* libPods-ClockDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2F9CC3A4D9C6C720D4204B /* Pods-ClockDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClockDemo/Pods-ClockDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		352C87D9E0D5E5D3948FB407 /* Pods-FlipClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipClock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlipClock/Pods-FlipClock.debug.xcconfig"; sourceTree = "<group>"; };
+		39626A867257171D9584E9FC /* libPods-FlipClock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlipClock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45612A7E20CDAC481A525F3B /* Pods-ClockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClockDemo/Pods-ClockDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CDD59AD4F6BBB97F7918E6A8 /* Pods-FlipClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipClock.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlipClock/Pods-FlipClock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,7 @@
 				120DE6EF1662E88500C3C998 /* ScreenSaver.framework in Frameworks */,
 				120DE7461662E95600C3C998 /* QuartzCore.framework in Frameworks */,
 				120DE7471662E95600C3C998 /* SceneKit.framework in Frameworks */,
+				EA0030E321FA83527B8A54E1 /* libPods-FlipClock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,18 +151,31 @@
 				12203CCA1824B201009DD26A /* QuartzCore.framework in Frameworks */,
 				12203CC81824B1F3009DD26A /* SceneKit.framework in Frameworks */,
 				12203C9A1824B193009DD26A /* Cocoa.framework in Frameworks */,
+				0D8687C3FA324EF0B173C4F3 /* libPods-ClockDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E81D384495CC6F9654C6928 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F9CC3A4D9C6C720D4204B /* Pods-ClockDemo.debug.xcconfig */,
+				45612A7E20CDAC481A525F3B /* Pods-ClockDemo.release.xcconfig */,
+				352C87D9E0D5E5D3948FB407 /* Pods-FlipClock.debug.xcconfig */,
+				CDD59AD4F6BBB97F7918E6A8 /* Pods-FlipClock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		120DE6DC1662E88500C3C998 = {
 			isa = PBXGroup;
 			children = (
 				120DE6F41662E88500C3C998 /* FlipClock */,
 				120DE6EB1662E88500C3C998 /* Frameworks */,
 				120DE6EA1662E88500C3C998 /* Products */,
+				0E81D384495CC6F9654C6928 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +198,8 @@
 				120DE6EC1662E88500C3C998 /* Cocoa.framework */,
 				120DE6EE1662E88500C3C998 /* ScreenSaver.framework */,
 				120DE6F01662E88500C3C998 /* Other Frameworks */,
+				1317A58C512F251D58A98283 /* libPods-ClockDemo.a */,
+				39626A867257171D9584E9FC /* libPods-FlipClock.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -348,11 +372,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 120DE7001662E88500C3C998 /* Build configuration list for PBXNativeTarget "FlipClock" */;
 			buildPhases = (
+				E55C1376695C702F4C355A0E /* [CP] Check Pods Manifest.lock */,
 				120DE6E31662E88500C3C998 /* Sources */,
 				120DE6E41662E88500C3C998 /* Frameworks */,
 				120DE6E51662E88500C3C998 /* Headers */,
 				120DE6E61662E88500C3C998 /* Resources */,
 				120DE6E71662E88500C3C998 /* Rez */,
+				A63898D3D666EC000884AB6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -367,9 +393,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12203CC11824B194009DD26A /* Build configuration list for PBXNativeTarget "ClockDemo" */;
 			buildPhases = (
+				DF02B78E1DAEAD7BC85B0400 /* [CP] Check Pods Manifest.lock */,
 				12203C951824B193009DD26A /* Sources */,
 				12203C961824B193009DD26A /* Frameworks */,
 				12203C971824B193009DD26A /* Resources */,
+				733E843BA1B8A7B5771081BE /* [CP] Embed Pods Frameworks */,
+				8703EBD9E2B2A2B6708C6C95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -445,6 +474,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		733E843BA1B8A7B5771081BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClockDemo/Pods-ClockDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8703EBD9E2B2A2B6708C6C95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClockDemo/Pods-ClockDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A63898D3D666EC000884AB6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlipClock/Pods-FlipClock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF02B78E1DAEAD7BC85B0400 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E55C1376695C702F4C355A0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		120DE6E31662E88500C3C998 /* Sources */ = {
@@ -598,6 +705,7 @@
 		};
 		120DE7011662E88500C3C998 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352C87D9E0D5E5D3948FB407 /* Pods-FlipClock.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -618,6 +726,7 @@
 		};
 		120DE7021662E88500C3C998 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD59AD4F6BBB97F7918E6A8 /* Pods-FlipClock.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -638,6 +747,7 @@
 		};
 		12203CC21824B194009DD26A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2F9CC3A4D9C6C720D4204B /* Pods-ClockDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -666,6 +776,7 @@
 		};
 		12203CC31824B194009DD26A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45612A7E20CDAC481A525F3B /* Pods-ClockDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_BOOL_CONVERSION = YES;
