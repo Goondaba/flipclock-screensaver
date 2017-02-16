@@ -47,6 +47,9 @@
 		12285B5A1E52D39E00DB212A /* DigitFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B571E52D39E00DB212A /* DigitFont.m */; };
 		125D6FDD1824B98E00164C8C /* ClockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7D1824AE1E009DD26A /* ClockNode.m */; };
 		12902409166BDF3100F4FE57 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12902408166BDF3100F4FE57 /* ConfigureSheet.xib */; };
+		129FF8101E555B130092C595 /* ServicesProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 129FF80E1E555B130092C595 /* ServicesProvider.h */; };
+		129FF8111E555B130092C595 /* ServicesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 129FF80F1E555B130092C595 /* ServicesProvider.m */; };
+		129FF8121E555B130092C595 /* ServicesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 129FF80F1E555B130092C595 /* ServicesProvider.m */; };
 		12B8E46E1B65C170002EADC6 /* SCNNode+FlipClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */; };
 		12B8E46F1B65C170002EADC6 /* SCNNode+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */; };
 		12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */; };
@@ -110,6 +113,8 @@
 		12285B561E52D39E00DB212A /* DigitFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitFont.h; sourceTree = "<group>"; };
 		12285B571E52D39E00DB212A /* DigitFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitFont.m; sourceTree = "<group>"; };
 		12902408166BDF3100F4FE57 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		129FF80E1E555B130092C595 /* ServicesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesProvider.h; sourceTree = "<group>"; };
+		129FF80F1E555B130092C595 /* ServicesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesProvider.m; sourceTree = "<group>"; };
 		12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SCNNode+FlipClock.h"; path = "Categories/SCNNode+FlipClock.h"; sourceTree = "<group>"; };
 		12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SCNNode+FlipClock.m"; path = "Categories/SCNNode+FlipClock.m"; sourceTree = "<group>"; };
 		12B8E4761B65EB6B002EADC6 /* DigitAnimationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitAnimationModel.h; sourceTree = "<group>"; };
@@ -244,6 +249,7 @@
 		12203C7B1824ADC3009DD26A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				129FF80D1E555AED0092C595 /* Services */,
 				12285B5B1E52D3A100DB212A /* Models */,
 				12E3D36B1E516694007F3134 /* Views */,
 				12203C7C1824AE1E009DD26A /* ClockNode.h */,
@@ -305,6 +311,15 @@
 			name = XIBs;
 			sourceTree = "<group>";
 		};
+		129FF80D1E555AED0092C595 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				129FF80E1E555B130092C595 /* ServicesProvider.h */,
+				129FF80F1E555B130092C595 /* ServicesProvider.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		12B8E46B1B65C132002EADC6 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +377,7 @@
 				12E3D3761E5173EC007F3134 /* NSImage+Flipclock.h in Headers */,
 				12FA9DBF1DCD7FF700EA216A /* SCNPlane+FlipClock.h in Headers */,
 				12285B501E52CC5500DB212A /* DigitMedianRenderView.h in Headers */,
+				129FF8101E555B130092C595 /* ServicesProvider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +574,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129FF8111E555B130092C595 /* ServicesProvider.m in Sources */,
 				12203C851824AE1E009DD26A /* ClockNode.m in Sources */,
 				12E3D3631E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */,
 				12285B591E52D39E00DB212A /* DigitFont.m in Sources */,
@@ -579,6 +596,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129FF8121E555B130092C595 /* ServicesProvider.m in Sources */,
 				12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */,
 				12E3D3641E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */,
 				12285B5A1E52D39E00DB212A /* DigitFont.m in Sources */,
