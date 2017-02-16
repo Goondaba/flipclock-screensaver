@@ -1,5 +1,5 @@
 //
-//  ServicesProvider.h
+//  RepoFeedService.h
 //  FlipClock
 //
 //  Created by Jonathan Salvador on 2/15/17.
@@ -9,10 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "FeedServiceProtocol.h"
 
-@interface ServicesProvider : NSObject
-
-+ (instancetype)instance;
-
-@property (nonatomic, strong) id<FeedServiceProtocol> feedService;
+@interface RepoFeedService : NSObject <FeedServiceProtocol>
 
 @end
