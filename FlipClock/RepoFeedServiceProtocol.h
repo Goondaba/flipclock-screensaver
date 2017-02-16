@@ -1,5 +1,5 @@
 //
-//  FeedServiceProtocol.h
+//  RepoFeedServiceProtocol.h
 //  FlipClock
 //
 //  Created by Jonathan Salvador on 2/15/17.
@@ -10,7 +10,7 @@
 
 typedef void (^newReleaseFetchCompletionBlock)(BOOL newReleaseAvailable);
 
-@protocol FeedServiceProtocol <NSObject>
+@protocol RepoFeedServiceProtocol <NSObject>
 
 - (void)newReleaseIsAvailable:(newReleaseFetchCompletionBlock)completion;
 
