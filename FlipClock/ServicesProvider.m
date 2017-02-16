@@ -7,6 +7,7 @@
 //
 
 #import "ServicesProvider.h"
+#import "RepoFeedService.h"
 
 @implementation ServicesProvider
 
@@ -18,6 +19,8 @@
     
     dispatch_once(&token, ^{
 
+        shared.feedService = [RepoFeedService new];
+        //TODO: Add texture generator/fetcher to services
     });
     
     return shared;
