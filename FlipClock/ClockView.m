@@ -37,12 +37,17 @@
     //set military and seconds flags
     Boolean showMilitary = true;
     Boolean showSeconds  = true;
+    Boolean checkForUpdates  = false;
     DigitFontType fontType = kDigitFontTypeHelveticaRegular;
     
-    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds andFontType:fontType];
+    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds andCheckforUpdates:checkForUpdates andFontType:fontType];
 }
 
 -(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andFontType:(DigitFontType)fontType {
+    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds andCheckforUpdates:true andFontType:fontType];
+}
+
+-(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andCheckforUpdates:(Boolean)checkForUpdates andFontType:(DigitFontType)fontType {
     
     self.backgroundColor = [NSColor blackColor];
     
@@ -73,6 +78,10 @@
     clock.transform = transLeft;
     
     [clock startClockWithMilitary:showMilitary andWithSeconds:showSeconds];
+    
+    if (!checkForUpdates) {
+        return;
+    }
     
     //Check if update available
     //One per app/System prefs launch
