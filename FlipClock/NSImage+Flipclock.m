@@ -46,19 +46,4 @@
     return [[NSImage alloc] initWithData:data];
 }
 
-+ (NSImage*)getImageForFileName:(NSString*)givenImageName{
-    
-//    NSImage *returnImage = [NSImage imageNamed:givenImageName];
-//    
-//    if (returnImage) {
-//        return returnImage;
-//    }
-//    else {
-    
-        NSString *pathString = [[NSBundle bundleForClass:[self class]] pathForResource:givenImageName ofType:@"png"];
-        return [[NSImage alloc] initWithContentsOfFile:pathString];
-//    }
-}
-
-
 @end
