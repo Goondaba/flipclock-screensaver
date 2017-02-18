@@ -157,4 +157,9 @@ CGFloat frameRate = 30.0f;
     [[NSApplication sharedApplication] endSheet:configSheet];
 }
 
+-(IBAction)openURLTapped:(id)sender {
+    
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://stackoverflow.com"]];
+}
+
 @end
