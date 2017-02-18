@@ -9,17 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "DigitFont.h"
 
-typedef NS_ENUM(NSInteger, DigitMedianDrawType) {
-    kDigitMedianDrawTypeAM,
-    kDigitMedianDrawTypePM
-};
-
 @interface DigitNodeImageGeneratorUtil : NSObject
 
 + (NSDictionary<NSString *, NSImage*> *)generateTexturesWithFontType:(DigitFontType)fontType;
-
-+ (NSImage *)drawString:(NSString *)string withFont:(NSFont *)font andBackgroundColour:(NSColor *)backgroundColour;
-
-+ (NSImage *)drawMedianWithType:(DigitMedianDrawType)type withFont:(NSFont *)font andBackgroundColour:(NSColor *)backgroundColour;
 
 @end
