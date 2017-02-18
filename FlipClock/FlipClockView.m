@@ -28,6 +28,8 @@
 
 #import "FlipClockView.h"
 #import "DigitFont.h"
+#import "Constants.h"
+#import "ServicesProvider.h"
 
 @implementation FlipClockView
 
@@ -109,6 +111,8 @@ CGFloat frameRate = 30.0f;
         }
     }
     
+    self->updateButton.hidden = ([[ServicesProvider instance].feedService latestVersion] == nil);
+    
     //set sheet options to defaults
     [militaryBox setState:[defaults integerForKey:isMilitary_str]];
     [secondsBox  setState:[defaults integerForKey:hasSeconds_str]];
@@ -157,9 +161,9 @@ CGFloat frameRate = 30.0f;
     [[NSApplication sharedApplication] endSheet:configSheet];
 }
 
--(IBAction)openURLTapped:(id)sender {
+-(IBAction)openGithubTapped:(id)sender {
     
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://stackoverflow.com"]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:kGithubURLString]];
 }
 
 @end
