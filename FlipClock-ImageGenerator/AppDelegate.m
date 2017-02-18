@@ -48,14 +48,19 @@
 
 - (void)saveImage:(NSImage *)image withName:(NSString *)name {
     
-    NSData *finalData = [image TIFFRepresentation];
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:name];
     
+    
+    CGImageRef cgRef = [image CGImageForProposedRect:NULL
+                                             context:nil
+                                               hints:nil];
+    NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:cgRef];
+    [newRep setSize:[image size]];   // if you want the same resolution
+    
     NSLog(@"Writing %@...", filePath);
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    [fileManager createFileAtPath:filePath contents:finalData attributes:nil];
+    NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:nil];
+    [pngData writeToFile:filePath atomically:YES];
 }
 
 
