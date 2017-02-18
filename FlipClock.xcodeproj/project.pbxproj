@@ -82,9 +82,6 @@
 		12DC29C51E58298C00CD58D0 /* DigitMedianRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B4F1E52CC5500DB212A /* DigitMedianRenderView.m */; };
 		12DC29C61E58299000CD58D0 /* DigitMedianRenderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12285B531E52CC5F00DB212A /* DigitMedianRenderView.xib */; };
 		12DC29C81E5829AB00CD58D0 /* NSImage+Flipclock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */; };
-		12E3D3621E515447007F3134 /* DigitNodeImageGeneratorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E3D3601E515447007F3134 /* DigitNodeImageGeneratorUtil.h */; };
-		12E3D3631E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3611E515447007F3134 /* DigitNodeImageGeneratorUtil.m */; };
-		12E3D3641E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3611E515447007F3134 /* DigitNodeImageGeneratorUtil.m */; };
 		12E3D36E1E516710007F3134 /* DigitRenderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E3D36C1E516710007F3134 /* DigitRenderView.h */; };
 		12E3D36F1E516710007F3134 /* DigitRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D36D1E516710007F3134 /* DigitRenderView.m */; };
 		12E3D3701E516710007F3134 /* DigitRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D36D1E516710007F3134 /* DigitRenderView.m */; };
@@ -466,7 +463,6 @@
 				12203C841824AE1E009DD26A /* ClockNode.h in Headers */,
 				12203C901824AFED009DD26A /* AppDelegate.h in Headers */,
 				12285B581E52D39E00DB212A /* DigitFont.h in Headers */,
-				12E3D3621E515447007F3134 /* DigitNodeImageGeneratorUtil.h in Headers */,
 				12E3D3761E5173EC007F3134 /* NSImage+Flipclock.h in Headers */,
 				12D530201E582CE700901CD5 /* DigitNodeTypes.h in Headers */,
 				12FA9DBF1DCD7FF700EA216A /* SCNPlane+FlipClock.h in Headers */,
@@ -711,7 +707,6 @@
 				129FF8111E555B130092C595 /* ServicesProvider.m in Sources */,
 				12203C851824AE1E009DD26A /* ClockNode.m in Sources */,
 				12D530241E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */,
-				12E3D3631E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */,
 				12285B591E52D39E00DB212A /* DigitFont.m in Sources */,
 				120DE6FD1662E88500C3C998 /* FlipClockView.m in Sources */,
 				12203C911824AFED009DD26A /* AppDelegate.m in Sources */,
@@ -736,7 +731,6 @@
 				129FF8121E555B130092C595 /* ServicesProvider.m in Sources */,
 				12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */,
 				12D530251E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */,
-				12E3D3641E515447007F3134 /* DigitNodeImageGeneratorUtil.m in Sources */,
 				12285B5A1E52D39E00DB212A /* DigitFont.m in Sources */,
 				121C2B561824B8C100A2580D /* main.m in Sources */,
 				121C2B571824B8C800A2580D /* AppDelegate.m in Sources */,
