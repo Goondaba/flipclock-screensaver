@@ -16,9 +16,7 @@ typedef NS_ENUM(NSInteger, DigitMedianDrawType) {
 
 @interface DigitNodeImageGeneratorUtil : NSObject
 
-+ (NSDictionary<NSString *, NSImage*> *)textures;
-
-+ (void)generateTexturesWithFontType:(DigitFontType)fontType;
++ (NSDictionary<NSString *, NSImage*> *)generateTexturesWithFontType:(DigitFontType)fontType;
 
 + (NSImage *)drawString:(NSString *)string withFont:(NSFont *)font andBackgroundColour:(NSColor *)backgroundColour;
 

@@ -16,14 +16,10 @@ static NSDictionary<NSString *, NSImage*> *shared = nil;
 
 @implementation DigitNodeImageGeneratorUtil
 
-+ (NSDictionary<NSString *, NSImage*> *)textures {
-    return shared;
-}
-
-+ (void)generateTexturesWithFontType:(DigitFontType)fontType {
++ (NSDictionary<NSString *, NSImage*> *)generateTexturesWithFontType:(DigitFontType)fontType {
     
     if (fontType < 0) {
-        return;
+        return nil;
     }
     
     if (!shared) {
@@ -58,6 +54,8 @@ static NSDictionary<NSString *, NSImage*> *shared = nil;
         [shared setValue:firstImage    forKey:top_str];
         [shared setValue:secondImage forKey:bottom_str];
     }
+    
+    return shared;
 }
 
 + (NSImage *)drawString:(NSString *)string withFont:(NSFont *)font andBackgroundColour:(NSColor *)backgroundColour {
