@@ -8,7 +8,7 @@
 
 #import "Constants.h"
 
-NSString * const kGithubURLString = @"https://github.com/Goondaba/flipclock-screensaver";
+NSString * const kGithubURLString = @"https://github.com/Goondaba/flipclock-screensaver/releases";
 
 @implementation Constants
 @end

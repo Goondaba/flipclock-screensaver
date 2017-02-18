@@ -122,7 +122,7 @@ typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
 
 - (NSURL *)repoURL {
     
-    NSString *fullURLString = [NSString stringWithFormat:@"%@/releases.atom", kGithubURLString];
+    NSString *fullURLString = [NSString stringWithFormat:@"%@.atom", kGithubURLString];
     return [NSURL URLWithString:fullURLString];
 }
 
