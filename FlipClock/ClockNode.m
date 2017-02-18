@@ -106,7 +106,8 @@ CGFloat currentLateral;
     
     [self flipToCurrentTime];
 //    Begin timer
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(flipToCurrentTime) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(flipToCurrentTime) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 }
 
 -(void)flipToCurrentTime{
