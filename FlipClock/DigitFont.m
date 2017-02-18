@@ -6,6 +6,7 @@
 //  Copyright © 2017 Jonathan Salvador. All rights reserved.
 //
 
+#import <Cocoa/Cocoa.h>
 #import "DigitFont.h"
 
 @interface DigitFont ()
