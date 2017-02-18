@@ -38,8 +38,15 @@
         NSString *topLoadName    = [NSString stringWithFormat:@"%@_%ld", top_str, (long)fontType];
         NSString *bottomLoadName = [NSString stringWithFormat:@"%@_%ld", bottom_str, (long)fontType];
         
-        [self.textures setValue:[NSImage getImageForFileName:topLoadName]    forKey:top_str];
-        [self.textures setValue:[NSImage getImageForFileName:bottomLoadName] forKey:bottom_str];
+        [self.textures setValue:[self getImageForFileName:topLoadName]    forKey:top_str];
+        [self.textures setValue:[self getImageForFileName:bottomLoadName] forKey:bottom_str];
     }
 }
+
+- (NSImage *)getImageForFileName:(NSString*)givenImageName{
+    
+    NSString *pathString = [[NSBundle bundleForClass:[self class]] pathForResource:givenImageName ofType:@"png"];
+    return [[NSImage alloc] initWithContentsOfFile:pathString];
+}
+
 @end
