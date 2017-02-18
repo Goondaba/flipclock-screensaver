@@ -31,6 +31,10 @@
 #import "Constants.h"
 #import "ServicesProvider.h"
 
+@interface FlipClockView :()
+@property (nonatomic, assign) BOOL isPreview;
+@end
+
 @implementation FlipClockView
 
 //static NSString *moduleName;
@@ -44,7 +48,9 @@ CGFloat frameRate = 30.0f;
     
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
-        [self setAnimationTimeInterval:1/frameRate];
+        [self setAnimationTimeInterval:(1.0/frameRate)];
+        
+        _isPreview = isPreview;
         
         // Register our default values
         [[self getDefaults] registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:
@@ -71,7 +77,8 @@ CGFloat frameRate = 30.0f;
     
     [myClockView drawClockWithMilitary:[defaults integerForKey:isMilitary_str]
                             andSeconds:[defaults integerForKey:hasSeconds_str]
-                           andFontType:[defaults integerForKey:font_str]];
+                           andFontType:[defaults integerForKey:font_str]
+                             isPreview:self.isPreview];
 }
 
 - (void)stopAnimation{

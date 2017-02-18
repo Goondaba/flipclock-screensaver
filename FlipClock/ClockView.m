@@ -37,17 +37,13 @@
     //set military and seconds flags
     Boolean showMilitary = true;
     Boolean showSeconds  = true;
-    Boolean checkForUpdates  = false;
+    BOOL isPreview  = NO; //
     DigitFontType fontType = kDigitFontTypeHelveticaRegular;
     
-    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds andCheckforUpdates:checkForUpdates andFontType:fontType];
+    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds andFontType:fontType isPreview:isPreview];
 }
 
--(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andFontType:(DigitFontType)fontType {
-    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds andCheckforUpdates:true andFontType:fontType];
-}
-
--(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andCheckforUpdates:(Boolean)checkForUpdates andFontType:(DigitFontType)fontType {
+-(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andFontType:(DigitFontType)fontType isPreview:(BOOL)isPreview {
     
     self.backgroundColor = [NSColor blackColor];
     
@@ -79,19 +75,17 @@
     
     [clock startClockWithMilitary:showMilitary andWithSeconds:showSeconds];
     
-    if (!checkForUpdates) {
-        return;
-    }
+//    //Check if update available
+//    //One per app/System prefs launch
+//    static dispatch_once_t token;
+//    dispatch_once(&token, ^{
+//        [[ServicesProvider instance].feedService newReleaseIsAvailable:^(BOOL newReleaseAvailable) {
+//            
+//            //TODO: Impl update available notice
+//        }];
+//    });
     
-    //Check if update available
-    //One per app/System prefs launch
-    static dispatch_once_t token;
-    dispatch_once(&token, ^{
-        [[ServicesProvider instance].feedService newReleaseIsAvailable:^(BOOL newReleaseAvailable) {
-            
-            //TODO: Impl update available notice
-        }];
-    });
+    [self addVersionNoticeIfNecessary:isPreview withFontType:fontType];
 }
 
 +(SCNVector3)getCamPositionFor:(Boolean)givenMilitary andSeconds:(Boolean)givenSeconds{
@@ -133,6 +127,33 @@
     diffuseLightNode.light = diffuseLight;
     diffuseLightNode.position = SCNVector3Make(-30, 30, 50);
     [givenScene.rootNode addChildNode:diffuseLightNode];
+}
+
+- (void)addVersionNoticeIfNecessary:(BOOL)isPreview withFontType:(DigitFontType)fontType {
+    
+    if (isPreview) {
+        return;
+    }
+    
+    CGFloat fontSize = 12.0;
+    
+    CGSize size  = CGSizeMake(CGRectGetWidth(self.frame), 200);
+    CGFloat maxY = CGRectGetMaxY(self.frame);
+    
+//    NSRect textFieldRect = NSMakeRect(300, maxY, size.width, size.height);
+    NSRect textFieldRect = NSMakeRect(0, fontSize, CGRectGetWidth(self.frame), fontSize);
+    
+    NSTextField* textField = [[NSTextField alloc] initWithFrame:textFieldRect];
+    [textField setFont:[NSFont fontWithName:[DigitFont fontNameForType:fontType] size:fontSize]];
+    [textField setTextColor:[NSColor whiteColor]];
+    [textField setStringValue:@"Some Text"];
+    [textField setBackgroundColor:[NSColor blueColor]];
+    [textField setDrawsBackground:YES];
+    [textField setBordered:NO];
+    [textField setAlignment:NSCenterTextAlignment];
+    [textField setAutoresizingMask:(NSViewWidthSizable)];
+    
+    [self addSubview:textField];
 }
 
 @end
