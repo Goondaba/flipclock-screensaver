@@ -9,6 +9,7 @@
 #import "RepoFeedService.h"
 #import <MWFeedParser/MWFeedParser.h>
 #import <MWFeedParser/NSString+HTML.h>
+#import <NSString-comparetoVersion/NSString+CompareToVersion.h>
 
 static NSString * const kRepoURL = @"https://github.com/Goondaba/flipclock-screensaver/releases.atom";
 
@@ -62,6 +63,10 @@ static NSString * const kRepoURL = @"https://github.com/Goondaba/flipclock-scree
 }
 
 - (void)feedParserDidFinish:(MWFeedParser *)parser {
+    
+    //Grab current version
+    
+    //Parse out numerical portion of title
     
     //TODO: Trigger callback
     NSLog(@"%@", self.titleList);
