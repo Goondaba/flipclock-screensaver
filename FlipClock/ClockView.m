@@ -75,11 +75,12 @@
     [clock startClockWithMilitary:showMilitary andWithSeconds:showSeconds];
     
     //Check if update available
+    //One per app/System prefs launch
     static dispatch_once_t token;
     dispatch_once(&token, ^{
         [[ServicesProvider instance].feedService newReleaseIsAvailable:^(BOOL newReleaseAvailable) {
             
-            //
+            //TODO: Impl update available notice
         }];
     });
 }
