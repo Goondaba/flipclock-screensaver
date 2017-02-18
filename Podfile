@@ -3,6 +3,7 @@
 
 def common_pods
   pod 'MWFeedParser', '~>1.0.1'
+  pod 'NSString-compareToVersion', :podspec => 'Local Pods/NSString-compareToVersion/NSString-compareToVersion.podspec'
 end
 
 target 'ClockDemo' do
