@@ -45,6 +45,8 @@
 		12285B581E52D39E00DB212A /* DigitFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 12285B561E52D39E00DB212A /* DigitFont.h */; };
 		12285B591E52D39E00DB212A /* DigitFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B571E52D39E00DB212A /* DigitFont.m */; };
 		12285B5A1E52D39E00DB212A /* DigitFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B571E52D39E00DB212A /* DigitFont.m */; };
+		12406C2C1E583CC0000809A9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12406C2B1E583CC0000809A9 /* Media.xcassets */; };
+		12406C2D1E583CC0000809A9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12406C2B1E583CC0000809A9 /* Media.xcassets */; };
 		125D6FDD1824B98E00164C8C /* ClockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7D1824AE1E009DD26A /* ClockNode.m */; };
 		12902409166BDF3100F4FE57 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12902408166BDF3100F4FE57 /* ConfigureSheet.xib */; };
 		129FF8101E555B130092C595 /* ServicesProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 129FF80E1E555B130092C595 /* ServicesProvider.h */; };
@@ -136,6 +138,7 @@
 		12285B531E52CC5F00DB212A /* DigitMedianRenderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DigitMedianRenderView.xib; sourceTree = "<group>"; };
 		12285B561E52D39E00DB212A /* DigitFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitFont.h; sourceTree = "<group>"; };
 		12285B571E52D39E00DB212A /* DigitFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitFont.m; sourceTree = "<group>"; };
+		12406C2B1E583CC0000809A9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		12902408166BDF3100F4FE57 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		129FF80E1E555B130092C595 /* ServicesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesProvider.h; sourceTree = "<group>"; };
 		129FF80F1E555B130092C595 /* ServicesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesProvider.m; sourceTree = "<group>"; };
@@ -312,6 +315,7 @@
 				12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */,
 				12B8E46B1B65C132002EADC6 /* Categories */,
 				12E3D3651E51544C007F3134 /* Util */,
+				12406C2B1E583CC0000809A9 /* Media.xcassets */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -577,6 +581,7 @@
 			files = (
 				12285B541E52CC5F00DB212A /* DigitMedianRenderView.xib in Resources */,
 				120DE6F91662E88500C3C998 /* InfoPlist.strings in Resources */,
+				12406C2C1E583CC0000809A9 /* Media.xcassets in Resources */,
 				12E3D3721E516734007F3134 /* DigitRenderView.xib in Resources */,
 				12902409166BDF3100F4FE57 /* ConfigureSheet.xib in Resources */,
 				12023A9917717ADA00494081 /* thumbnail@2x.png in Resources */,
@@ -592,6 +597,7 @@
 				121C2B531824B7D600A2580D /* Credits.rtf in Resources */,
 				121C2B341824B6B500A2580D /* MainMenu.xib in Resources */,
 				12285B551E52CC5F00DB212A /* DigitMedianRenderView.xib in Resources */,
+				12406C2D1E583CC0000809A9 /* Media.xcassets in Resources */,
 				12E3D3731E516734007F3134 /* DigitRenderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
