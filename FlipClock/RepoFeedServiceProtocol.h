@@ -14,4 +14,14 @@ typedef void (^newReleaseFetchCompletionBlock)(BOOL newReleaseAvailable);
 
 - (void)newReleaseIsAvailable:(newReleaseFetchCompletionBlock)completion;
 
+
+/**
+ The latest version available from Github.
+ Is only populated if the latest Github version is newer than the current version.
+ Nil otherwise.
+
+ @return version string
+ */
+- (NSString *)latestVersion;
+
 @end
