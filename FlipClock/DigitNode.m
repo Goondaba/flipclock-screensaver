@@ -33,6 +33,7 @@
 #import "DigitNodeImageGeneratorUtil.h"
 #import "NSImage+Flipclock.h"
 #import "DigitFont.h"
+#import "DigitNodeTextureNameUtil.h"
 
 @implementation DigitNode
 @synthesize currentTexturePrefix;
@@ -59,7 +60,7 @@ CGFloat flipSegmentZGap   = 0.01;
     else
         fromType = givenDigitType - 1;
     
-    [self flipToTexturePrefix:[DigitNode getTexturePrefixFor:givenDigitType] fromPrefix:[DigitNode getTexturePrefixFor:fromType]];
+    [self flipToTexturePrefix:[DigitNodeTextureNameUtil getTexturePrefixFor:givenDigitType] fromPrefix:[DigitNodeTextureNameUtil getTexturePrefixFor:fromType]];
 }
 
 -(void)flipToTexturePrefix:(NSString*)givenPrefix fromPrefix:(NSString*)givenOldPrefix{
@@ -125,7 +126,7 @@ CGFloat flipSegmentZGap   = 0.01;
 -(void)startDigitAt:(DigitType)givenDigitType{
     
     //get texture prefix
-    self->currentTexturePrefix = [DigitNode getTexturePrefixFor:givenDigitType];
+    self->currentTexturePrefix = [DigitNodeTextureNameUtil getTexturePrefixFor:givenDigitType];
     
     //create top plane
     topHalf       = [SCNPlane planeWithWidth:flipSegementWidth height:flipSegmentHeight];
@@ -150,50 +151,6 @@ CGFloat flipSegmentZGap   = 0.01;
     
      NSString *pathString = [[NSBundle bundleForClass:[self class]] pathForResource:givenImageName ofType:@"png"];
     return [[NSImage alloc] initWithContentsOfFile:pathString];
-}
-
-+(NSString*)getTexturePrefixFor:(DigitType)givenDigitType{
-    switch(givenDigitType){
-    case kZero:
-        return @"zero";
-        break;
-    case kOne:
-        return @"one";
-        break;
-    case kTwo:
-        return @"two";
-        break;
-    case kThree:
-        return @"three";
-        break;
-    case kFour:
-        return @"four";
-        break;
-    case kFive:
-        return @"five";
-        break;
-    case kSix:
-        return @"six";
-        break;
-    case kSeven:
-        return @"seven";
-        break;
-    case kEight:
-        return @"eight";
-        break;
-    case kNine:
-        return @"nine";
-        break;
-    case kAM:
-        return @"am";
-        break;
-    case kPM:
-        return @"pm";
-        break;
-    default:
-        return @"zero";
-        break;
-    }
 }
 
 @end

@@ -9,10 +9,9 @@
 #import "DigitNodeImageGeneratorUtil.h"
 #import "DigitRenderView.h"
 #import "DigitMedianRenderView.h"
-#import "DigitNode.h"
 #import "NSImage+Flipclock.h"
-
-static NSDictionary<NSString *, NSImage*> *shared = nil;
+#import "DigitNodeTypes.h"
+#import "DigitNodeTextureNameUtil.h"
 
 @implementation DigitNodeImageGeneratorUtil
 
@@ -22,16 +21,15 @@ static NSDictionary<NSString *, NSImage*> *shared = nil;
         return nil;
     }
     
-    if (!shared) {
-        shared = [NSMutableDictionary dictionary];
-    }
+    NSDictionary<NSString *, NSImage*> *shared = [NSMutableDictionary dictionary];
+
     DigitFont *nodeFont = [[DigitFont alloc] initWithFontType:fontType];
     
     NSColor *veryDarkGrey = [NSColor colorWithRed:0.06f green:0.06f blue:0.06f alpha:1];
     
     for(int i=0; i < numDigitType; i++){
         
-        NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
+        NSString *currentPrefix = [DigitNodeTextureNameUtil getTexturePrefixFor:i];
         NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
         NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
         NSImage *fullImage = nil;
