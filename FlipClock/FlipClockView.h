@@ -32,7 +32,7 @@
 /**
  *  Where the screen saver is drawn
  */
-@interface FlipClockView : ScreenSaverView{
+@interface FlipClockView : ScreenSaverView {
     ClockView *myClockView;
     
     IBOutlet id configSheet;
