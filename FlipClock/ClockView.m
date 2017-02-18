@@ -52,7 +52,7 @@
     self.backgroundColor = [NSColor blackColor];
     
     //Load textures
-    [DigitNodeImageGeneratorUtil generateTexturesWithFontType:fontType];
+    [[[ServicesProvider instance] textureService] loadTexturesWithFontType:fontType];
     
     // Create an empty scene
     SCNScene *scene = [SCNScene scene];

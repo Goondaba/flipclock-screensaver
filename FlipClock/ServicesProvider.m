@@ -8,6 +8,7 @@
 
 #import "ServicesProvider.h"
 #import "RepoFeedService.h"
+#import "TextureProviderService.h"
 
 @implementation ServicesProvider
 
@@ -22,7 +23,8 @@
         shared = [ServicesProvider new];
         
         shared.feedService = [RepoFeedService new];
-        //TODO: Add texture generator/fetcher to services
+        shared.textureService = [TextureProviderService new];
+        //TODO: Add texture generator to services
     });
     
     return shared;

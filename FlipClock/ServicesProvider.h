@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "RepoFeedServiceProtocol.h"
+#import "TextureProviderServiceProtocol.h"
 
 @interface ServicesProvider : NSObject
 
 + (instancetype)instance;
 
 @property (nonatomic, strong) id<RepoFeedServiceProtocol> feedService;
+@property (nonatomic, strong) id<TextureProviderServiceProtocol> textureService;
 
 @end
