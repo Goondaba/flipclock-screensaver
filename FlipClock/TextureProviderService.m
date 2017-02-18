@@ -8,6 +8,7 @@
 
 #import "TextureProviderService.h"
 #import "DigitNodeTextureNameUtil.h"
+#import "NSImage+Flipclock.h"
 
 @interface TextureProviderService ()
 @property (nonatomic, strong) NSMutableDictionary<NSString *, NSImage*> *textures;
@@ -37,10 +38,8 @@
         NSString *topLoadName    = [NSString stringWithFormat:@"%@_%ld", top_str, (long)fontType];
         NSString *bottomLoadName = [NSString stringWithFormat:@"%@_%ld", bottom_str, (long)fontType];
         
-        [self.textures setValue:[NSImage imageNamed:topLoadName]    forKey:top_str];
-        [self.textures setValue:[NSImage imageNamed:bottomLoadName] forKey:bottom_str];
+        [self.textures setValue:[NSImage getImageForFileName:topLoadName]    forKey:top_str];
+        [self.textures setValue:[NSImage getImageForFileName:bottomLoadName] forKey:bottom_str];
     }
 }
-
-
 @end

@@ -13,6 +13,11 @@
 #import "DigitNodeTypes.h"
 #import "DigitNodeTextureNameUtil.h"
 
+typedef NS_ENUM(NSInteger, DigitMedianDrawType) {
+    kDigitMedianDrawTypeAM,
+    kDigitMedianDrawTypePM
+};
+
 @implementation DigitNodeImageGeneratorUtil
 
 + (NSDictionary<NSString *, NSImage*> *)generateTexturesWithFontType:(DigitFontType)fontType {

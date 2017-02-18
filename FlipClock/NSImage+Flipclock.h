@@ -12,4 +12,6 @@
 
 - (void)splitImageVertically:(NSImage **)firstImage secondImage:(NSImage **)secondImage;
 
++ (NSImage*)getImageForFileName:(NSString*)givenImageName;
+
 @end
