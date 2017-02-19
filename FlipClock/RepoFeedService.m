@@ -82,7 +82,7 @@ typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
         if (latestVersion) {
             
             //Grab current version
-            NSString *currentVersion = [NSString stringWithFormat:@"%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+            NSString *currentVersion = [NSString stringWithFormat:@"%@",[[NSBundle bundleForClass:[self class]] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
             BOOL newerVersionExists = [latestVersion isNewerThanVersion:currentVersion];
             if (newerVersionExists) {
                 self.latestVersion = latestVersion;
