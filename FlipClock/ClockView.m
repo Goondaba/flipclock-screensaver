@@ -30,6 +30,7 @@
 #import "ClockNode.h"
 #import "DigitNodeImageGeneratorUtil.h"
 #import "ServicesProvider.h"
+#import <NSString-comparetoVersion/NSString+CompareToVersion.h>
 
 @interface ClockView ()
 @property (nonatomic, strong) NSTextField* updateTextField;
@@ -51,6 +52,10 @@
     
     self.backgroundColor = [NSColor blackColor];
     
+    if (self.updateTextField) {
+        [self.updateTextField removeFromSuperview];
+        self.updateTextField = nil;
+    }
     //Load textures
     [[[ServicesProvider instance] textureService] loadTexturesWithFontType:fontType];
     
@@ -140,11 +145,7 @@
         return;
     }
     
-    if (self.updateTextField && self.updateTextField.superview) {
-        return;
-    }
-    
-    if (latestVersion == nil) {
+    if ((latestVersion == nil) || ([latestVersion isEqualToVersion:latestVersion])) {
         return;
     }
     
