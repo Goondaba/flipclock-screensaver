@@ -30,6 +30,12 @@
 #import "ClockNode.h"
 #import "DigitNodeImageGeneratorUtil.h"
 #import "ServicesProvider.h"
+#import <NSString-comparetoVersion/NSString+CompareToVersion.h>
+#import "VersionUtil.h"
+
+@interface ClockView ()
+@property (nonatomic, strong) NSTextField* updateTextField;
+@end
 
 @implementation ClockView
 
@@ -37,17 +43,13 @@
     //set military and seconds flags
     Boolean showMilitary = true;
     Boolean showSeconds  = true;
-    Boolean checkForUpdates  = false;
+    BOOL isPreview  = NO; //
     DigitFontType fontType = kDigitFontTypeHelveticaRegular;
     
-    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds andCheckforUpdates:checkForUpdates andFontType:fontType];
+    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds andFontType:fontType isPreview:isPreview];
 }
 
--(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andFontType:(DigitFontType)fontType {
-    [self drawClockWithMilitary:showMilitary andSeconds:showSeconds andCheckforUpdates:true andFontType:fontType];
-}
-
--(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andCheckforUpdates:(Boolean)checkForUpdates andFontType:(DigitFontType)fontType {
+-(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andFontType:(DigitFontType)fontType isPreview:(BOOL)isPreview {
     
     self.backgroundColor = [NSColor blackColor];
     
@@ -79,19 +81,16 @@
     
     [clock startClockWithMilitary:showMilitary andWithSeconds:showSeconds];
     
-    if (!checkForUpdates) {
-        return;
-    }
-    
     //Check if update available
     //One per app/System prefs launch
     static dispatch_once_t token;
     dispatch_once(&token, ^{
         [[ServicesProvider instance].feedService newReleaseIsAvailable:^(BOOL newReleaseAvailable) {
-            
-            //TODO: Impl update available notice
+            [self addVersionNoticeIfNecessary:isPreview withFontType:fontType];
         }];
     });
+    
+    [self addVersionNoticeIfNecessary:isPreview withFontType:fontType];
 }
 
 +(SCNVector3)getCamPositionFor:(Boolean)givenMilitary andSeconds:(Boolean)givenSeconds{
@@ -133,6 +132,54 @@
     diffuseLightNode.light = diffuseLight;
     diffuseLightNode.position = SCNVector3Make(-30, 30, 50);
     [givenScene.rootNode addChildNode:diffuseLightNode];
+}
+
+- (void)addVersionNoticeIfNecessary:(BOOL)isPreview withFontType:(DigitFontType)fontType {
+    
+    NSString *latestVersion = [[ServicesProvider instance].feedService latestVersion];
+    
+    if ((latestVersion == nil) || ([latestVersion isEqualToVersion:[VersionUtil currentVersion]])) {
+        return;
+    }
+    
+    if (isPreview) {
+        return;
+    }
+    
+    if (self.updateTextField && self.updateTextField.superview) {
+        return;
+    }
+    
+    //build textfield
+    CGFloat fontSize = 24.0;
+    
+    NSString *textToDisplay = [NSString stringWithFormat:@"Version update v%@ available. See options for details.",
+                               latestVersion];
+    
+    CGSize size  = CGSizeMake(CGRectGetWidth(self.frame), fontSize);
+    CGFloat heightPadding = 10;
+    
+    NSRect textFieldRect = NSMakeRect(0, 0, size.width, size.height + heightPadding);
+    
+    self.updateTextField = [[NSTextField alloc] initWithFrame:textFieldRect];
+    [self.updateTextField setFont:[NSFont fontWithName:[DigitFont fontNameForType:fontType] size:fontSize]];
+    [self.updateTextField setTextColor:[NSColor whiteColor]];
+    [self.updateTextField setStringValue:textToDisplay];
+    [self.updateTextField setBackgroundColor:[NSColor blackColor]];
+    [self.updateTextField setDrawsBackground:YES];
+    [self.updateTextField setBordered:NO];
+    [self.updateTextField setAlignment:NSCenterTextAlignment];
+    [self.updateTextField setAutoresizingMask:(NSViewWidthSizable)];
+    
+    [self addSubview:self.updateTextField];
+    
+    //fade in
+    self.updateTextField.alphaValue = 0;
+    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
+        context.duration = 2;
+        self.updateTextField.animator.alphaValue = 1;
+    }
+    completionHandler:^{}];
 }
 
 @end

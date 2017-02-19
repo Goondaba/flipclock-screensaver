@@ -10,8 +10,8 @@
 #import <MWFeedParser/MWFeedParser.h>
 #import <MWFeedParser/NSString+HTML.h>
 #import <NSString-comparetoVersion/NSString+CompareToVersion.h>
-
-static NSString * const kRepoURL = @"https://github.com/Goondaba/flipclock-screensaver/releases.atom";
+#import "Constants.h"
+#import "VersionUtil.h"
 
 typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
     VersionRegexGroupSequenceName = 1,
@@ -23,6 +23,7 @@ typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
 @property (nonatomic, strong) MWFeedParser *feedParser;
 @property (copy) newReleaseFetchCompletionBlock completionCallback;
 @property (nonatomic, strong) NSMutableArray<NSString *> *titleList;
+@property (nonatomic, strong) NSString *latestVersion;
 @end
 
 @implementation RepoFeedService
@@ -31,6 +32,7 @@ typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
     
     if (self = [super init]) {
         self.titleList = [NSMutableArray new];
+        self.latestVersion = nil;
     }
     return self;
 }
@@ -38,7 +40,7 @@ typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
 - (void)newReleaseIsAvailable:(void (^) (BOOL newReleaseAvailable))completion {
     
     if (!self.feedParser) {
-        NSURL *feedURL = [NSURL URLWithString:kRepoURL];
+        NSURL *feedURL = [self repoURL];
         self.feedParser = [[MWFeedParser alloc] initWithFeedURL:feedURL];
     }
     
@@ -52,6 +54,10 @@ typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
     
     self.completionCallback = completion;
     [self.feedParser parse];
+}
+
+- (NSString *)latestVersion {
+    return _latestVersion;
 }
 
 #pragma mark - MWFeedParser Delegate
@@ -76,9 +82,13 @@ typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
         if (latestVersion) {
             
             //Grab current version
-            NSString *currentVersion = [NSString stringWithFormat:@"%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+            NSString *currentVersion = [VersionUtil currentVersion];
+            BOOL newerVersionExists = [latestVersion isNewerThanVersion:currentVersion];
+            if (newerVersionExists) {
+                self.latestVersion = latestVersion;
+            }
             
-            self.completionCallback ([latestVersion isNewerThanVersion:currentVersion]);
+            self.completionCallback (newerVersionExists);
             return;
         }
     }
@@ -109,4 +119,11 @@ typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
     
     return nil;
 }
+
+- (NSURL *)repoURL {
+    
+    NSString *fullURLString = [NSString stringWithFormat:@"%@.atom", kGithubURLString];
+    return [NSURL URLWithString:fullURLString];
+}
+
 @end

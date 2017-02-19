@@ -28,6 +28,9 @@
 
 #import "FlipClockView.h"
 #import "DigitFont.h"
+#import "Constants.h"
+#import "ServicesProvider.h"
+#import "VersionUtil.h"
 
 @implementation FlipClockView
 
@@ -42,7 +45,7 @@ CGFloat frameRate = 30.0f;
     
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
-        [self setAnimationTimeInterval:1/frameRate];
+        [self setAnimationTimeInterval:(1.0/frameRate)];
         
         // Register our default values
         [[self getDefaults] registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:
@@ -69,7 +72,8 @@ CGFloat frameRate = 30.0f;
     
     [myClockView drawClockWithMilitary:[defaults integerForKey:isMilitary_str]
                             andSeconds:[defaults integerForKey:hasSeconds_str]
-                           andFontType:[defaults integerForKey:font_str]];
+                           andFontType:[defaults integerForKey:font_str]
+                             isPreview:self.isPreview];
 }
 
 - (void)stopAnimation{
@@ -108,6 +112,9 @@ CGFloat frameRate = 30.0f;
             NSBeep();
         }
     }
+    
+    currentVersionField.cell.title = [NSString stringWithFormat:@"v%@", [VersionUtil currentVersion]];
+    updateButton.hidden = ([[ServicesProvider instance].feedService latestVersion] == nil);
     
     //set sheet options to defaults
     [militaryBox setState:[defaults integerForKey:isMilitary_str]];
@@ -155,6 +162,11 @@ CGFloat frameRate = 30.0f;
     
     // Close the sheet
     [[NSApplication sharedApplication] endSheet:configSheet];
+}
+
+-(IBAction)openGithubTapped:(id)sender {
+    
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:kGithubURLString]];
 }
 
 @end

@@ -32,6 +32,6 @@
 
 @interface ClockView : SCNView
 
--(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andFontType:(DigitFontType)fontType;
+-(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andFontType:(DigitFontType)fontType isPreview:(BOOL)isPreview;
 
 @end

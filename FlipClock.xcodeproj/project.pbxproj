@@ -24,6 +24,10 @@
 		121C2B581824B8CD00A2580D /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7F1824AE1E009DD26A /* ClockView.m */; };
 		121C2B591824B8D200A2580D /* DigitNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C831824AE1E009DD26A /* DigitNode.m */; };
 		121C2B5A1824B8D400A2580D /* DigitAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */; };
+		121D497E1E58E14B00E88B01 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 121D497C1E58E14B00E88B01 /* Constants.h */; };
+		121D497F1E58E14B00E88B01 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D497D1E58E14B00E88B01 /* Constants.m */; };
+		121D49801E58E14B00E88B01 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D497D1E58E14B00E88B01 /* Constants.m */; };
+		121D49811E58E14B00E88B01 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D497D1E58E14B00E88B01 /* Constants.m */; };
 		12203C841824AE1E009DD26A /* ClockNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 12203C7C1824AE1E009DD26A /* ClockNode.h */; };
 		12203C851824AE1E009DD26A /* ClockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7D1824AE1E009DD26A /* ClockNode.m */; };
 		12203C861824AE1E009DD26A /* ClockView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12203C7E1824AE1E009DD26A /* ClockView.h */; };
@@ -52,6 +56,9 @@
 		12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */; };
 		12B8E4781B65EB6B002EADC6 /* DigitAnimationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E4761B65EB6B002EADC6 /* DigitAnimationModel.h */; };
 		12B8E4791B65EB6B002EADC6 /* DigitAnimationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */; };
+		12D22F571E599F0E00070DFE /* VersionUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D22F551E599F0E00070DFE /* VersionUtil.h */; };
+		12D22F581E599F0E00070DFE /* VersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D22F561E599F0E00070DFE /* VersionUtil.m */; };
+		12D22F591E599F0E00070DFE /* VersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D22F561E599F0E00070DFE /* VersionUtil.m */; };
 		12D530201E582CE700901CD5 /* DigitNodeTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D5301F1E582CE700901CD5 /* DigitNodeTypes.h */; };
 		12D530231E582E8500901CD5 /* DigitNodeTextureNameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D530211E582E8500901CD5 /* DigitNodeTextureNameUtil.h */; };
 		12D530241E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */; };
@@ -106,6 +113,8 @@
 		121C2B521824B7CC00A2580D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		121C2B541824B82500A2580D /* ClockDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockDemo-Prefix.pch"; sourceTree = "<group>"; };
 		121C2B551824B88500A2580D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		121D497C1E58E14B00E88B01 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		121D497D1E58E14B00E88B01 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		12203C7C1824AE1E009DD26A /* ClockNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockNode.h; sourceTree = "<group>"; };
 		12203C7D1824AE1E009DD26A /* ClockNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockNode.m; sourceTree = "<group>"; };
 		12203C7E1824AE1E009DD26A /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
@@ -133,6 +142,8 @@
 		12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SCNNode+FlipClock.m"; path = "Categories/SCNNode+FlipClock.m"; sourceTree = "<group>"; };
 		12B8E4761B65EB6B002EADC6 /* DigitAnimationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitAnimationModel.h; sourceTree = "<group>"; };
 		12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitAnimationModel.m; sourceTree = "<group>"; };
+		12D22F551E599F0E00070DFE /* VersionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionUtil.h; sourceTree = "<group>"; };
+		12D22F561E599F0E00070DFE /* VersionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionUtil.m; sourceTree = "<group>"; };
 		12D5301F1E582CE700901CD5 /* DigitNodeTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitNodeTypes.h; sourceTree = "<group>"; };
 		12D530211E582E8500901CD5 /* DigitNodeTextureNameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitNodeTextureNameUtil.h; sourceTree = "<group>"; };
 		12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitNodeTextureNameUtil.m; sourceTree = "<group>"; };
@@ -286,15 +297,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		121D49821E58E27B00E88B01 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				12D5301F1E582CE700901CD5 /* DigitNodeTypes.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
 		12203C7B1824ADC3009DD26A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				121D49821E58E27B00E88B01 /* Headers */,
 				129FF80D1E555AED0092C595 /* Services */,
 				12285B5B1E52D3A100DB212A /* Models */,
 				12E3D36B1E516694007F3134 /* Views */,
 				12203C7C1824AE1E009DD26A /* ClockNode.h */,
 				12203C7D1824AE1E009DD26A /* ClockNode.m */,
-				12D5301F1E582CE700901CD5 /* DigitNodeTypes.h */,
 				12203C821824AE1E009DD26A /* DigitNode.h */,
 				12203C831824AE1E009DD26A /* DigitNode.m */,
 				12B8E4761B65EB6B002EADC6 /* DigitAnimationModel.h */,
@@ -303,6 +322,8 @@
 				12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */,
 				12B8E46B1B65C132002EADC6 /* Categories */,
 				12E3D3651E51544C007F3134 /* Util */,
+				121D497C1E58E14B00E88B01 /* Constants.h */,
+				121D497D1E58E14B00E88B01 /* Constants.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -438,6 +459,8 @@
 			children = (
 				12D530211E582E8500901CD5 /* DigitNodeTextureNameUtil.h */,
 				12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */,
+				12D22F551E599F0E00070DFE /* VersionUtil.h */,
+				12D22F561E599F0E00070DFE /* VersionUtil.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -464,6 +487,7 @@
 				12DC299A1E581D9C00CD58D0 /* TextureProviderService.h in Headers */,
 				12203C861824AE1E009DD26A /* ClockView.h in Headers */,
 				12B8E4781B65EB6B002EADC6 /* DigitAnimationModel.h in Headers */,
+				12D22F571E599F0E00070DFE /* VersionUtil.h in Headers */,
 				12203C881824AE1E009DD26A /* DigitAnimationDelegate.h in Headers */,
 				12203C841824AE1E009DD26A /* ClockNode.h in Headers */,
 				12203C901824AFED009DD26A /* AppDelegate.h in Headers */,
@@ -472,6 +496,7 @@
 				12D530201E582CE700901CD5 /* DigitNodeTypes.h in Headers */,
 				12FA9DBF1DCD7FF700EA216A /* SCNPlane+FlipClock.h in Headers */,
 				12D530231E582E8500901CD5 /* DigitNodeTextureNameUtil.h in Headers */,
+				121D497E1E58E14B00E88B01 /* Constants.h in Headers */,
 				129FF8101E555B130092C595 /* ServicesProvider.h in Headers */,
 				12DC299E1E581DB800CD58D0 /* TextureProviderServiceProtocol.h in Headers */,
 				12D6B2C01E556FDA00AE9805 /* RepoFeedService.h in Headers */,
@@ -707,12 +732,14 @@
 				129FF8111E555B130092C595 /* ServicesProvider.m in Sources */,
 				12203C851824AE1E009DD26A /* ClockNode.m in Sources */,
 				12D530241E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */,
+				121D497F1E58E14B00E88B01 /* Constants.m in Sources */,
 				12285B591E52D39E00DB212A /* DigitFont.m in Sources */,
 				120DE6FD1662E88500C3C998 /* FlipClockView.m in Sources */,
 				12203C911824AFED009DD26A /* AppDelegate.m in Sources */,
 				12203C8B1824AE1E009DD26A /* DigitNode.m in Sources */,
 				12D6B2C11E556FDA00AE9805 /* RepoFeedService.m in Sources */,
 				12FA9DC01DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */,
+				12D22F581E599F0E00070DFE /* VersionUtil.m in Sources */,
 				12B8E4791B65EB6B002EADC6 /* DigitAnimationModel.m in Sources */,
 				12E3D3771E5173EC007F3134 /* NSImage+Flipclock.m in Sources */,
 				12DC299B1E581D9C00CD58D0 /* TextureProviderService.m in Sources */,
@@ -729,12 +756,14 @@
 				129FF8121E555B130092C595 /* ServicesProvider.m in Sources */,
 				12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */,
 				12D530251E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */,
+				121D49801E58E14B00E88B01 /* Constants.m in Sources */,
 				12285B5A1E52D39E00DB212A /* DigitFont.m in Sources */,
 				121C2B561824B8C100A2580D /* main.m in Sources */,
 				121C2B571824B8C800A2580D /* AppDelegate.m in Sources */,
 				121C2B581824B8CD00A2580D /* ClockView.m in Sources */,
 				12D6B2C21E556FDA00AE9805 /* RepoFeedService.m in Sources */,
 				12FA9DC11DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */,
+				12D22F591E599F0E00070DFE /* VersionUtil.m in Sources */,
 				12D79AD21B65EC9C00C0A422 /* DigitAnimationModel.m in Sources */,
 				12E3D3781E5173EC007F3134 /* NSImage+Flipclock.m in Sources */,
 				12DC299C1E581D9C00CD58D0 /* TextureProviderService.m in Sources */,
@@ -756,6 +785,7 @@
 				12DC29C81E5829AB00CD58D0 /* NSImage+Flipclock.m in Sources */,
 				12DC29B41E5828CD00CD58D0 /* AppDelegate.m in Sources */,
 				12DC29C31E58297900CD58D0 /* DigitRenderView.m in Sources */,
+				121D49811E58E14B00E88B01 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
