@@ -11,7 +11,7 @@
 #import <MWFeedParser/NSString+HTML.h>
 #import <NSString-comparetoVersion/NSString+CompareToVersion.h>
 #import "Constants.h"
-
+#import "VersionUtil.h"
 
 typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
     VersionRegexGroupSequenceName = 1,
@@ -82,7 +82,7 @@ typedef NS_ENUM(NSInteger, VersionRegexGroupSequence) {
         if (latestVersion) {
             
             //Grab current version
-            NSString *currentVersion = [NSString stringWithFormat:@"%@",[[NSBundle bundleForClass:[self class]] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+            NSString *currentVersion = [VersionUtil currentVersion];
             BOOL newerVersionExists = [latestVersion isNewerThanVersion:currentVersion];
             if (newerVersionExists) {
                 self.latestVersion = latestVersion;

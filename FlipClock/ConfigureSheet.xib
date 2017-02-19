@@ -9,6 +9,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="FlipClockView">
             <connections>
                 <outlet property="configSheet" destination="1" id="41"/>
+                <outlet property="currentVersionField" destination="9Uh-x7-RHD" id="d9N-RS-hg5"/>
                 <outlet property="fontPopUp" destination="Z7S-ax-dQ6" id="3NJ-3s-jOZ"/>
                 <outlet property="militaryBox" destination="17" id="46"/>
                 <outlet property="secondsBox" destination="21" id="47"/>
@@ -79,7 +80,7 @@ Gw
                         </popUpButtonCell>
                     </popUpButton>
                     <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3d1-Du-KBI">
-                        <rect key="frame" x="14" y="13" width="112" height="32"/>
+                        <rect key="frame" x="103" y="13" width="112" height="32"/>
                         <buttonCell key="cell" type="push" title="Get update!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7so-E3-M1Z">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -88,6 +89,14 @@ Gw
                             <action selector="openGithubTapped:" target="-2" id="SJs-Dq-z2i"/>
                         </connections>
                     </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Uh-x7-RHD">
+                        <rect key="frame" x="18" y="20" width="93" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="currentVersion" id="Pcq-hK-X7l">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstItem="3" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" symbolic="YES" id="7"/>
@@ -102,9 +111,11 @@ Gw
                     <constraint firstItem="25" firstAttribute="trailing" secondItem="9" secondAttribute="trailing" id="44"/>
                     <constraint firstAttribute="trailing" secondItem="25" secondAttribute="trailing" constant="20" symbolic="YES" id="45"/>
                     <constraint firstItem="Z7S-ax-dQ6" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="32" id="1ZQ-ay-Xqb"/>
-                    <constraint firstAttribute="bottom" secondItem="3d1-Du-KBI" secondAttribute="bottom" constant="20" symbolic="YES" id="9g8-C0-4UZ"/>
+                    <constraint firstItem="25" firstAttribute="leading" secondItem="3d1-Du-KBI" secondAttribute="trailing" constant="12" id="Bl3-zv-8kT"/>
+                    <constraint firstAttribute="bottom" secondItem="9Uh-x7-RHD" secondAttribute="bottom" constant="20" symbolic="YES" id="JVd-bK-rxG"/>
+                    <constraint firstItem="9Uh-x7-RHD" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="Pzq-Oh-P7R"/>
                     <constraint firstItem="Z7S-ax-dQ6" firstAttribute="top" secondItem="21" secondAttribute="bottom" constant="20" id="UP0-9z-3I1"/>
-                    <constraint firstItem="3d1-Du-KBI" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="aBH-jM-rQZ"/>
+                    <constraint firstAttribute="bottom" secondItem="3d1-Du-KBI" secondAttribute="bottom" constant="20" symbolic="YES" id="oMB-Ym-ogb"/>
                 </constraints>
             </view>
             <point key="canvasLocation" x="132" y="182.5"/>
