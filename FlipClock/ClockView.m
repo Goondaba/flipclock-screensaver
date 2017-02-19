@@ -53,10 +53,6 @@
     
     self.backgroundColor = [NSColor blackColor];
     
-    if (self.updateTextField) {
-        [self.updateTextField removeFromSuperview];
-        self.updateTextField = nil;
-    }
     //Load textures
     [[[ServicesProvider instance] textureService] loadTexturesWithFontType:fontType];
     
@@ -142,11 +138,15 @@
     
     NSString *latestVersion = [[ServicesProvider instance].feedService latestVersion];
     
+    if ((latestVersion == nil) || ([latestVersion isEqualToVersion:[VersionUtil currentVersion]])) {
+        return;
+    }
+    
     if (isPreview) {
         return;
     }
     
-    if ((latestVersion == nil) || ([latestVersion isEqualToVersion:[VersionUtil currentVersion]])) {
+    if (self.updateTextField && self.updateTextField.superview) {
         return;
     }
     
