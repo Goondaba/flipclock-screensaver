@@ -155,9 +155,9 @@
                                latestVersion];
     
     CGSize size  = CGSizeMake(CGRectGetWidth(self.frame), fontSize);
-    CGFloat minY = CGRectGetMinY(self.frame);
+    CGFloat heightPadding = 10;
     
-    NSRect textFieldRect = NSMakeRect(0, fontSize + minY, size.width, size.height);
+    NSRect textFieldRect = NSMakeRect(0, 0, size.width, size.height + heightPadding);
     
     self.updateTextField = [[NSTextField alloc] initWithFrame:textFieldRect];
     [self.updateTextField setFont:[NSFont fontWithName:[DigitFont fontNameForType:fontType] size:fontSize]];
