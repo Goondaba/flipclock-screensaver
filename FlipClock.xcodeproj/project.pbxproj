@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D8687C3FA324EF0B173C4F3 /* libPods-ClockDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1317A58C512F251D58A98283 /* libPods-ClockDemo.a */; };
-		12023A9917717ADA00494081 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12023A9717717ADA00494081 /* thumbnail@2x.png */; };
-		12023A9A17717ADA00494081 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 12023A9817717ADA00494081 /* thumbnail.png */; };
 		120DE6ED1662E88500C3C998 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE6EC1662E88500C3C998 /* Cocoa.framework */; };
 		120DE6EF1662E88500C3C998 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE6EE1662E88500C3C998 /* ScreenSaver.framework */; };
 		120DE6F91662E88500C3C998 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 120DE6F71662E88500C3C998 /* InfoPlist.strings */; };
@@ -94,8 +92,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12023A9717717ADA00494081 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
-		12023A9817717ADA00494081 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		120DE6E91662E88500C3C998 /* FlipClock.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipClock.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		120DE6EC1662E88500C3C998 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		120DE6EE1662E88500C3C998 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
@@ -284,8 +280,6 @@
 			isa = PBXGroup;
 			children = (
 				121C2B511824B7CC00A2580D /* Credits.rtf */,
-				12023A9717717ADA00494081 /* thumbnail@2x.png */,
-				12023A9817717ADA00494081 /* thumbnail.png */,
 				120DE6F61662E88500C3C998 /* FlipClock-Info.plist */,
 				12203CCB1824B35A009DD26A /* ClockDemo-Info.plist */,
 				120DE6F71662E88500C3C998 /* InfoPlist.strings */,
@@ -607,8 +601,6 @@
 				120DE6F91662E88500C3C998 /* InfoPlist.strings in Resources */,
 				12571EC01E584F560081ED56 /* Media.xcassets in Resources */,
 				12902409166BDF3100F4FE57 /* ConfigureSheet.xib in Resources */,
-				12023A9917717ADA00494081 /* thumbnail@2x.png in Resources */,
-				12023A9A17717ADA00494081 /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
