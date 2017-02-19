@@ -7,70 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12023A9917717ADA00494081 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12023A9717717ADA00494081 /* thumbnail@2x.png */; };
-		12023A9A17717ADA00494081 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 12023A9817717ADA00494081 /* thumbnail.png */; };
+		0D8687C3FA324EF0B173C4F3 /* libPods-ClockDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1317A58C512F251D58A98283 /* libPods-ClockDemo.a */; };
 		120DE6ED1662E88500C3C998 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE6EC1662E88500C3C998 /* Cocoa.framework */; };
 		120DE6EF1662E88500C3C998 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE6EE1662E88500C3C998 /* ScreenSaver.framework */; };
 		120DE6F91662E88500C3C998 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 120DE6F71662E88500C3C998 /* InfoPlist.strings */; };
 		120DE6FD1662E88500C3C998 /* FlipClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 120DE6FC1662E88500C3C998 /* FlipClockView.m */; };
-		120DE7291662E8C200C3C998 /* am_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7111662E8C200C3C998 /* am_top.png */; };
-		120DE72A1662E8C300C3C998 /* pm_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7121662E8C200C3C998 /* pm_top.png */; };
-		120DE72B1662E8C300C3C998 /* am_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7131662E8C200C3C998 /* am_bot.png */; };
-		120DE72C1662E8C300C3C998 /* pm_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7141662E8C200C3C998 /* pm_bot.png */; };
-		120DE72D1662E8C300C3C998 /* eight_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7151662E8C200C3C998 /* eight_bot.png */; };
-		120DE72E1662E8C300C3C998 /* eight_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7161662E8C200C3C998 /* eight_top.png */; };
-		120DE72F1662E8C300C3C998 /* five_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7171662E8C200C3C998 /* five_bot.png */; };
-		120DE7301662E8C300C3C998 /* five_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7181662E8C200C3C998 /* five_top.png */; };
-		120DE7311662E8C300C3C998 /* four_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7191662E8C200C3C998 /* four_bot.png */; };
-		120DE7321662E8C300C3C998 /* four_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71A1662E8C200C3C998 /* four_top.png */; };
-		120DE7331662E8C300C3C998 /* nine_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71B1662E8C200C3C998 /* nine_bot.png */; };
-		120DE7341662E8C300C3C998 /* nine_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71C1662E8C200C3C998 /* nine_top.png */; };
-		120DE7351662E8C300C3C998 /* one_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71D1662E8C200C3C998 /* one_bot.png */; };
-		120DE7361662E8C300C3C998 /* one_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71E1662E8C200C3C998 /* one_top.png */; };
-		120DE7371662E8C300C3C998 /* seven_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71F1662E8C200C3C998 /* seven_bot.png */; };
-		120DE7381662E8C300C3C998 /* seven_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7201662E8C200C3C998 /* seven_top.png */; };
-		120DE7391662E8C300C3C998 /* six_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7211662E8C200C3C998 /* six_bot.png */; };
-		120DE73A1662E8C300C3C998 /* six_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7221662E8C200C3C998 /* six_top.png */; };
-		120DE73B1662E8C300C3C998 /* three_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7231662E8C200C3C998 /* three_bot.png */; };
-		120DE73C1662E8C300C3C998 /* three_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7241662E8C200C3C998 /* three_top.png */; };
-		120DE73D1662E8C300C3C998 /* two_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7251662E8C200C3C998 /* two_bot.png */; };
-		120DE73E1662E8C300C3C998 /* two_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7261662E8C200C3C998 /* two_top.png */; };
-		120DE73F1662E8C300C3C998 /* zero_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7271662E8C200C3C998 /* zero_bot.png */; };
-		120DE7401662E8C300C3C998 /* zero_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7281662E8C200C3C998 /* zero_top.png */; };
 		120DE7461662E95600C3C998 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE7441662E95600C3C998 /* QuartzCore.framework */; };
 		120DE7471662E95600C3C998 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE7451662E95600C3C998 /* SceneKit.framework */; };
 		121C2B341824B6B500A2580D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 121C2B321824B6B500A2580D /* MainMenu.xib */; };
 		121C2B361824B71600A2580D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 120DE6F71662E88500C3C998 /* InfoPlist.strings */; };
-		121C2B391824B75100A2580D /* am_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7111662E8C200C3C998 /* am_top.png */; };
-		121C2B3A1824B75100A2580D /* pm_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7121662E8C200C3C998 /* pm_top.png */; };
-		121C2B3B1824B75100A2580D /* am_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7131662E8C200C3C998 /* am_bot.png */; };
-		121C2B3C1824B75100A2580D /* pm_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7141662E8C200C3C998 /* pm_bot.png */; };
-		121C2B3D1824B75100A2580D /* eight_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7151662E8C200C3C998 /* eight_bot.png */; };
-		121C2B3E1824B75100A2580D /* eight_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7161662E8C200C3C998 /* eight_top.png */; };
-		121C2B3F1824B75100A2580D /* five_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7171662E8C200C3C998 /* five_bot.png */; };
-		121C2B401824B75100A2580D /* five_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7181662E8C200C3C998 /* five_top.png */; };
-		121C2B411824B75100A2580D /* four_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7191662E8C200C3C998 /* four_bot.png */; };
-		121C2B421824B75100A2580D /* four_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71A1662E8C200C3C998 /* four_top.png */; };
-		121C2B431824B75100A2580D /* nine_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71B1662E8C200C3C998 /* nine_bot.png */; };
-		121C2B441824B75100A2580D /* nine_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71C1662E8C200C3C998 /* nine_top.png */; };
-		121C2B451824B75100A2580D /* one_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71D1662E8C200C3C998 /* one_bot.png */; };
-		121C2B461824B75100A2580D /* one_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71E1662E8C200C3C998 /* one_top.png */; };
-		121C2B471824B75100A2580D /* seven_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE71F1662E8C200C3C998 /* seven_bot.png */; };
-		121C2B481824B75100A2580D /* seven_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7201662E8C200C3C998 /* seven_top.png */; };
-		121C2B491824B75100A2580D /* six_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7211662E8C200C3C998 /* six_bot.png */; };
-		121C2B4A1824B75100A2580D /* six_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7221662E8C200C3C998 /* six_top.png */; };
-		121C2B4B1824B75100A2580D /* three_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7231662E8C200C3C998 /* three_bot.png */; };
-		121C2B4C1824B75100A2580D /* three_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7241662E8C200C3C998 /* three_top.png */; };
-		121C2B4D1824B75100A2580D /* two_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7251662E8C200C3C998 /* two_bot.png */; };
-		121C2B4E1824B75100A2580D /* two_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7261662E8C200C3C998 /* two_top.png */; };
-		121C2B4F1824B75100A2580D /* zero_bot.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7271662E8C200C3C998 /* zero_bot.png */; };
-		121C2B501824B75100A2580D /* zero_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 120DE7281662E8C200C3C998 /* zero_top.png */; };
 		121C2B531824B7D600A2580D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 121C2B511824B7CC00A2580D /* Credits.rtf */; };
 		121C2B561824B8C100A2580D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 121C2B551824B88500A2580D /* main.m */; };
 		121C2B571824B8C800A2580D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C8F1824AFED009DD26A /* AppDelegate.m */; };
 		121C2B581824B8CD00A2580D /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7F1824AE1E009DD26A /* ClockView.m */; };
 		121C2B591824B8D200A2580D /* DigitNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C831824AE1E009DD26A /* DigitNode.m */; };
 		121C2B5A1824B8D400A2580D /* DigitAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */; };
+		121D497E1E58E14B00E88B01 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 121D497C1E58E14B00E88B01 /* Constants.h */; };
+		121D497F1E58E14B00E88B01 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D497D1E58E14B00E88B01 /* Constants.m */; };
+		121D49801E58E14B00E88B01 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D497D1E58E14B00E88B01 /* Constants.m */; };
+		121D49811E58E14B00E88B01 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D497D1E58E14B00E88B01 /* Constants.m */; };
 		12203C841824AE1E009DD26A /* ClockNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 12203C7C1824AE1E009DD26A /* ClockNode.h */; };
 		12203C851824AE1E009DD26A /* ClockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7D1824AE1E009DD26A /* ClockNode.m */; };
 		12203C861824AE1E009DD26A /* ClockView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12203C7E1824AE1E009DD26A /* ClockView.h */; };
@@ -84,22 +39,59 @@
 		12203C9A1824B193009DD26A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120DE6EC1662E88500C3C998 /* Cocoa.framework */; };
 		12203CC81824B1F3009DD26A /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12203CC71824B1F3009DD26A /* SceneKit.framework */; };
 		12203CCA1824B201009DD26A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12203CC91824B201009DD26A /* QuartzCore.framework */; };
+		12285B581E52D39E00DB212A /* DigitFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 12285B561E52D39E00DB212A /* DigitFont.h */; };
+		12285B591E52D39E00DB212A /* DigitFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B571E52D39E00DB212A /* DigitFont.m */; };
+		12285B5A1E52D39E00DB212A /* DigitFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B571E52D39E00DB212A /* DigitFont.m */; };
+		12571EC01E584F560081ED56 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12571EBF1E584F560081ED56 /* Media.xcassets */; };
+		12571EC11E584F560081ED56 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12571EBF1E584F560081ED56 /* Media.xcassets */; };
 		125D6FDD1824B98E00164C8C /* ClockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 12203C7D1824AE1E009DD26A /* ClockNode.m */; };
 		12902409166BDF3100F4FE57 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12902408166BDF3100F4FE57 /* ConfigureSheet.xib */; };
+		129FF8101E555B130092C595 /* ServicesProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 129FF80E1E555B130092C595 /* ServicesProvider.h */; };
+		129FF8111E555B130092C595 /* ServicesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 129FF80F1E555B130092C595 /* ServicesProvider.m */; };
+		129FF8121E555B130092C595 /* ServicesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 129FF80F1E555B130092C595 /* ServicesProvider.m */; };
 		12B8E46E1B65C170002EADC6 /* SCNNode+FlipClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */; };
 		12B8E46F1B65C170002EADC6 /* SCNNode+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */; };
 		12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */; };
 		12B8E4781B65EB6B002EADC6 /* DigitAnimationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E4761B65EB6B002EADC6 /* DigitAnimationModel.h */; };
 		12B8E4791B65EB6B002EADC6 /* DigitAnimationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */; };
+		12D22F571E599F0E00070DFE /* VersionUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D22F551E599F0E00070DFE /* VersionUtil.h */; };
+		12D22F581E599F0E00070DFE /* VersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D22F561E599F0E00070DFE /* VersionUtil.m */; };
+		12D22F591E599F0E00070DFE /* VersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D22F561E599F0E00070DFE /* VersionUtil.m */; };
+		12D530201E582CE700901CD5 /* DigitNodeTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D5301F1E582CE700901CD5 /* DigitNodeTypes.h */; };
+		12D530231E582E8500901CD5 /* DigitNodeTextureNameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D530211E582E8500901CD5 /* DigitNodeTextureNameUtil.h */; };
+		12D530241E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */; };
+		12D530251E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */; };
+		12D530261E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */; };
+		12D6B2C01E556FDA00AE9805 /* RepoFeedService.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D6B2BE1E556FDA00AE9805 /* RepoFeedService.h */; };
+		12D6B2C11E556FDA00AE9805 /* RepoFeedService.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D6B2BF1E556FDA00AE9805 /* RepoFeedService.m */; };
+		12D6B2C21E556FDA00AE9805 /* RepoFeedService.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D6B2BF1E556FDA00AE9805 /* RepoFeedService.m */; };
+		12D6B2C51E556FF900AE9805 /* RepoFeedServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D6B2C41E556FF900AE9805 /* RepoFeedServiceProtocol.h */; };
 		12D79AD21B65EC9C00C0A422 /* DigitAnimationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */; };
+		12DC299A1E581D9C00CD58D0 /* TextureProviderService.h in Headers */ = {isa = PBXBuildFile; fileRef = 12DC29981E581D9C00CD58D0 /* TextureProviderService.h */; };
+		12DC299B1E581D9C00CD58D0 /* TextureProviderService.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DC29991E581D9C00CD58D0 /* TextureProviderService.m */; };
+		12DC299C1E581D9C00CD58D0 /* TextureProviderService.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DC29991E581D9C00CD58D0 /* TextureProviderService.m */; };
+		12DC299E1E581DB800CD58D0 /* TextureProviderServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 12DC299D1E581DB800CD58D0 /* TextureProviderServiceProtocol.h */; };
+		12DC29B41E5828CD00CD58D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DC29B31E5828CD00CD58D0 /* AppDelegate.m */; };
+		12DC29B71E5828CD00CD58D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DC29B61E5828CD00CD58D0 /* main.m */; };
+		12DC29B91E5828CD00CD58D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DC29B81E5828CD00CD58D0 /* Assets.xcassets */; };
+		12DC29BC1E5828CD00CD58D0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12DC29BA1E5828CD00CD58D0 /* MainMenu.xib */; };
+		12DC29C11E58292A00CD58D0 /* DigitNodeImageGeneratorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3611E515447007F3134 /* DigitNodeImageGeneratorUtil.m */; };
+		12DC29C21E58295800CD58D0 /* DigitFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B571E52D39E00DB212A /* DigitFont.m */; };
+		12DC29C31E58297900CD58D0 /* DigitRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D36D1E516710007F3134 /* DigitRenderView.m */; };
+		12DC29C41E58298800CD58D0 /* DigitRenderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E3D3711E516734007F3134 /* DigitRenderView.xib */; };
+		12DC29C51E58298C00CD58D0 /* DigitMedianRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12285B4F1E52CC5500DB212A /* DigitMedianRenderView.m */; };
+		12DC29C61E58299000CD58D0 /* DigitMedianRenderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12285B531E52CC5F00DB212A /* DigitMedianRenderView.xib */; };
+		12DC29C81E5829AB00CD58D0 /* NSImage+Flipclock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */; };
+		12E3D3761E5173EC007F3134 /* NSImage+Flipclock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E3D3741E5173EC007F3134 /* NSImage+Flipclock.h */; };
+		12E3D3771E5173EC007F3134 /* NSImage+Flipclock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */; };
+		12E3D3781E5173EC007F3134 /* NSImage+Flipclock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */; };
 		12FA9DBF1DCD7FF700EA216A /* SCNPlane+FlipClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 12FA9DBD1DCD7FF700EA216A /* SCNPlane+FlipClock.h */; };
 		12FA9DC01DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */; };
 		12FA9DC11DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */; };
+		EA0030E321FA83527B8A54E1 /* libPods-FlipClock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39626A867257171D9584E9FC /* libPods-FlipClock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12023A9717717ADA00494081 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
-		12023A9817717ADA00494081 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		120DE6E91662E88500C3C998 /* FlipClock.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipClock.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		120DE6EC1662E88500C3C998 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		120DE6EE1662E88500C3C998 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
@@ -111,36 +103,14 @@
 		120DE6FA1662E88500C3C998 /* FlipClock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlipClock-Prefix.pch"; sourceTree = "<group>"; };
 		120DE6FB1662E88500C3C998 /* FlipClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipClockView.h; sourceTree = "<group>"; };
 		120DE6FC1662E88500C3C998 /* FlipClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipClockView.m; sourceTree = "<group>"; };
-		120DE7111662E8C200C3C998 /* am_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = am_top.png; sourceTree = "<group>"; };
-		120DE7121662E8C200C3C998 /* pm_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pm_top.png; sourceTree = "<group>"; };
-		120DE7131662E8C200C3C998 /* am_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = am_bot.png; sourceTree = "<group>"; };
-		120DE7141662E8C200C3C998 /* pm_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pm_bot.png; sourceTree = "<group>"; };
-		120DE7151662E8C200C3C998 /* eight_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eight_bot.png; sourceTree = "<group>"; };
-		120DE7161662E8C200C3C998 /* eight_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eight_top.png; sourceTree = "<group>"; };
-		120DE7171662E8C200C3C998 /* five_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = five_bot.png; sourceTree = "<group>"; };
-		120DE7181662E8C200C3C998 /* five_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = five_top.png; sourceTree = "<group>"; };
-		120DE7191662E8C200C3C998 /* four_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = four_bot.png; sourceTree = "<group>"; };
-		120DE71A1662E8C200C3C998 /* four_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = four_top.png; sourceTree = "<group>"; };
-		120DE71B1662E8C200C3C998 /* nine_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nine_bot.png; sourceTree = "<group>"; };
-		120DE71C1662E8C200C3C998 /* nine_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nine_top.png; sourceTree = "<group>"; };
-		120DE71D1662E8C200C3C998 /* one_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one_bot.png; sourceTree = "<group>"; };
-		120DE71E1662E8C200C3C998 /* one_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one_top.png; sourceTree = "<group>"; };
-		120DE71F1662E8C200C3C998 /* seven_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven_bot.png; sourceTree = "<group>"; };
-		120DE7201662E8C200C3C998 /* seven_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven_top.png; sourceTree = "<group>"; };
-		120DE7211662E8C200C3C998 /* six_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = six_bot.png; sourceTree = "<group>"; };
-		120DE7221662E8C200C3C998 /* six_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = six_top.png; sourceTree = "<group>"; };
-		120DE7231662E8C200C3C998 /* three_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = three_bot.png; sourceTree = "<group>"; };
-		120DE7241662E8C200C3C998 /* three_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = three_top.png; sourceTree = "<group>"; };
-		120DE7251662E8C200C3C998 /* two_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two_bot.png; sourceTree = "<group>"; };
-		120DE7261662E8C200C3C998 /* two_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two_top.png; sourceTree = "<group>"; };
-		120DE7271662E8C200C3C998 /* zero_bot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zero_bot.png; sourceTree = "<group>"; };
-		120DE7281662E8C200C3C998 /* zero_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zero_top.png; sourceTree = "<group>"; };
 		120DE7441662E95600C3C998 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QuartzCore.framework; sourceTree = "<group>"; };
 		120DE7451662E95600C3C998 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SceneKit.framework; sourceTree = "<group>"; };
 		121C2B331824B6B500A2580D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		121C2B521824B7CC00A2580D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		121C2B541824B82500A2580D /* ClockDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockDemo-Prefix.pch"; sourceTree = "<group>"; };
 		121C2B551824B88500A2580D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		121D497C1E58E14B00E88B01 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		121D497D1E58E14B00E88B01 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		12203C7C1824AE1E009DD26A /* ClockNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockNode.h; sourceTree = "<group>"; };
 		12203C7D1824AE1E009DD26A /* ClockNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockNode.m; sourceTree = "<group>"; };
 		12203C7E1824AE1E009DD26A /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
@@ -155,13 +125,52 @@
 		12203CC71824B1F3009DD26A /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		12203CC91824B201009DD26A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		12203CCB1824B35A009DD26A /* ClockDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ClockDemo-Info.plist"; sourceTree = "<group>"; };
+		12285B4E1E52CC5500DB212A /* DigitMedianRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DigitMedianRenderView.h; path = ../FlipClock/DigitMedianRenderView.h; sourceTree = "<group>"; };
+		12285B4F1E52CC5500DB212A /* DigitMedianRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DigitMedianRenderView.m; path = ../FlipClock/DigitMedianRenderView.m; sourceTree = "<group>"; };
+		12285B531E52CC5F00DB212A /* DigitMedianRenderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DigitMedianRenderView.xib; path = ../FlipClock/DigitMedianRenderView.xib; sourceTree = "<group>"; };
+		12285B561E52D39E00DB212A /* DigitFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitFont.h; sourceTree = "<group>"; };
+		12285B571E52D39E00DB212A /* DigitFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitFont.m; sourceTree = "<group>"; };
+		12571EBF1E584F560081ED56 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		12902408166BDF3100F4FE57 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		129FF80E1E555B130092C595 /* ServicesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesProvider.h; sourceTree = "<group>"; };
+		129FF80F1E555B130092C595 /* ServicesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesProvider.m; sourceTree = "<group>"; };
 		12B8E46C1B65C170002EADC6 /* SCNNode+FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SCNNode+FlipClock.h"; path = "Categories/SCNNode+FlipClock.h"; sourceTree = "<group>"; };
 		12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SCNNode+FlipClock.m"; path = "Categories/SCNNode+FlipClock.m"; sourceTree = "<group>"; };
 		12B8E4761B65EB6B002EADC6 /* DigitAnimationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitAnimationModel.h; sourceTree = "<group>"; };
 		12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitAnimationModel.m; sourceTree = "<group>"; };
+		12D22F551E599F0E00070DFE /* VersionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionUtil.h; sourceTree = "<group>"; };
+		12D22F561E599F0E00070DFE /* VersionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionUtil.m; sourceTree = "<group>"; };
+		12D5301F1E582CE700901CD5 /* DigitNodeTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitNodeTypes.h; sourceTree = "<group>"; };
+		12D530211E582E8500901CD5 /* DigitNodeTextureNameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitNodeTextureNameUtil.h; sourceTree = "<group>"; };
+		12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitNodeTextureNameUtil.m; sourceTree = "<group>"; };
+		12D6B2BE1E556FDA00AE9805 /* RepoFeedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepoFeedService.h; sourceTree = "<group>"; };
+		12D6B2BF1E556FDA00AE9805 /* RepoFeedService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepoFeedService.m; sourceTree = "<group>"; };
+		12D6B2C41E556FF900AE9805 /* RepoFeedServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepoFeedServiceProtocol.h; sourceTree = "<group>"; };
+		12DC29981E581D9C00CD58D0 /* TextureProviderService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureProviderService.h; sourceTree = "<group>"; };
+		12DC29991E581D9C00CD58D0 /* TextureProviderService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextureProviderService.m; sourceTree = "<group>"; };
+		12DC299D1E581DB800CD58D0 /* TextureProviderServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureProviderServiceProtocol.h; sourceTree = "<group>"; };
+		12DC29B01E5828CD00CD58D0 /* FlipClock-ImageGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlipClock-ImageGenerator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12DC29B21E5828CD00CD58D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12DC29B31E5828CD00CD58D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12DC29B61E5828CD00CD58D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12DC29B81E5828CD00CD58D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12DC29BB1E5828CD00CD58D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		12DC29BD1E5828CD00CD58D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E3D3601E515447007F3134 /* DigitNodeImageGeneratorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DigitNodeImageGeneratorUtil.h; path = ../FlipClock/DigitNodeImageGeneratorUtil.h; sourceTree = "<group>"; };
+		12E3D3611E515447007F3134 /* DigitNodeImageGeneratorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DigitNodeImageGeneratorUtil.m; path = ../FlipClock/DigitNodeImageGeneratorUtil.m; sourceTree = "<group>"; };
+		12E3D36C1E516710007F3134 /* DigitRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DigitRenderView.h; path = ../FlipClock/DigitRenderView.h; sourceTree = "<group>"; };
+		12E3D36D1E516710007F3134 /* DigitRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DigitRenderView.m; path = ../FlipClock/DigitRenderView.m; sourceTree = "<group>"; };
+		12E3D3711E516734007F3134 /* DigitRenderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DigitRenderView.xib; path = ../FlipClock/DigitRenderView.xib; sourceTree = "<group>"; };
+		12E3D3741E5173EC007F3134 /* NSImage+Flipclock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Flipclock.h"; sourceTree = "<group>"; };
+		12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Flipclock.m"; sourceTree = "<group>"; };
 		12FA9DBD1DCD7FF700EA216A /* SCNPlane+FlipClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCNPlane+FlipClock.h"; sourceTree = "<group>"; };
 		12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCNPlane+FlipClock.m"; sourceTree = "<group>"; };
+		1317A58C512F251D58A98283 /* libPods-ClockDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2F9CC3A4D9C6C720D4204B /* Pods-ClockDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClockDemo/Pods-ClockDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		352C87D9E0D5E5D3948FB407 /* Pods-FlipClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipClock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlipClock/Pods-FlipClock.debug.xcconfig"; sourceTree = "<group>"; };
+		39626A867257171D9584E9FC /* libPods-FlipClock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlipClock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45612A7E20CDAC481A525F3B /* Pods-ClockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClockDemo/Pods-ClockDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CDD59AD4F6BBB97F7918E6A8 /* Pods-FlipClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipClock.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlipClock/Pods-FlipClock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +182,7 @@
 				120DE6EF1662E88500C3C998 /* ScreenSaver.framework in Frameworks */,
 				120DE7461662E95600C3C998 /* QuartzCore.framework in Frameworks */,
 				120DE7471662E95600C3C998 /* SceneKit.framework in Frameworks */,
+				EA0030E321FA83527B8A54E1 /* libPods-FlipClock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,18 +193,39 @@
 				12203CCA1824B201009DD26A /* QuartzCore.framework in Frameworks */,
 				12203CC81824B1F3009DD26A /* SceneKit.framework in Frameworks */,
 				12203C9A1824B193009DD26A /* Cocoa.framework in Frameworks */,
+				0D8687C3FA324EF0B173C4F3 /* libPods-ClockDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DC29AD1E5828CD00CD58D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E81D384495CC6F9654C6928 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E2F9CC3A4D9C6C720D4204B /* Pods-ClockDemo.debug.xcconfig */,
+				45612A7E20CDAC481A525F3B /* Pods-ClockDemo.release.xcconfig */,
+				352C87D9E0D5E5D3948FB407 /* Pods-FlipClock.debug.xcconfig */,
+				CDD59AD4F6BBB97F7918E6A8 /* Pods-FlipClock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		120DE6DC1662E88500C3C998 = {
 			isa = PBXGroup;
 			children = (
 				120DE6F41662E88500C3C998 /* FlipClock */,
+				12DC29B11E5828CD00CD58D0 /* FlipClock-ImageGenerator */,
 				120DE6EB1662E88500C3C998 /* Frameworks */,
 				120DE6EA1662E88500C3C998 /* Products */,
+				0E81D384495CC6F9654C6928 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +234,7 @@
 			children = (
 				120DE6E91662E88500C3C998 /* FlipClock.saver */,
 				12203C991824B193009DD26A /* ClockDemo.app */,
+				12DC29B01E5828CD00CD58D0 /* FlipClock-ImageGenerator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +249,8 @@
 				120DE6EC1662E88500C3C998 /* Cocoa.framework */,
 				120DE6EE1662E88500C3C998 /* ScreenSaver.framework */,
 				120DE6F01662E88500C3C998 /* Other Frameworks */,
+				1317A58C512F251D58A98283 /* libPods-ClockDemo.a */,
+				39626A867257171D9584E9FC /* libPods-FlipClock.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -246,56 +280,44 @@
 			isa = PBXGroup;
 			children = (
 				121C2B511824B7CC00A2580D /* Credits.rtf */,
-				12023A9717717ADA00494081 /* thumbnail@2x.png */,
-				12023A9817717ADA00494081 /* thumbnail.png */,
-				120DE7111662E8C200C3C998 /* am_top.png */,
-				120DE7121662E8C200C3C998 /* pm_top.png */,
-				120DE7131662E8C200C3C998 /* am_bot.png */,
-				120DE7141662E8C200C3C998 /* pm_bot.png */,
-				120DE7151662E8C200C3C998 /* eight_bot.png */,
-				120DE7161662E8C200C3C998 /* eight_top.png */,
-				120DE7171662E8C200C3C998 /* five_bot.png */,
-				120DE7181662E8C200C3C998 /* five_top.png */,
-				120DE7191662E8C200C3C998 /* four_bot.png */,
-				120DE71A1662E8C200C3C998 /* four_top.png */,
-				120DE71B1662E8C200C3C998 /* nine_bot.png */,
-				120DE71C1662E8C200C3C998 /* nine_top.png */,
-				120DE71D1662E8C200C3C998 /* one_bot.png */,
-				120DE71E1662E8C200C3C998 /* one_top.png */,
-				120DE71F1662E8C200C3C998 /* seven_bot.png */,
-				120DE7201662E8C200C3C998 /* seven_top.png */,
-				120DE7211662E8C200C3C998 /* six_bot.png */,
-				120DE7221662E8C200C3C998 /* six_top.png */,
-				120DE7231662E8C200C3C998 /* three_bot.png */,
-				120DE7241662E8C200C3C998 /* three_top.png */,
-				120DE7251662E8C200C3C998 /* two_bot.png */,
-				120DE7261662E8C200C3C998 /* two_top.png */,
-				120DE7271662E8C200C3C998 /* zero_bot.png */,
-				120DE7281662E8C200C3C998 /* zero_top.png */,
 				120DE6F61662E88500C3C998 /* FlipClock-Info.plist */,
 				12203CCB1824B35A009DD26A /* ClockDemo-Info.plist */,
 				120DE6F71662E88500C3C998 /* InfoPlist.strings */,
 				121C2B551824B88500A2580D /* main.m */,
 				120DE6FA1662E88500C3C998 /* FlipClock-Prefix.pch */,
 				121C2B541824B82500A2580D /* ClockDemo-Prefix.pch */,
+				12571EBF1E584F560081ED56 /* Media.xcassets */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		121D49821E58E27B00E88B01 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				12D5301F1E582CE700901CD5 /* DigitNodeTypes.h */,
+			);
+			name = Headers;
 			sourceTree = "<group>";
 		};
 		12203C7B1824ADC3009DD26A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				12B8E46B1B65C132002EADC6 /* Categories */,
+				121D49821E58E27B00E88B01 /* Headers */,
+				129FF80D1E555AED0092C595 /* Services */,
+				12285B5B1E52D3A100DB212A /* Models */,
+				12E3D36B1E516694007F3134 /* Views */,
 				12203C7C1824AE1E009DD26A /* ClockNode.h */,
 				12203C7D1824AE1E009DD26A /* ClockNode.m */,
-				12203C7E1824AE1E009DD26A /* ClockView.h */,
-				12203C7F1824AE1E009DD26A /* ClockView.m */,
 				12203C821824AE1E009DD26A /* DigitNode.h */,
 				12203C831824AE1E009DD26A /* DigitNode.m */,
 				12B8E4761B65EB6B002EADC6 /* DigitAnimationModel.h */,
 				12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */,
 				12203C801824AE1E009DD26A /* DigitAnimationDelegate.h */,
 				12203C811824AE1E009DD26A /* DigitAnimationDelegate.m */,
+				12B8E46B1B65C132002EADC6 /* Categories */,
+				12E3D3651E51544C007F3134 /* Util */,
+				121D497C1E58E14B00E88B01 /* Constants.h */,
+				121D497D1E58E14B00E88B01 /* Constants.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -328,12 +350,57 @@
 			name = XIBs;
 			sourceTree = "<group>";
 		};
+		12285B5B1E52D3A100DB212A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12285B561E52D39E00DB212A /* DigitFont.h */,
+				12285B571E52D39E00DB212A /* DigitFont.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		12571EC21E5850CE0081ED56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12E3D36C1E516710007F3134 /* DigitRenderView.h */,
+				12E3D36D1E516710007F3134 /* DigitRenderView.m */,
+				12E3D3711E516734007F3134 /* DigitRenderView.xib */,
+				12285B4E1E52CC5500DB212A /* DigitMedianRenderView.h */,
+				12285B4F1E52CC5500DB212A /* DigitMedianRenderView.m */,
+				12285B531E52CC5F00DB212A /* DigitMedianRenderView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		12571EC31E5851280081ED56 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				12E3D3601E515447007F3134 /* DigitNodeImageGeneratorUtil.h */,
+				12E3D3611E515447007F3134 /* DigitNodeImageGeneratorUtil.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		12902400166BDB7C00F4FE57 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
 				12902408166BDF3100F4FE57 /* ConfigureSheet.xib */,
 			);
 			name = XIBs;
+			sourceTree = "<group>";
+		};
+		129FF80D1E555AED0092C595 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				12D6B2C31E556FDF00AE9805 /* Protocols */,
+				129FF80E1E555B130092C595 /* ServicesProvider.h */,
+				129FF80F1E555B130092C595 /* ServicesProvider.m */,
+				12D6B2BE1E556FDA00AE9805 /* RepoFeedService.h */,
+				12D6B2BF1E556FDA00AE9805 /* RepoFeedService.m */,
+				12DC29981E581D9C00CD58D0 /* TextureProviderService.h */,
+				12DC29991E581D9C00CD58D0 /* TextureProviderService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		12B8E46B1B65C132002EADC6 /* Categories */ = {
@@ -343,8 +410,62 @@
 				12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */,
 				12FA9DBD1DCD7FF700EA216A /* SCNPlane+FlipClock.h */,
 				12FA9DBE1DCD7FF700EA216A /* SCNPlane+FlipClock.m */,
+				12E3D3741E5173EC007F3134 /* NSImage+Flipclock.h */,
+				12E3D3751E5173EC007F3134 /* NSImage+Flipclock.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		12D6B2C31E556FDF00AE9805 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				12D6B2C41E556FF900AE9805 /* RepoFeedServiceProtocol.h */,
+				12DC299D1E581DB800CD58D0 /* TextureProviderServiceProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		12DC29B11E5828CD00CD58D0 /* FlipClock-ImageGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				12571EC21E5850CE0081ED56 /* Views */,
+				12571EC31E5851280081ED56 /* Util */,
+				12DC29B21E5828CD00CD58D0 /* AppDelegate.h */,
+				12DC29B31E5828CD00CD58D0 /* AppDelegate.m */,
+				12DC29B81E5828CD00CD58D0 /* Assets.xcassets */,
+				12DC29BA1E5828CD00CD58D0 /* MainMenu.xib */,
+				12DC29BD1E5828CD00CD58D0 /* Info.plist */,
+				12DC29B51E5828CD00CD58D0 /* Supporting Files */,
+			);
+			path = "FlipClock-ImageGenerator";
+			sourceTree = "<group>";
+		};
+		12DC29B51E5828CD00CD58D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12DC29B61E5828CD00CD58D0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12E3D3651E51544C007F3134 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				12D530211E582E8500901CD5 /* DigitNodeTextureNameUtil.h */,
+				12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */,
+				12D22F551E599F0E00070DFE /* VersionUtil.h */,
+				12D22F561E599F0E00070DFE /* VersionUtil.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		12E3D36B1E516694007F3134 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12203C7E1824AE1E009DD26A /* ClockView.h */,
+				12203C7F1824AE1E009DD26A /* ClockView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,12 +477,23 @@
 			files = (
 				12203C8A1824AE1E009DD26A /* DigitNode.h in Headers */,
 				12B8E46E1B65C170002EADC6 /* SCNNode+FlipClock.h in Headers */,
+				12D6B2C51E556FF900AE9805 /* RepoFeedServiceProtocol.h in Headers */,
+				12DC299A1E581D9C00CD58D0 /* TextureProviderService.h in Headers */,
 				12203C861824AE1E009DD26A /* ClockView.h in Headers */,
 				12B8E4781B65EB6B002EADC6 /* DigitAnimationModel.h in Headers */,
+				12D22F571E599F0E00070DFE /* VersionUtil.h in Headers */,
 				12203C881824AE1E009DD26A /* DigitAnimationDelegate.h in Headers */,
 				12203C841824AE1E009DD26A /* ClockNode.h in Headers */,
 				12203C901824AFED009DD26A /* AppDelegate.h in Headers */,
+				12285B581E52D39E00DB212A /* DigitFont.h in Headers */,
+				12E3D3761E5173EC007F3134 /* NSImage+Flipclock.h in Headers */,
+				12D530201E582CE700901CD5 /* DigitNodeTypes.h in Headers */,
 				12FA9DBF1DCD7FF700EA216A /* SCNPlane+FlipClock.h in Headers */,
+				12D530231E582E8500901CD5 /* DigitNodeTextureNameUtil.h in Headers */,
+				121D497E1E58E14B00E88B01 /* Constants.h in Headers */,
+				129FF8101E555B130092C595 /* ServicesProvider.h in Headers */,
+				12DC299E1E581DB800CD58D0 /* TextureProviderServiceProtocol.h in Headers */,
+				12D6B2C01E556FDA00AE9805 /* RepoFeedService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,11 +504,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 120DE7001662E88500C3C998 /* Build configuration list for PBXNativeTarget "FlipClock" */;
 			buildPhases = (
+				E55C1376695C702F4C355A0E /* [CP] Check Pods Manifest.lock */,
 				120DE6E31662E88500C3C998 /* Sources */,
 				120DE6E41662E88500C3C998 /* Frameworks */,
 				120DE6E51662E88500C3C998 /* Headers */,
 				120DE6E61662E88500C3C998 /* Resources */,
 				120DE6E71662E88500C3C998 /* Rez */,
+				A63898D3D666EC000884AB6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,9 +525,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12203CC11824B194009DD26A /* Build configuration list for PBXNativeTarget "ClockDemo" */;
 			buildPhases = (
+				DF02B78E1DAEAD7BC85B0400 /* [CP] Check Pods Manifest.lock */,
 				12203C951824B193009DD26A /* Sources */,
 				12203C961824B193009DD26A /* Frameworks */,
 				12203C971824B193009DD26A /* Resources */,
+				733E843BA1B8A7B5771081BE /* [CP] Embed Pods Frameworks */,
+				8703EBD9E2B2A2B6708C6C95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -404,6 +541,23 @@
 			productReference = 12203C991824B193009DD26A /* ClockDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		12DC29AF1E5828CD00CD58D0 /* FlipClock-ImageGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12DC29C01E5828CD00CD58D0 /* Build configuration list for PBXNativeTarget "FlipClock-ImageGenerator" */;
+			buildPhases = (
+				12DC29AC1E5828CD00CD58D0 /* Sources */,
+				12DC29AD1E5828CD00CD58D0 /* Frameworks */,
+				12DC29AE1E5828CD00CD58D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlipClock-ImageGenerator";
+			productName = "FlipClock-ImageGenerator";
+			productReference = 12DC29B01E5828CD00CD58D0 /* FlipClock-ImageGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -412,6 +566,12 @@
 			attributes = {
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Jonathan Salvador";
+				TargetAttributes = {
+					12DC29AF1E5828CD00CD58D0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 120DE6E11662E88500C3C998 /* Build configuration list for PBXProject "FlipClock" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -428,6 +588,7 @@
 			targets = (
 				120DE6E81662E88500C3C998 /* FlipClock */,
 				12203C981824B193009DD26A /* ClockDemo */,
+				12DC29AF1E5828CD00CD58D0 /* FlipClock-ImageGenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -438,33 +599,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				120DE6F91662E88500C3C998 /* InfoPlist.strings in Resources */,
-				120DE7291662E8C200C3C998 /* am_top.png in Resources */,
-				120DE72A1662E8C300C3C998 /* pm_top.png in Resources */,
-				120DE72B1662E8C300C3C998 /* am_bot.png in Resources */,
-				120DE72C1662E8C300C3C998 /* pm_bot.png in Resources */,
-				120DE72D1662E8C300C3C998 /* eight_bot.png in Resources */,
-				120DE72E1662E8C300C3C998 /* eight_top.png in Resources */,
-				120DE72F1662E8C300C3C998 /* five_bot.png in Resources */,
-				120DE7301662E8C300C3C998 /* five_top.png in Resources */,
-				120DE7311662E8C300C3C998 /* four_bot.png in Resources */,
-				120DE7321662E8C300C3C998 /* four_top.png in Resources */,
-				120DE7331662E8C300C3C998 /* nine_bot.png in Resources */,
-				120DE7341662E8C300C3C998 /* nine_top.png in Resources */,
-				120DE7351662E8C300C3C998 /* one_bot.png in Resources */,
-				120DE7361662E8C300C3C998 /* one_top.png in Resources */,
-				120DE7371662E8C300C3C998 /* seven_bot.png in Resources */,
-				120DE7381662E8C300C3C998 /* seven_top.png in Resources */,
-				120DE7391662E8C300C3C998 /* six_bot.png in Resources */,
-				120DE73A1662E8C300C3C998 /* six_top.png in Resources */,
-				120DE73B1662E8C300C3C998 /* three_bot.png in Resources */,
-				120DE73C1662E8C300C3C998 /* three_top.png in Resources */,
-				120DE73D1662E8C300C3C998 /* two_bot.png in Resources */,
-				120DE73E1662E8C300C3C998 /* two_top.png in Resources */,
-				120DE73F1662E8C300C3C998 /* zero_bot.png in Resources */,
-				120DE7401662E8C300C3C998 /* zero_top.png in Resources */,
+				12571EC01E584F560081ED56 /* Media.xcassets in Resources */,
 				12902409166BDF3100F4FE57 /* ConfigureSheet.xib in Resources */,
-				12023A9917717ADA00494081 /* thumbnail@2x.png in Resources */,
-				12023A9A17717ADA00494081 /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,30 +611,18 @@
 				121C2B361824B71600A2580D /* InfoPlist.strings in Resources */,
 				121C2B531824B7D600A2580D /* Credits.rtf in Resources */,
 				121C2B341824B6B500A2580D /* MainMenu.xib in Resources */,
-				121C2B391824B75100A2580D /* am_top.png in Resources */,
-				121C2B3A1824B75100A2580D /* pm_top.png in Resources */,
-				121C2B3B1824B75100A2580D /* am_bot.png in Resources */,
-				121C2B3C1824B75100A2580D /* pm_bot.png in Resources */,
-				121C2B3D1824B75100A2580D /* eight_bot.png in Resources */,
-				121C2B3E1824B75100A2580D /* eight_top.png in Resources */,
-				121C2B3F1824B75100A2580D /* five_bot.png in Resources */,
-				121C2B401824B75100A2580D /* five_top.png in Resources */,
-				121C2B411824B75100A2580D /* four_bot.png in Resources */,
-				121C2B421824B75100A2580D /* four_top.png in Resources */,
-				121C2B431824B75100A2580D /* nine_bot.png in Resources */,
-				121C2B441824B75100A2580D /* nine_top.png in Resources */,
-				121C2B451824B75100A2580D /* one_bot.png in Resources */,
-				121C2B461824B75100A2580D /* one_top.png in Resources */,
-				121C2B471824B75100A2580D /* seven_bot.png in Resources */,
-				121C2B481824B75100A2580D /* seven_top.png in Resources */,
-				121C2B491824B75100A2580D /* six_bot.png in Resources */,
-				121C2B4A1824B75100A2580D /* six_top.png in Resources */,
-				121C2B4B1824B75100A2580D /* three_bot.png in Resources */,
-				121C2B4C1824B75100A2580D /* three_top.png in Resources */,
-				121C2B4D1824B75100A2580D /* two_bot.png in Resources */,
-				121C2B4E1824B75100A2580D /* two_top.png in Resources */,
-				121C2B4F1824B75100A2580D /* zero_bot.png in Resources */,
-				121C2B501824B75100A2580D /* zero_top.png in Resources */,
+				12571EC11E584F560081ED56 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DC29AE1E5828CD00CD58D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DC29C61E58299000CD58D0 /* DigitMedianRenderView.xib in Resources */,
+				12DC29C41E58298800CD58D0 /* DigitRenderView.xib in Resources */,
+				12DC29B91E5828CD00CD58D0 /* Assets.xcassets in Resources */,
+				12DC29BC1E5828CD00CD58D0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,17 +638,103 @@
 		};
 /* End PBXRezBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		733E843BA1B8A7B5771081BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClockDemo/Pods-ClockDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8703EBD9E2B2A2B6708C6C95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClockDemo/Pods-ClockDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A63898D3D666EC000884AB6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlipClock/Pods-FlipClock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF02B78E1DAEAD7BC85B0400 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E55C1376695C702F4C355A0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		120DE6E31662E88500C3C998 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129FF8111E555B130092C595 /* ServicesProvider.m in Sources */,
 				12203C851824AE1E009DD26A /* ClockNode.m in Sources */,
+				12D530241E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */,
+				121D497F1E58E14B00E88B01 /* Constants.m in Sources */,
+				12285B591E52D39E00DB212A /* DigitFont.m in Sources */,
 				120DE6FD1662E88500C3C998 /* FlipClockView.m in Sources */,
 				12203C911824AFED009DD26A /* AppDelegate.m in Sources */,
 				12203C8B1824AE1E009DD26A /* DigitNode.m in Sources */,
+				12D6B2C11E556FDA00AE9805 /* RepoFeedService.m in Sources */,
 				12FA9DC01DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */,
+				12D22F581E599F0E00070DFE /* VersionUtil.m in Sources */,
 				12B8E4791B65EB6B002EADC6 /* DigitAnimationModel.m in Sources */,
+				12E3D3771E5173EC007F3134 /* NSImage+Flipclock.m in Sources */,
+				12DC299B1E581D9C00CD58D0 /* TextureProviderService.m in Sources */,
 				12B8E46F1B65C170002EADC6 /* SCNNode+FlipClock.m in Sources */,
 				12203C871824AE1E009DD26A /* ClockView.m in Sources */,
 				12203C891824AE1E009DD26A /* DigitAnimationDelegate.m in Sources */,
@@ -535,15 +745,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129FF8121E555B130092C595 /* ServicesProvider.m in Sources */,
 				12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */,
+				12D530251E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */,
+				121D49801E58E14B00E88B01 /* Constants.m in Sources */,
+				12285B5A1E52D39E00DB212A /* DigitFont.m in Sources */,
 				121C2B561824B8C100A2580D /* main.m in Sources */,
 				121C2B571824B8C800A2580D /* AppDelegate.m in Sources */,
 				121C2B581824B8CD00A2580D /* ClockView.m in Sources */,
+				12D6B2C21E556FDA00AE9805 /* RepoFeedService.m in Sources */,
 				12FA9DC11DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */,
+				12D22F591E599F0E00070DFE /* VersionUtil.m in Sources */,
 				12D79AD21B65EC9C00C0A422 /* DigitAnimationModel.m in Sources */,
+				12E3D3781E5173EC007F3134 /* NSImage+Flipclock.m in Sources */,
+				12DC299C1E581D9C00CD58D0 /* TextureProviderService.m in Sources */,
 				125D6FDD1824B98E00164C8C /* ClockNode.m in Sources */,
 				121C2B591824B8D200A2580D /* DigitNode.m in Sources */,
 				121C2B5A1824B8D400A2580D /* DigitAnimationDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12DC29AC1E5828CD00CD58D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DC29B71E5828CD00CD58D0 /* main.m in Sources */,
+				12DC29C11E58292A00CD58D0 /* DigitNodeImageGeneratorUtil.m in Sources */,
+				12DC29C51E58298C00CD58D0 /* DigitMedianRenderView.m in Sources */,
+				12DC29C21E58295800CD58D0 /* DigitFont.m in Sources */,
+				12D530261E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */,
+				12DC29C81E5829AB00CD58D0 /* NSImage+Flipclock.m in Sources */,
+				12DC29B41E5828CD00CD58D0 /* AppDelegate.m in Sources */,
+				12DC29C31E58297900CD58D0 /* DigitRenderView.m in Sources */,
+				121D49811E58E14B00E88B01 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +806,14 @@
 				121C2B521824B7CC00A2580D /* en */,
 			);
 			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		12DC29BA1E5828CD00CD58D0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12DC29BB1E5828CD00CD58D0 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -656,6 +898,7 @@
 		};
 		120DE7011662E88500C3C998 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352C87D9E0D5E5D3948FB407 /* Pods-FlipClock.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -676,6 +919,7 @@
 		};
 		120DE7021662E88500C3C998 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD59AD4F6BBB97F7918E6A8 /* Pods-FlipClock.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -696,6 +940,7 @@
 		};
 		12203CC21824B194009DD26A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2F9CC3A4D9C6C720D4204B /* Pods-ClockDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -724,6 +969,7 @@
 		};
 		12203CC31824B194009DD26A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45612A7E20CDAC481A525F3B /* Pods-ClockDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -743,6 +989,54 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Goondaba.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		12DC29BE1E5828CD00CD58D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "FlipClock-ImageGenerator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Goondaba.FlipClock-ImageGenerator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		12DC29BF1E5828CD00CD58D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "FlipClock-ImageGenerator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Goondaba.FlipClock-ImageGenerator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -772,6 +1066,15 @@
 			buildConfigurations = (
 				12203CC21824B194009DD26A /* Debug */,
 				12203CC31824B194009DD26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12DC29C01E5828CD00CD58D0 /* Build configuration list for PBXNativeTarget "FlipClock-ImageGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12DC29BE1E5828CD00CD58D0 /* Debug */,
+				12DC29BF1E5828CD00CD58D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

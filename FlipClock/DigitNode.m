@@ -30,6 +30,10 @@
 #import "DigitAnimationDelegate.h"
 #import "DigitAnimationModel.h"
 #import "SCNPlane+FlipClock.h"
+#import "DigitNodeImageGeneratorUtil.h"
+#import "NSImage+Flipclock.h"
+#import "DigitFont.h"
+#import "DigitNodeTextureNameUtil.h"
 
 @implementation DigitNode
 @synthesize currentTexturePrefix;
@@ -56,7 +60,7 @@ CGFloat flipSegmentZGap   = 0.01;
     else
         fromType = givenDigitType - 1;
     
-    [self flipToTexturePrefix:[DigitNode getTexturePrefixFor:givenDigitType] fromPrefix:[DigitNode getTexturePrefixFor:fromType]];
+    [self flipToTexturePrefix:[DigitNodeTextureNameUtil getTexturePrefixFor:givenDigitType] fromPrefix:[DigitNodeTextureNameUtil getTexturePrefixFor:fromType]];
 }
 
 -(void)flipToTexturePrefix:(NSString*)givenPrefix fromPrefix:(NSString*)givenOldPrefix{
@@ -122,7 +126,7 @@ CGFloat flipSegmentZGap   = 0.01;
 -(void)startDigitAt:(DigitType)givenDigitType{
     
     //get texture prefix
-    self->currentTexturePrefix = [DigitNode getTexturePrefixFor:givenDigitType];
+    self->currentTexturePrefix = [DigitNodeTextureNameUtil getTexturePrefixFor:givenDigitType];
     
     //create top plane
     topHalf       = [SCNPlane planeWithWidth:flipSegementWidth height:flipSegmentHeight];
@@ -143,76 +147,10 @@ CGFloat flipSegmentZGap   = 0.01;
     [bottomHalf applyMaterialWithName:[NSString stringWithFormat:@"%@_bot", self->currentTexturePrefix]];
 }
 
-//Do a one-time load of textures into the textures array
-+ (NSDictionary<NSString *, NSImage*> *)textures {
-    
-    static dispatch_once_t token;
-    static NSDictionary<NSString *, NSImage*> *shared = nil;
-    
-    dispatch_once(&token, ^{
-        shared = [NSMutableDictionary dictionary];
-        
-        for(int i=0; i < numDigitType; i++){
-            
-            NSString *currentPrefix = [DigitNode getTexturePrefixFor:i];
-            NSString *top_str       = [NSString stringWithFormat:@"%@_top", currentPrefix];
-            NSString *bottom_str    = [NSString stringWithFormat:@"%@_bot", currentPrefix];
-            
-            [shared setValue:[DigitNode getImageForFileName:top_str]    forKey:top_str];
-            [shared setValue:[DigitNode getImageForFileName:bottom_str] forKey:bottom_str];
-        }
-    });
-    
-    return shared;
-}
-
 +(NSImage*)getImageForFileName:(NSString*)givenImageName{
+    
      NSString *pathString = [[NSBundle bundleForClass:[self class]] pathForResource:givenImageName ofType:@"png"];
     return [[NSImage alloc] initWithContentsOfFile:pathString];
-}
-
-+(NSString*)getTexturePrefixFor:(DigitType)givenDigitType{
-    switch(givenDigitType){
-    case kZero:
-        return @"zero";
-        break;
-    case kOne:
-        return @"one";
-        break;
-    case kTwo:
-        return @"two";
-        break;
-    case kThree:
-        return @"three";
-        break;
-    case kFour:
-        return @"four";
-        break;
-    case kFive:
-        return @"five";
-        break;
-    case kSix:
-        return @"six";
-        break;
-    case kSeven:
-        return @"seven";
-        break;
-    case kEight:
-        return @"eight";
-        break;
-    case kNine:
-        return @"nine";
-        break;
-    case kAM:
-        return @"am";
-        break;
-    case kPM:
-        return @"pm";
-        break;
-    default:
-        return @"zero";
-        break;
-    }
 }
 
 @end

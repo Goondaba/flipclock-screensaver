@@ -1,0 +1,27 @@
+PODS:
+  - MWFeedParser (1.0.1):
+    - MWFeedParser/FeedParser (= 1.0.1)
+    - MWFeedParser/NSDate+InternetDateTime (= 1.0.1)
+    - MWFeedParser/NSString+HTML (= 1.0.1)
+  - MWFeedParser/FeedParser (1.0.1):
+    - MWFeedParser/NSDate+InternetDateTime
+    - MWFeedParser/NSString+HTML
+  - MWFeedParser/NSDate+InternetDateTime (1.0.1)
+  - MWFeedParser/NSString+HTML (1.0.1)
+  - NSString-compareToVersion (0.4)
+
+DEPENDENCIES:
+  - MWFeedParser (~> 1.0.1)
+  - NSString-compareToVersion (from `Local Pods/NSString-compareToVersion/NSString-compareToVersion.podspec`)
+
+EXTERNAL SOURCES:
+  NSString-compareToVersion:
+    :podspec: Local Pods/NSString-compareToVersion/NSString-compareToVersion.podspec
+
+SPEC CHECKSUMS:
+  MWFeedParser: 2cf646014c1baf6ad1b08c480b40a08180079247
+  NSString-compareToVersion: adcfd695ed6d13b338f9cef6d2d4c211a75ba7ab
+
+PODFILE CHECKSUM: e306ed01231d6af9fbfaa3124ccf93308cbdb813
+
+COCOAPODS: 1.2.0

@@ -32,12 +32,15 @@
 /**
  *  Where the screen saver is drawn
  */
-@interface FlipClockView : ScreenSaverView{
+@interface FlipClockView : ScreenSaverView {
     ClockView *myClockView;
     
     IBOutlet id configSheet;
     IBOutlet NSButton *militaryBox;
     IBOutlet NSButton *secondsBox;
+    IBOutlet NSPopUpButton *fontPopUp;
+    IBOutlet NSButton *updateButton;
+    IBOutlet NSTextField *currentVersionField;
 }
 
 @end

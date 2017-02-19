@@ -27,22 +27,7 @@
 //
 
 #import <SceneKit/SceneKit.h>
-
-typedef NS_ENUM(NSInteger, DigitType) {
-    kZero,
-    kOne,
-    kTwo,
-    kThree,
-    kFour,
-    kFive,
-    kSix,
-    kSeven,
-    kEight,
-    kNine,
-    kAM,
-    kPM,
-    numDigitType
-};
+#import "DigitNodeTypes.h"
 
 @interface DigitNode : SCNNode{
     NSString *currentTexturePrefix;
@@ -56,7 +41,5 @@ typedef NS_ENUM(NSInteger, DigitType) {
 - (void)flipToDigit:(DigitType)givenDigitType;
 - (void)startDigitAt:(DigitType)givenDigitType;
 
-+ (NSDictionary<NSString *, NSImage*> *)textures;
 + (CGFloat)getDigitWidth;
-
 @end

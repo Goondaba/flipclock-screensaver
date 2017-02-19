@@ -28,9 +28,10 @@
 
 #import <Cocoa/Cocoa.h>
 #import <SceneKit/SceneKit.h>
+#import "DigitFont.h"
 
 @interface ClockView : SCNView
 
--(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds;
+-(void)drawClockWithMilitary:(Boolean)showMilitary andSeconds:(Boolean)showSeconds andFontType:(DigitFontType)fontType isPreview:(BOOL)isPreview;
 
 @end

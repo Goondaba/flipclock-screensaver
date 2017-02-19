@@ -7,7 +7,7 @@
 //
 
 #import "SCNPlane+FlipClock.h"
-#import "DigitNode.h"
+#import "ServicesProvider.h"
 
 @implementation SCNPlane (FlipClock)
 
@@ -22,7 +22,10 @@
     }
     else{
         SCNMaterial *material = [SCNMaterial material];
-        material.diffuse.contents  = [[DigitNode textures] objectForKey:givenImageName];
+        
+        NSDictionary<NSString *, NSImage*> *textures = [[[ServicesProvider instance] textureService] textures];
+        
+        material.diffuse.contents  = [textures objectForKey:givenImageName];
         material.shininess = 1.0;
         self.materials = @[material];
     }
