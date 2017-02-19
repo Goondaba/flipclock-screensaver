@@ -31,6 +31,10 @@
 #import "DigitNodeImageGeneratorUtil.h"
 #import "ServicesProvider.h"
 
+@interface ClockView ()
+@property (nonatomic, strong) NSTextField* updateTextField;
+@end
+
 @implementation ClockView
 
 -(void)awakeFromNib{
@@ -75,15 +79,14 @@
     
     [clock startClockWithMilitary:showMilitary andWithSeconds:showSeconds];
     
-//    //Check if update available
-//    //One per app/System prefs launch
-//    static dispatch_once_t token;
-//    dispatch_once(&token, ^{
-//        [[ServicesProvider instance].feedService newReleaseIsAvailable:^(BOOL newReleaseAvailable) {
-//            
-//            //TODO: Impl update available notice
-//        }];
-//    });
+    //Check if update available
+    //One per app/System prefs launch
+    static dispatch_once_t token;
+    dispatch_once(&token, ^{
+        [[ServicesProvider instance].feedService newReleaseIsAvailable:^(BOOL newReleaseAvailable) {
+            [self addVersionNoticeIfNecessary:isPreview withFontType:fontType];
+        }];
+    });
     
     [self addVersionNoticeIfNecessary:isPreview withFontType:fontType];
 }
@@ -131,29 +134,50 @@
 
 - (void)addVersionNoticeIfNecessary:(BOOL)isPreview withFontType:(DigitFontType)fontType {
     
+    NSString *latestVersion = [[ServicesProvider instance].feedService latestVersion];
+    
     if (isPreview) {
         return;
     }
     
-    CGFloat fontSize = 12.0;
+    if (self.updateTextField && self.updateTextField.superview) {
+        return;
+    }
     
-    CGSize size  = CGSizeMake(CGRectGetWidth(self.frame), 200);
-    CGFloat maxY = CGRectGetMaxY(self.frame);
+    if (latestVersion == nil) {
+        return;
+    }
     
-//    NSRect textFieldRect = NSMakeRect(300, maxY, size.width, size.height);
-    NSRect textFieldRect = NSMakeRect(0, fontSize, CGRectGetWidth(self.frame), fontSize);
+    //build textfield
+    CGFloat fontSize = 24.0;
     
-    NSTextField* textField = [[NSTextField alloc] initWithFrame:textFieldRect];
-    [textField setFont:[NSFont fontWithName:[DigitFont fontNameForType:fontType] size:fontSize]];
-    [textField setTextColor:[NSColor whiteColor]];
-    [textField setStringValue:@"Some Text"];
-    [textField setBackgroundColor:[NSColor blueColor]];
-    [textField setDrawsBackground:YES];
-    [textField setBordered:NO];
-    [textField setAlignment:NSCenterTextAlignment];
-    [textField setAutoresizingMask:(NSViewWidthSizable)];
+    NSString *textToDisplay = [NSString stringWithFormat:@"Version update v%@ available. See options for details.",
+                               latestVersion];
     
-    [self addSubview:textField];
+    CGSize size  = CGSizeMake(CGRectGetWidth(self.frame), fontSize);
+    CGFloat minY = CGRectGetMinY(self.frame);
+    
+    NSRect textFieldRect = NSMakeRect(0, fontSize + minY, size.width, size.height);
+    
+    self.updateTextField = [[NSTextField alloc] initWithFrame:textFieldRect];
+    [self.updateTextField setFont:[NSFont fontWithName:[DigitFont fontNameForType:fontType] size:fontSize]];
+    [self.updateTextField setTextColor:[NSColor whiteColor]];
+    [self.updateTextField setStringValue:textToDisplay];
+    [self.updateTextField setBackgroundColor:[NSColor blackColor]];
+    [self.updateTextField setDrawsBackground:YES];
+    [self.updateTextField setBordered:NO];
+    [self.updateTextField setAlignment:NSCenterTextAlignment];
+    [self.updateTextField setAutoresizingMask:(NSViewWidthSizable)];
+    
+    [self addSubview:self.updateTextField];
+    
+    //fade in
+    self.updateTextField.alphaValue = 0;
+    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
+        context.duration = 2;
+        self.updateTextField.animator.alphaValue = 1;
+    }
+    completionHandler:^{}];
 }
 
 @end
