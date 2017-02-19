@@ -31,6 +31,7 @@
 #import "DigitNodeImageGeneratorUtil.h"
 #import "ServicesProvider.h"
 #import <NSString-comparetoVersion/NSString+CompareToVersion.h>
+#import "VersionUtil.h"
 
 @interface ClockView ()
 @property (nonatomic, strong) NSTextField* updateTextField;
@@ -145,7 +146,7 @@
         return;
     }
     
-    if ((latestVersion == nil) || ([latestVersion isEqualToVersion:latestVersion])) {
+    if ((latestVersion == nil) || ([latestVersion isEqualToVersion:[VersionUtil currentVersion]])) {
         return;
     }
     
