@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
@@ -20,14 +20,14 @@
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="1" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" documentModal="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="272" y="172" width="304" height="264"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="contentRect" x="272" y="172" width="304" height="227"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="2">
-                <rect key="frame" x="0.0" y="0.0" width="304" height="264"/>
+                <rect key="frame" x="0.0" y="0.0" width="304" height="227"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3">
-                        <rect key="frame" x="18" y="227" width="111" height="17"/>
+                        <rect key="frame" x="18" y="190" width="111" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="FlipClock Options" id="4">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -35,17 +35,17 @@
                         </textFieldCell>
                     </textField>
                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="9">
-                        <rect key="frame" x="20" y="216" width="264" height="5"/>
+                        <rect key="frame" x="20" y="179" width="264" height="5"/>
                     </box>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="17">
-                        <rect key="frame" x="30" y="179" width="105" height="18"/>
+                        <rect key="frame" x="30" y="142" width="105" height="18"/>
                         <buttonCell key="cell" type="check" title="24 hour clock" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="18">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="21">
-                        <rect key="frame" x="30" y="159" width="110" height="18"/>
+                        <rect key="frame" x="30" y="122" width="110" height="18"/>
                         <buttonCell key="cell" type="check" title="Show seconds" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="22">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -65,7 +65,7 @@ Gw
                         </connections>
                     </button>
                     <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z7S-ax-dQ6">
-                        <rect key="frame" x="30" y="117" width="76" height="26"/>
+                        <rect key="frame" x="30" y="80" width="76" height="26"/>
                         <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="gt7-hg-cKq" id="MeF-LO-Er5">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
@@ -107,7 +107,7 @@ Gw
                     <constraint firstItem="3d1-Du-KBI" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="aBH-jM-rQZ"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="132" y="201"/>
+            <point key="canvasLocation" x="132" y="182.5"/>
         </window>
     </objects>
 </document>
