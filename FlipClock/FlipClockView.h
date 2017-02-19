@@ -40,6 +40,7 @@
     IBOutlet NSButton *secondsBox;
     IBOutlet NSPopUpButton *fontPopUp;
     IBOutlet NSButton *updateButton;
+    IBOutlet NSTextField *currentVersionField;
 }
 
 @end

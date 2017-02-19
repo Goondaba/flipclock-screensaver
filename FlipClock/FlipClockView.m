@@ -30,6 +30,7 @@
 #import "DigitFont.h"
 #import "Constants.h"
 #import "ServicesProvider.h"
+#import "VersionUtil.h"
 
 @implementation FlipClockView
 
@@ -112,7 +113,8 @@ CGFloat frameRate = 30.0f;
         }
     }
     
-    self->updateButton.hidden = ([[ServicesProvider instance].feedService latestVersion] == nil);
+    currentVersionField.cell.title = [NSString stringWithFormat:@"v%@", [VersionUtil currentVersion]];
+    updateButton.hidden = ([[ServicesProvider instance].feedService latestVersion] == nil);
     
     //set sheet options to defaults
     [militaryBox setState:[defaults integerForKey:isMilitary_str]];

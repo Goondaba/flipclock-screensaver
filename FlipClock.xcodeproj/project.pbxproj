@@ -56,6 +56,9 @@
 		12B8E4701B65C240002EADC6 /* SCNNode+FlipClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */; };
 		12B8E4781B65EB6B002EADC6 /* DigitAnimationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B8E4761B65EB6B002EADC6 /* DigitAnimationModel.h */; };
 		12B8E4791B65EB6B002EADC6 /* DigitAnimationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */; };
+		12D22F571E599F0E00070DFE /* VersionUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D22F551E599F0E00070DFE /* VersionUtil.h */; };
+		12D22F581E599F0E00070DFE /* VersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D22F561E599F0E00070DFE /* VersionUtil.m */; };
+		12D22F591E599F0E00070DFE /* VersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D22F561E599F0E00070DFE /* VersionUtil.m */; };
 		12D530201E582CE700901CD5 /* DigitNodeTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D5301F1E582CE700901CD5 /* DigitNodeTypes.h */; };
 		12D530231E582E8500901CD5 /* DigitNodeTextureNameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D530211E582E8500901CD5 /* DigitNodeTextureNameUtil.h */; };
 		12D530241E582E8500901CD5 /* DigitNodeTextureNameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */; };
@@ -139,6 +142,8 @@
 		12B8E46D1B65C170002EADC6 /* SCNNode+FlipClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SCNNode+FlipClock.m"; path = "Categories/SCNNode+FlipClock.m"; sourceTree = "<group>"; };
 		12B8E4761B65EB6B002EADC6 /* DigitAnimationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitAnimationModel.h; sourceTree = "<group>"; };
 		12B8E4771B65EB6B002EADC6 /* DigitAnimationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitAnimationModel.m; sourceTree = "<group>"; };
+		12D22F551E599F0E00070DFE /* VersionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionUtil.h; sourceTree = "<group>"; };
+		12D22F561E599F0E00070DFE /* VersionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionUtil.m; sourceTree = "<group>"; };
 		12D5301F1E582CE700901CD5 /* DigitNodeTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitNodeTypes.h; sourceTree = "<group>"; };
 		12D530211E582E8500901CD5 /* DigitNodeTextureNameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitNodeTextureNameUtil.h; sourceTree = "<group>"; };
 		12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitNodeTextureNameUtil.m; sourceTree = "<group>"; };
@@ -454,6 +459,8 @@
 			children = (
 				12D530211E582E8500901CD5 /* DigitNodeTextureNameUtil.h */,
 				12D530221E582E8500901CD5 /* DigitNodeTextureNameUtil.m */,
+				12D22F551E599F0E00070DFE /* VersionUtil.h */,
+				12D22F561E599F0E00070DFE /* VersionUtil.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -480,6 +487,7 @@
 				12DC299A1E581D9C00CD58D0 /* TextureProviderService.h in Headers */,
 				12203C861824AE1E009DD26A /* ClockView.h in Headers */,
 				12B8E4781B65EB6B002EADC6 /* DigitAnimationModel.h in Headers */,
+				12D22F571E599F0E00070DFE /* VersionUtil.h in Headers */,
 				12203C881824AE1E009DD26A /* DigitAnimationDelegate.h in Headers */,
 				12203C841824AE1E009DD26A /* ClockNode.h in Headers */,
 				12203C901824AFED009DD26A /* AppDelegate.h in Headers */,
@@ -731,6 +739,7 @@
 				12203C8B1824AE1E009DD26A /* DigitNode.m in Sources */,
 				12D6B2C11E556FDA00AE9805 /* RepoFeedService.m in Sources */,
 				12FA9DC01DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */,
+				12D22F581E599F0E00070DFE /* VersionUtil.m in Sources */,
 				12B8E4791B65EB6B002EADC6 /* DigitAnimationModel.m in Sources */,
 				12E3D3771E5173EC007F3134 /* NSImage+Flipclock.m in Sources */,
 				12DC299B1E581D9C00CD58D0 /* TextureProviderService.m in Sources */,
@@ -754,6 +763,7 @@
 				121C2B581824B8CD00A2580D /* ClockView.m in Sources */,
 				12D6B2C21E556FDA00AE9805 /* RepoFeedService.m in Sources */,
 				12FA9DC11DCD7FF700EA216A /* SCNPlane+FlipClock.m in Sources */,
+				12D22F591E599F0E00070DFE /* VersionUtil.m in Sources */,
 				12D79AD21B65EC9C00C0A422 /* DigitAnimationModel.m in Sources */,
 				12E3D3781E5173EC007F3134 /* NSImage+Flipclock.m in Sources */,
 				12DC299C1E581D9C00CD58D0 /* TextureProviderService.m in Sources */,
